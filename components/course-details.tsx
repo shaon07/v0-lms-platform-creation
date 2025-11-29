@@ -1,16 +1,20 @@
-"use client"
+"use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import type { CourseDetails } from "@/lib/courses-data"
-import { ExternalLink, BookOpen, Users, Clock } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { CourseDetails } from "@/lib/courses-data";
+import { BookOpen, Clock, ExternalLink, Users } from "lucide-react";
+import Link from "next/link";
 
 interface CourseDetailsProps {
-  course: CourseDetails
-  progress: number
+  course: CourseDetails;
+  progress: number;
 }
 
-export default function CourseDetailsComponent({ course, progress }: CourseDetailsProps) {
+export default function CourseDetailsComponent({
+  course,
+  progress,
+}: CourseDetailsProps) {
   return (
     <div className="space-y-6">
       <div>
@@ -18,7 +22,9 @@ export default function CourseDetailsComponent({ course, progress }: CourseDetai
           {course.level}
         </div>
         <h1 className="text-4xl font-bold mb-2">{course.title}</h1>
-        <p className="text-lg text-muted-foreground mb-4">{course.description}</p>
+        <p className="text-lg text-muted-foreground mb-4">
+          {course.description}
+        </p>
 
         <div className="flex flex-wrap gap-4 mb-6">
           <div className="flex items-center gap-2 text-sm">
@@ -37,9 +43,12 @@ export default function CourseDetailsComponent({ course, progress }: CourseDetai
 
         <div className="flex gap-3">
           <Button asChild size="lg" className="gap-2">
-            <a href={course.url} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={`/course/${course.id}/playlist`}
+              className="flex items-center gap-2"
+            >
               Start Learning <ExternalLink className="w-4 h-4" />
-            </a>
+            </Link>
           </Button>
           <Button variant="outline" size="lg">
             Share Course
@@ -55,9 +64,13 @@ export default function CourseDetailsComponent({ course, progress }: CourseDetai
         <CardContent className="space-y-4">
           <div className="flex items-baseline gap-2">
             <span className="text-3xl font-bold">{course.rating}</span>
-            <span className="text-sm text-muted-foreground">out of 5 stars</span>
+            <span className="text-sm text-muted-foreground">
+              out of 5 stars
+            </span>
           </div>
-          <p className="text-sm text-muted-foreground">{course.reviews} reviews from students</p>
+          <p className="text-sm text-muted-foreground">
+            {course.reviews} reviews from students
+          </p>
           <div className="space-y-2">
             {[5, 4, 3, 2, 1].map((star) => (
               <div key={star} className="flex items-center gap-2">
@@ -76,5 +89,5 @@ export default function CourseDetailsComponent({ course, progress }: CourseDetai
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }
