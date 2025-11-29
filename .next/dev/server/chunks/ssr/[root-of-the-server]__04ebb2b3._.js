@@ -1008,7 +1008,7 @@ async function getPlaylistVideos(playlistId) {
             }
             const endMarker = ";";
             // Find the first semicolon after the start marker
-            // Note: This is still naive but better than simple regex. 
+            // Note: This is still naive but better than simple regex.
             // A better way is to look for the </script> tag or specific end sequence.
             // ytInitialData is usually defined in a script tag.
             // Let's try splitting by the start marker and taking the rest
@@ -1046,7 +1046,6 @@ async function getPlaylistVideos(playlistId) {
             data = JSON.parse(jsonString);
         } catch (e) {
             console.error("Failed to parse ytInitialData JSON", e);
-            // console.log("JSON String snippet:", jsonString.substring(0, 100) + "..." + jsonString.substring(jsonString.length - 100))
             return [];
         }
         // Navigate through the JSON to find the playlist items
@@ -1060,9 +1059,15 @@ async function getPlaylistVideos(playlistId) {
             return [];
         }
         const videos = [];
-        contents.forEach((item)=>{
-            if (item.playlistVideoRenderer) {
-                const video = item.playlistVideoRenderer;
+        // Helper: recursively collect playlistVideoRenderer nodes
+        function collectPlaylistVideos(obj) {
+            if (!obj || typeof obj !== "object") return;
+            if (Array.isArray(obj)) {
+                obj.forEach(collectPlaylistVideos);
+                return;
+            }
+            if (obj.playlistVideoRenderer) {
+                const video = obj.playlistVideoRenderer;
                 videos.push({
                     id: video.videoId,
                     title: video.title?.runs?.[0]?.text || "Unknown Title",
@@ -1070,7 +1075,89 @@ async function getPlaylistVideos(playlistId) {
                     thumbnail: video.thumbnail?.thumbnails?.[0]?.url || ""
                 });
             }
-        });
+            for (const k of Object.keys(obj)){
+                collectPlaylistVideos(obj[k]);
+            }
+        }
+        collectPlaylistVideos(contents);
+        // Try to find a continuation token to fetch additional pages
+        function findContinuation(obj) {
+            if (!obj || typeof obj !== "object") return null;
+            if (Array.isArray(obj)) {
+                for (const el of obj){
+                    const t = findContinuation(el);
+                    if (t) return t;
+                }
+                return null;
+            }
+            if (obj.nextContinuationData?.continuation) return obj.nextContinuationData.continuation;
+            for (const k of Object.keys(obj)){
+                const t = findContinuation(obj[k]);
+                if (t) return t;
+            }
+            return null;
+        }
+        let continuation = findContinuation(contents);
+        // Extract INNERTUBE API key and context from the page to use the browse endpoint
+        let apiKey = "";
+        let context = null;
+        try {
+            const ytcfgMatch = html.match(/ytcfg\.set\((\{[\s\S]*?\})\);/);
+            if (ytcfgMatch) {
+                const cfg = JSON.parse(ytcfgMatch[1]);
+                apiKey = cfg.INNERTUBE_API_KEY || "";
+                context = cfg.INNERTUBE_CONTEXT || null;
+            }
+            if (!apiKey) {
+                const keyMatch = html.match(/"INNERTUBE_API_KEY"\s*:\s*"([^"]+)"/);
+                if (keyMatch) apiKey = keyMatch[1];
+            }
+            if (!context) {
+                const ctxMatch = html.match(/"INNERTUBE_CONTEXT"\s*:\s*(\{[\s\S]*?\})\s*,\s*"INNERTUBE_CONTEXT_CLIENT_NAME"/);
+                if (ctxMatch) {
+                    try {
+                        context = JSON.parse(ctxMatch[1]);
+                    } catch  {}
+                }
+            }
+        } catch (e) {
+            console.warn("Failed to extract INNERTUBE config", e);
+        }
+        // If we have a continuation token and an API key/context, fetch additional pages
+        while(continuation){
+            if (!apiKey || !context) break;
+            try {
+                const browseUrl = `https://www.youtube.com/youtubei/v1/browse?key=${apiKey}`;
+                const body = JSON.stringify({
+                    context,
+                    continuation
+                });
+                const contResp = await fetch(browseUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                        "Accept-Language": "en-US,en;q=0.9"
+                    },
+                    body,
+                    next: {
+                        revalidate: 3600
+                    }
+                });
+                if (!contResp.ok) {
+                    console.error(`Continuation fetch failed: ${contResp.status}`);
+                    break;
+                }
+                const contJson = await contResp.json();
+                // Collect any playlistVideoRenderer nodes in the response
+                collectPlaylistVideos(contJson);
+                // Find next continuation token
+                continuation = findContinuation(contJson);
+            } catch (e) {
+                console.error("Error fetching continuation", e);
+                break;
+            }
+        }
         console.log(`Found ${videos.length} videos`);
         return videos;
     } catch (error) {
