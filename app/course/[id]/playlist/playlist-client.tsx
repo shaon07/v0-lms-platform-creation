@@ -39,16 +39,20 @@ export default function PlaylistClient({
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
       <main className="flex-1 max-w-[1600px] mx-auto w-full p-4 md:p-6">
-        {/* Debug Info - Remove in production */}
-        <div className="mb-4 p-2 bg-muted text-xs font-mono rounded border">
-          <p>Playlist ID: {playlistId || "None"}</p>
-          <p>Videos Found: {initialVideos.length}</p>
-          <p>Using Real Data: {usingRealData ? "Yes" : "No"}</p>
-          <p>Total Items Displayed: {videos.length}</p>
-          {debugError && (
-            <p className="text-red-500">Scraper Error: {debugError}</p>
-          )}
-        </div>
+        {process.env.NEXT_PUBLIC_MODE === "development" && (
+          <>
+            {/* Debug Info - Remove in production */}
+            <div className="mb-4 p-2 bg-muted text-xs font-mono rounded border">
+              <p>Playlist ID: {playlistId || "None"}</p>
+              <p>Videos Found: {initialVideos.length}</p>
+              <p>Using Real Data: {usingRealData ? "Yes" : "No"}</p>
+              <p>Total Items Displayed: {videos.length}</p>
+              {debugError && (
+                <p className="text-red-500">Scraper Error: {debugError}</p>
+              )}
+            </div>
+          </>
+        )}
 
         <div className="mb-4 flex items-center gap-4">
           <Link href={`/course/${course.id}`}>
@@ -120,7 +124,7 @@ export default function PlaylistClient({
                 <div className="p-2 space-y-1">
                   {videos.map((video, index) => (
                     <button
-                      key={video.id || index}
+                      key={`${video.id ?? "noid"}-${index}`}
                       onClick={() => setActiveLessonIndex(index)}
                       className={`w-full text-left p-3 rounded-lg text-sm transition-colors flex gap-3 group ${
                         index === activeLessonIndex
