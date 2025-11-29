@@ -1,20 +1,22 @@
-"use client"
+"use client";
 
-import type React from "react"
-import Link from "next/link"
-import { useState } from "react"
-import { Play, Users, Star, Bookmark, ChevronRight } from "lucide-react"
-import type { Course } from "@/lib/courses-data"
-import { saveCourse, removeSavedCourse, isCourseSaved } from "@/lib/enrollment"
+import type { Course } from "@/lib/courses-data";
+import { isCourseSaved, removeSavedCourse, saveCourse } from "@/lib/enrollment";
+import { Bookmark, ChevronRight, Play, Star, Users } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import type React from "react";
+import { useState } from "react";
 
 interface CourseCardProps {
-  course: Course
-  onSaveToggle?: (saved: boolean) => void
+  course: Course;
+  onSaveToggle?: (saved: boolean) => void;
 }
 
 export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
-  const [isHovered, setIsHovered] = useState(false)
-  const [isSaved, setIsSaved] = useState(() => isCourseSaved(course.id))
+  const router = useRouter();
+  const [isHovered, setIsHovered] = useState(false);
+  const [isSaved, setIsSaved] = useState(() => isCourseSaved(course.id));
 
   // Generate color based on category hash
   const getCategoryColor = (category: string) => {
@@ -27,28 +29,23 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
       "from-red-500 to-red-600",
       "from-indigo-500 to-indigo-600",
       "from-teal-500 to-teal-600",
-    ]
-    const hash = category.charCodeAt(0) + category.charCodeAt(category.length - 1)
-    return colors[hash % colors.length]
-  }
-
-  const handleViewCourse = () => {
-    if (course.url && course.url !== "#") {
-      window.open(course.url, "_blank", "noopener,noreferrer")
-    }
-  }
+    ];
+    const hash =
+      category.charCodeAt(0) + category.charCodeAt(category.length - 1);
+    return colors[hash % colors.length];
+  };
 
   const handleToggleSave = (e: React.MouseEvent) => {
-    e.stopPropagation()
+    e.stopPropagation();
     if (isSaved) {
-      removeSavedCourse(course.id)
-      setIsSaved(false)
+      removeSavedCourse(course.id);
+      setIsSaved(false);
     } else {
-      saveCourse(course.id)
-      setIsSaved(true)
+      saveCourse(course.id);
+      setIsSaved(true);
     }
-    onSaveToggle?.(!isSaved)
-  }
+    onSaveToggle?.(!isSaved);
+  };
 
   return (
     <Link href={`/course/${course.id}`}>
@@ -60,19 +57,27 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
         <div className="relative overflow-hidden rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 h-64">
           {/* Thumbnail with gradient */}
           <div
-            className={`w-full h-full bg-gradient-to-br ${getCategoryColor(course.category)} flex items-center justify-center transition-transform duration-300 ${isHovered ? "scale-105" : ""}`}
+            className={`w-full h-full bg-gradient-to-br ${getCategoryColor(
+              course.category
+            )} flex items-center justify-center transition-transform duration-300 ${
+              isHovered ? "scale-105" : ""
+            }`}
           >
             <Play className="w-16 h-16 text-white/50" />
           </div>
 
           {/* Overlay on hover */}
           <div
-            className={`absolute inset-0 bg-black/60 flex items-center justify-center transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
+            className={`absolute inset-0 bg-black/60 flex items-center justify-center transition-opacity duration-300 ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
           >
             <button
-              className="bg-white text-black px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-100 transition-colors"
+              className="bg-white text-black px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-100 transition-colors cursor-pointer"
               onClick={(e) => {
-                e.preventDefault()
+                e.preventDefault();
+                e.stopPropagation();
+                router.push(`/course/${course.id}`);
               }}
             >
               <Play className="w-4 h-4 fill-current" />
@@ -83,16 +88,23 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
 
           <button
             onClick={(e) => {
-              e.preventDefault()
-              e.stopPropagation()
-              handleToggleSave(e)
+              e.preventDefault();
+              e.stopPropagation();
+              handleToggleSave(e);
             }}
             className={`absolute top-3 left-3 p-2 rounded-full transition-colors ${
-              isSaved ? "bg-primary text-primary-foreground" : "bg-black/40 text-white hover:bg-black/60"
+              isSaved
+                ? "bg-primary text-primary-foreground"
+                : "bg-black/40 text-white hover:bg-black/60"
             }`}
-            aria-label={isSaved ? "Remove from My Courses" : "Add to My Courses"}
+            aria-label={
+              isSaved ? "Remove from My Courses" : "Add to My Courses"
+            }
           >
-            <Bookmark className="w-5 h-5" fill={isSaved ? "currentColor" : "none"} />
+            <Bookmark
+              className="w-5 h-5"
+              fill={isSaved ? "currentColor" : "none"}
+            />
           </button>
 
           {/* Badge */}
@@ -107,7 +119,9 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
             {course.title}
           </h3>
 
-          <p className="text-sm text-muted-foreground line-clamp-2">by {course.instructor}</p>
+          <p className="text-sm text-muted-foreground line-clamp-2">
+            by {course.instructor}
+          </p>
 
           <div className="flex items-center gap-4 text-sm text-muted-foreground pt-2">
             <div className="flex items-center gap-1">
@@ -122,5 +136,5 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
         </div>
       </div>
     </Link>
-  )
+  );
 }
