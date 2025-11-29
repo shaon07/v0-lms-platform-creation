@@ -6,3 +6,13 @@
 [00:00:03.205] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764402871511}
 [00:00:05.765] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/course/1 color: rgb(120, 120, 120) color: inherit {"dp":"/course/[id]","o":"http://localhost:3000/course/1","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764402874070}
 [00:00:07.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764402875733}
+[00:08:28.548] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:28.735] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:28.735] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:28.735] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764403377039}
+[00:09:23.149] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/my-learning color: rgb(120, 120, 120) color: inherit {"dp":"/my-learning","o":"http://localhost:3000/my-learning","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764403431438}
+[00:09:26.814] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764403435115}
+[00:09:56.611] Server  LOG      ✓ Compiled in 141ms
+[00:10:00.041] Server  LOG      ✓ Compiled in 64ms
+[00:10:03.715] Server  LOG      ✓ Compiled in 79ms
+[00:10:05.608] Server  LOG      ✓ Compiled in 31ms

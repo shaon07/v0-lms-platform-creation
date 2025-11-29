@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play } from "lucide-react";
+import { BookOpen } from "lucide-react";
 import Link from "next/link";
 import { useCallback } from "react";
 
@@ -13,11 +13,16 @@ export default function Header() {
           href="/"
           className="flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
-          <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-            <Play className="w-6 h-6 text-primary-foreground fill-primary-foreground" />
-          </div>
-          <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            CodeLearn
+          <img
+            src="/logo.png"
+            alt="FreeLearn"
+            className="w-10 h-10 rounded-lg"
+          />
+          <span className="ml-2 text-xl md:text-2xl font-extrabold tracking-tight flex items-baseline">
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Free
+            </span>
+            <span className="ml-1 text-foreground">Learn</span>
           </span>
         </Link>
 
