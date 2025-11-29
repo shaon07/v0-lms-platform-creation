@@ -1,0 +1,116 @@
+"use client"
+import { useEffect } from "react"
+import { useParams } from "next/navigation"
+import Header from "@/components/header"
+import CourseDetails from "@/components/course-details"
+import CourseRecommendations from "@/components/course-recommendations"
+import YoutubePlayer from "@/components/youtube-player"
+import { courseDetailsMap } from "@/lib/courses-data"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
+import Link from "next/link"
+
+export default function CoursePage() {
+  const params = useParams()
+  const courseId = params.id as string
+  const course = courseDetailsMap[courseId]
+
+  // Scroll to top when course page loads or course ID changes
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [courseId])
+
+  if (!course) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
+          <div className="text-center space-y-4">
+            <p className="text-lg text-muted-foreground">Course not found</p>
+            <Link href="/">
+              <Button variant="outline">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to courses
+              </Button>
+            </Link>
+          </div>
+        </main>
+      </div>
+    )
+  }
+
+  const completedLessons = course.lessons.filter((l) => l.completed).length
+  const progress = Math.round((completedLessons / course.lessons.length) * 100)
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
+        <Link href="/">
+          <Button variant="outline" size="sm" className="mb-6 bg-transparent">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to courses
+          </Button>
+        </Link>
+
+        <div className="grid lg:grid-cols-3 gap-8 mb-8">
+          {/* Course Overview */}
+          <div className="lg:col-span-2">
+            <CourseDetails course={course} progress={progress} />
+          </div>
+
+          <div className="space-y-4">
+            <Card>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-sm">Course Progress</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span>Completion</span>
+                    <span className="font-semibold">{progress}%</span>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                    <div className="bg-primary h-full transition-all" style={{ width: `${progress}%` }} />
+                  </div>
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {completedLessons} of {course.lessons.length} lessons completed
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-sm">Quick Stats</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Duration:</span>
+                  <span className="font-medium">{course.duration}h</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Level:</span>
+                  <span className="font-medium">{course.level}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Students:</span>
+                  <span className="font-medium">{course.students.toLocaleString()}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Rating:</span>
+                  <span className="font-medium">{course.rating} ⭐</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {course.youtubePlaylistId && <YoutubePlayer playlistId={course.youtubePlaylistId} title="Course Videos" />}
+
+        <CourseRecommendations currentCourseId={courseId} />
+      </main>
+    </div>
+  )
+}
