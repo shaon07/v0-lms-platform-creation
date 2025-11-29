@@ -70,7 +70,7 @@ export default function Home() {
         </aside>
 
         {/* Main Content - Added left margin to account for fixed sidebar */}
-        <main className="flex-1 lg:ml-64">
+        <main className="flex-1">
           <SearchBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 
           {/* Mobile Filters */}
@@ -81,11 +81,10 @@ export default function Home() {
               <div className="flex gap-2 flex-wrap">
                 <button
                   onClick={() => setSelectedLanguage(null)}
-                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                    selectedLanguage === null
+                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedLanguage === null
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted text-foreground hover:bg-muted/80"
-                  }`}
+                    }`}
                 >
                   All
                 </button>
@@ -93,11 +92,10 @@ export default function Home() {
                   <button
                     key={lang}
                     onClick={() => setSelectedLanguage(lang)}
-                    className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                      selectedLanguage === lang
+                    className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedLanguage === lang
                         ? "bg-primary text-primary-foreground"
                         : "bg-muted text-foreground hover:bg-muted/80"
-                    }`}
+                      }`}
                   >
                     {lang}
                   </button>
@@ -111,11 +109,10 @@ export default function Home() {
               <div className="flex gap-2 flex-wrap">
                 <button
                   onClick={() => setSelectedCategory(null)}
-                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                    selectedCategory === null
+                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedCategory === null
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted text-foreground hover:bg-muted/80"
-                  }`}
+                    }`}
                 >
                   All
                 </button>
@@ -123,11 +120,10 @@ export default function Home() {
                   <button
                     key={cat}
                     onClick={() => setSelectedCategory(cat)}
-                    className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
-                      selectedCategory === cat
+                    className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedCategory === cat
                         ? "bg-primary text-primary-foreground"
                         : "bg-muted text-foreground hover:bg-muted/80"
-                    }`}
+                      }`}
                   >
                     {cat}
                   </button>
