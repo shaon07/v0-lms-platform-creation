@@ -1,28 +1,42 @@
-"use client"
+"use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { learningPaths } from "@/lib/learning-paths"
-import { coursesData } from "@/lib/courses-data"
-import { Clock, ChevronRight } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Course, coursesData } from "@/lib/courses-data";
+import { learningPaths } from "@/lib/learning-paths";
+import { ChevronRight, Clock } from "lucide-react";
+import Link from "next/link";
 
 export default function LearningPathsSection() {
   return (
     <section className="py-12">
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-2">Structured Learning Paths</h2>
-        <p className="text-muted-foreground">
-          Follow curated course sequences to master specific skills and build your career
-        </p>
+      <div className="mb-8 flex items-start justify-between">
+        <div>
+          <h2 className="text-3xl font-bold mb-2">Structured Learning Paths</h2>
+          <p className="text-muted-foreground">
+            Follow curated course sequences to master specific skills and build
+            your career
+          </p>
+        </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {learningPaths.map((path) => {
-          const pathCourses = path.courses.map((id) => coursesData.find((c) => c.id === id)).filter(Boolean)
+          const pathCourses = path.courses
+            .map((id) => coursesData.find((c) => c.id === id))
+            .filter((c): c is Course => !!c);
 
           return (
-            <Card key={path.id} className="hover:shadow-lg transition-shadow flex flex-col">
+            <Card
+              key={path.id}
+              className="hover:shadow-lg transition-shadow flex flex-col"
+            >
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between mb-2">
                   <span className="text-4xl">{path.icon}</span>
@@ -31,7 +45,9 @@ export default function LearningPathsSection() {
                   </span>
                 </div>
                 <CardTitle className="text-xl">{path.title}</CardTitle>
-                <CardDescription className="line-clamp-2">{path.description}</CardDescription>
+                <CardDescription className="line-clamp-2">
+                  {path.description}
+                </CardDescription>
               </CardHeader>
 
               <CardContent className="flex-1 flex flex-col justify-between">
@@ -47,7 +63,10 @@ export default function LearningPathsSection() {
                     </p>
                     <div className="space-y-1">
                       {pathCourses.map((course, i) => (
-                        <div key={course.id} className="text-xs text-muted-foreground flex items-center gap-2">
+                        <div
+                          key={course.id}
+                          className="text-xs text-muted-foreground flex items-center gap-2"
+                        >
                           <span className="w-5 h-5 rounded-full bg-primary/20 text-primary text-center leading-5 text-xs font-semibold">
                             {i + 1}
                           </span>
@@ -66,9 +85,18 @@ export default function LearningPathsSection() {
                 </Button>
               </CardContent>
             </Card>
-          )
+          );
         })}
       </div>
+
+      <div className="w-full flex justify-center mt-4">
+        <Button className="gap-2" asChild>
+          <Link href={`/learning-path`}>
+            See more
+            <ChevronRight className="w-4 h-4" />
+          </Link>
+        </Button>
+      </div>
     </section>
-  )
+  );
 }

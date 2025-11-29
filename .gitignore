@@ -1,7 +1,14 @@
-node_modules
-.next
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# macOS system file
 .DS_Store
