@@ -18,12 +18,6 @@ export default function Header() {
             alt="FreeLearn"
             className="w-10 h-10 rounded-lg"
           />
-          <span className="ml-2 text-xl md:text-2xl font-extrabold tracking-tight flex items-baseline">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Free
-            </span>
-            <span className="ml-1 text-foreground">Learn</span>
-          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-4">
