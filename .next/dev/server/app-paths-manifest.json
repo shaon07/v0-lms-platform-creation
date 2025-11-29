@@ -1,9 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/course/[id]/page": "app/course/[id]/page.js",
-  "/course/[id]/playlist/page": "app/course/[id]/playlist/page.js",
-  "/learning-path/[id]/page": "app/learning-path/[id]/page.js",
-  "/learning-path/page": "app/learning-path/page.js",
-  "/learning-paths/page": "app/learning-paths/page.js",
   "/page": "app/page.js"
 }

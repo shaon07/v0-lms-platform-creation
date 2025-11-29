@@ -1,25 +1,25 @@
-"use client"
-import { useEffect } from "react"
-import { useParams } from "next/navigation"
-import Header from "@/components/header"
-import CourseDetails from "@/components/course-details"
-import CourseRecommendations from "@/components/course-recommendations"
-import YoutubePlayer from "@/components/youtube-player"
-import { courseDetailsMap } from "@/lib/courses-data"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
-import Link from "next/link"
+"use client";
+import CourseDetails from "@/components/course-details";
+import CourseRecommendations from "@/components/course-recommendations";
+import Header from "@/components/header";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import YoutubePlayer from "@/components/youtube-player";
+import { courseDetailsMap } from "@/lib/courses-data";
+import { ArrowLeft } from "lucide-react";
+import { useParams, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function CoursePage() {
-  const params = useParams()
-  const courseId = params.id as string
-  const course = courseDetailsMap[courseId]
+  const router = useRouter();
+  const params = useParams();
+  const courseId = params.id as string;
+  const course = courseDetailsMap[courseId];
 
   // Scroll to top when course page loads or course ID changes
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [courseId])
+    window.scrollTo(0, 0);
+  }, [courseId]);
 
   if (!course) {
     return (
@@ -28,31 +28,32 @@ export default function CoursePage() {
         <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
           <div className="text-center space-y-4">
             <p className="text-lg text-muted-foreground">Course not found</p>
-            <Link href="/">
-              <Button variant="outline">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to courses
-              </Button>
-            </Link>
+            <Button variant="outline" onClick={() => router.back()}>
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to courses
+            </Button>
           </div>
         </main>
       </div>
-    )
+    );
   }
 
-  const completedLessons = course.lessons.filter((l) => l.completed).length
-  const progress = Math.round((completedLessons / course.lessons.length) * 100)
+  const completedLessons = course.lessons.filter((l) => l.completed).length;
+  const progress = Math.round((completedLessons / course.lessons.length) * 100);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-        <Link href="/">
-          <Button variant="outline" size="sm" className="mb-6 bg-transparent">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to courses
-          </Button>
-        </Link>
+        <Button
+          onClick={() => router.back()}
+          variant="outline"
+          size="sm"
+          className="mb-6 bg-transparent cursor-pointer"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to courses
+        </Button>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-8">
           {/* Course Overview */}
@@ -72,11 +73,15 @@ export default function CoursePage() {
                     <span className="font-semibold">{progress}%</span>
                   </div>
                   <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                    <div className="bg-primary h-full transition-all" style={{ width: `${progress}%` }} />
+                    <div
+                      className="bg-primary h-full transition-all"
+                      style={{ width: `${progress}%` }}
+                    />
                   </div>
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  {completedLessons} of {course.lessons.length} lessons completed
+                  {completedLessons} of {course.lessons.length} lessons
+                  completed
                 </div>
               </CardContent>
             </Card>
@@ -96,7 +101,9 @@ export default function CoursePage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Students:</span>
-                  <span className="font-medium">{course.students.toLocaleString()}</span>
+                  <span className="font-medium">
+                    {course.students.toLocaleString()}
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Rating:</span>
@@ -107,10 +114,15 @@ export default function CoursePage() {
           </div>
         </div>
 
-        {course.youtubePlaylistId && <YoutubePlayer playlistId={course.youtubePlaylistId} title="Course Videos" />}
+        {course.youtubePlaylistId && (
+          <YoutubePlayer
+            playlistId={course.youtubePlaylistId}
+            title="Course Videos"
+          />
+        )}
 
         <CourseRecommendations currentCourseId={courseId} />
       </main>
     </div>
-  )
+  );
 }
