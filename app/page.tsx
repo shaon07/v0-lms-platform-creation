@@ -22,6 +22,43 @@ export default function Home() {
     }
   }, [selectedCategory, selectedLanguage, searchQuery]); // added selectedLanguage to dependency
 
+  // Listen for selections from mobile header drawer
+  useEffect(() => {
+    function onSelectCategory(e: Event) {
+      const detail = (e as CustomEvent).detail as
+        | { category: string | null }
+        | undefined;
+      if (detail) setSelectedCategory(detail.category ?? null);
+    }
+
+    function onSelectLanguage(e: Event) {
+      const detail = (e as CustomEvent).detail as
+        | { language: string | null }
+        | undefined;
+      if (detail) setSelectedLanguage(detail.language ?? null);
+    }
+
+    window.addEventListener(
+      "selectCategory",
+      onSelectCategory as EventListener
+    );
+    window.addEventListener(
+      "selectLanguage",
+      onSelectLanguage as EventListener
+    );
+
+    return () => {
+      window.removeEventListener(
+        "selectCategory",
+        onSelectCategory as EventListener
+      );
+      window.removeEventListener(
+        "selectLanguage",
+        onSelectLanguage as EventListener
+      );
+    };
+  }, []);
+
   const filteredCourses = useMemo(() => {
     return coursesData.filter((course) => {
       const matchesCategory =
