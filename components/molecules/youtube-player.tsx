@@ -1,19 +1,20 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/atoms";
 
 interface YoutubePlayerProps {
-  playlistId: string
-  title?: string
+  playlistId: string;
+  title?: string;
 }
 
-export default function YoutubePlayer({ playlistId, title }: YoutubePlayerProps) {
-  // Extract playlist ID from various YouTube URL formats
-  let id = playlistId
+export default function YoutubePlayer({
+  playlistId,
+  title,
+}: YoutubePlayerProps) {
+  let id = playlistId;
 
-  // If it's a full URL, extract the playlist ID
   if (playlistId.includes("list=")) {
-    const match = playlistId.match(/list=([^&]+)/)
+    const match = playlistId.match(/list=([^&]+)/);
     if (match) {
-      id = match[1]
+      id = match[1];
     }
   }
 
@@ -37,5 +38,5 @@ export default function YoutubePlayer({ playlistId, title }: YoutubePlayerProps)
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

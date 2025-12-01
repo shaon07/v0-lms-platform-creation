@@ -1,8 +1,13 @@
 "use client";
 
-import Header from "@/components/header";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/atoms";
+import Header from "@/components/organisms/header";
 import { Course, coursesData } from "@/lib/courses-data";
 import { learningPaths } from "@/lib/learning-paths";
 import { ArrowLeft, BookOpen, CheckCircle2, Clock } from "lucide-react";

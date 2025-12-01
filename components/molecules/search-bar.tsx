@@ -1,14 +1,17 @@
-"use client"
+"use client";
 
-import { Search, X } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/atoms";
+import { Search, X } from "lucide-react";
 
 interface SearchBarProps {
-  searchQuery: string
-  onSearchChange: (query: string) => void
+  searchQuery: string;
+  onSearchChange: (query: string) => void;
 }
 
-export default function SearchBar({ searchQuery, onSearchChange }: SearchBarProps) {
+export default function SearchBar({
+  searchQuery,
+  onSearchChange,
+}: SearchBarProps) {
   return (
     <div className="mb-8">
       <div className="relative">
@@ -30,5 +33,5 @@ export default function SearchBar({ searchQuery, onSearchChange }: SearchBarProp
         )}
       </div>
     </div>
-  )
+  );
 }

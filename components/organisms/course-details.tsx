@@ -1,7 +1,12 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/atoms";
 import type { CourseDetails } from "@/lib/courses-data";
 import { BookOpen, Clock, ExternalLink, Users } from "lucide-react";
 import Link from "next/link";
@@ -56,7 +61,6 @@ export default function CourseDetailsComponent({
         </div>
       </div>
 
-      {/* Rating Section */}
       <Card>
         <CardHeader>
           <CardTitle className="text-lg">Student Reviews</CardTitle>
@@ -78,9 +82,7 @@ export default function CourseDetailsComponent({
                 <div className="flex-1 bg-muted rounded-full h-1.5">
                   <div
                     className="bg-primary h-full rounded-full"
-                    style={{
-                      width: `${Math.random() * 50 + 10}%`,
-                    }}
+                    style={{ width: `${Math.random() * 50 + 10}%` }}
                   />
                 </div>
               </div>

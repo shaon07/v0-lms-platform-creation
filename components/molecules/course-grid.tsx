@@ -1,8 +1,8 @@
-import CourseCard from "./course-card"
-import type { Course } from "@/lib/courses-data"
+import CourseCard from "@/components/molecules/course-card";
+import type { Course } from "@/lib/courses-data";
 
 interface CourseGridProps {
-  courses: Course[]
+  courses: Course[];
 }
 
 export default function CourseGrid({ courses }: CourseGridProps) {
@@ -12,5 +12,5 @@ export default function CourseGrid({ courses }: CourseGridProps) {
         <CourseCard key={course.id} course={course} />
       ))}
     </div>
-  )
+  );
 }

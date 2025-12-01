@@ -1,10 +1,15 @@
 "use client";
-import CourseDetails from "@/components/course-details";
-import CourseRecommendations from "@/components/course-recommendations";
-import Header from "@/components/header";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import YoutubePlayer from "@/components/youtube-player";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/atoms";
+import CourseRecommendations from "@/components/molecules/course-recommendations";
+import YoutubePlayer from "@/components/molecules/youtube-player";
+import CourseDetails from "@/components/organisms/course-details";
+import Header from "@/components/organisms/header";
 import { courseDetailsMap } from "@/lib/courses-data";
 import { ArrowLeft } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";

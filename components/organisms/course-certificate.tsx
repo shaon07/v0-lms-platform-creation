@@ -1,17 +1,26 @@
-"use client"
+"use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Award, Download, Share2 } from "lucide-react"
-import type { CourseDetails } from "@/lib/courses-data"
+import {
+  Button,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/atoms";
+import type { CourseDetails } from "@/lib/courses-data";
+import { Award, Download, Share2 } from "lucide-react";
 
 interface CourseCertificateProps {
-  course: CourseDetails
-  progress: number
+  course: CourseDetails;
+  progress: number;
 }
 
-export default function CourseCertificate({ course, progress }: CourseCertificateProps) {
-  const isCompleted = progress === 100
+export default function CourseCertificate({
+  course,
+  progress,
+}: CourseCertificateProps) {
+  const isCompleted = progress === 100;
 
   if (!isCompleted) {
     return (
@@ -34,11 +43,13 @@ export default function CourseCertificate({ course, progress }: CourseCertificat
                 style={{ width: `${progress}%` }}
               />
             </div>
-            <p className="text-sm text-muted-foreground">Complete {100 - progress}% more to unlock your certificate</p>
+            <p className="text-sm text-muted-foreground">
+              Complete {100 - progress}% more to unlock your certificate
+            </p>
           </div>
         </CardContent>
       </Card>
-    )
+    );
   }
 
   return (
@@ -54,10 +65,17 @@ export default function CourseCertificate({ course, progress }: CourseCertificat
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-white dark:bg-slate-900 rounded-lg p-6 border-2 border-green-200 dark:border-green-800 text-center">
-          <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">Certificate of Completion</p>
+          <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">
+            Certificate of Completion
+          </p>
           <h3 className="text-2xl font-bold mb-2">{course.title}</h3>
           <p className="text-sm text-muted-foreground mb-4">
-            Completed on {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+            Completed on{" "}
+            {new Date().toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
           </p>
           <div className="h-1 w-24 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto mb-4 rounded-full" />
           <p className="text-sm font-medium">Instructor: {course.instructor}</p>
@@ -75,5 +93,5 @@ export default function CourseCertificate({ course, progress }: CourseCertificat
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/atoms";
 import { BookOpen } from "lucide-react";
 import Link from "next/link";
 import { useCallback } from "react";
@@ -28,7 +28,6 @@ export default function Header() {
               if (el) {
                 el.scrollIntoView({ behavior: "smooth", block: "start" });
               } else {
-                // fallback: navigate to home with hash
                 window.location.href = "/#courses-section";
               }
             }, [])}

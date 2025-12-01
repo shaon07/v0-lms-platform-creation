@@ -18,7 +18,6 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isSaved, setIsSaved] = useState(() => isCourseSaved(course.id));
 
-  // Generate color based on category hash
   const getCategoryColor = (category: string) => {
     const colors = [
       "from-blue-500 to-blue-600",
@@ -55,7 +54,6 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="relative overflow-hidden rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 h-64">
-          {/* Thumbnail with gradient */}
           <div
             className={`w-full h-full bg-gradient-to-br ${getCategoryColor(
               course.category
@@ -66,7 +64,6 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
             <Play className="w-16 h-16 text-white/50" />
           </div>
 
-          {/* Overlay on hover */}
           <div
             className={`absolute inset-0 bg-black/60 flex items-center justify-center transition-opacity duration-300 ${
               isHovered ? "opacity-100" : "opacity-0"
@@ -107,13 +104,11 @@ export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
             />
           </button>
 
-          {/* Badge */}
           <div className="absolute top-3 right-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
             {course.category}
           </div>
         </div>
 
-        {/* Course Info */}
         <div className="mt-4 space-y-2">
           <h3 className="font-semibold text-lg line-clamp-2 group-hover:text-primary transition-colors">
             {course.title}

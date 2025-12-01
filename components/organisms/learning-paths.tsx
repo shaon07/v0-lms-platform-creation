@@ -1,13 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/components/atoms";
 import { Course, coursesData } from "@/lib/courses-data";
 import { learningPaths } from "@/lib/learning-paths";
 import { ChevronRight, Clock } from "lucide-react";

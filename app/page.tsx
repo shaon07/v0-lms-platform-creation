@@ -1,12 +1,12 @@
 "use client";
 
-import CategorySidebar from "@/components/category-sidebar";
-import CourseGrid from "@/components/course-grid";
-import Header from "@/components/header";
-import HeroSection from "@/components/hero-section";
-import LearningDashboard from "@/components/learning-dashboard";
-import LearningPathsSection from "@/components/learning-paths";
-import SearchBar from "@/components/search-bar";
+import CourseGrid from "@/components/molecules/course-grid";
+import SearchBar from "@/components/molecules/search-bar";
+import CategorySidebar from "@/components/organisms/category-sidebar";
+import Header from "@/components/organisms/header";
+import HeroSection from "@/components/organisms/hero-section";
+import LearningDashboard from "@/components/organisms/learning-dashboard";
+import LearningPathsSection from "@/components/organisms/learning-paths";
 import { coursesData } from "@/lib/courses-data";
 import { useEffect, useMemo, useState } from "react";
 

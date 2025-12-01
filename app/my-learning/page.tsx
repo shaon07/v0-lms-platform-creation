@@ -1,34 +1,47 @@
-"use client"
+"use client";
 
-import { useState, useMemo } from "react"
-import Header from "@/components/header"
-import { getSavedCourses } from "@/lib/enrollment"
-import { coursesData } from "@/lib/courses-data"
-import Link from "next/link"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BookOpen, Clock, CheckCircle2, ChevronRight } from "lucide-react"
+import {
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/atoms";
+import Header from "@/components/organisms/header";
+import { coursesData } from "@/lib/courses-data";
+import { getSavedCourses } from "@/lib/enrollment";
+import { BookOpen, CheckCircle2, ChevronRight, Clock } from "lucide-react";
+import Link from "next/link";
+import { useMemo, useState } from "react";
 
 export default function MyLearning() {
-  const [activeTab, setActiveTab] = useState("in-progress")
-  const savedCourses = useMemo(() => getSavedCourses(), [])
+  const [activeTab, setActiveTab] = useState("in-progress");
+  const savedCourses = useMemo(() => getSavedCourses(), []);
 
   const enrolledCourses = savedCourses
     .map((saved) => {
-      const course = coursesData.find((c) => c.id === saved.courseId)
-      return { ...saved, ...course }
+      const course = coursesData.find((c) => c.id === saved.courseId);
+      return { ...saved, ...course };
     })
-    .filter(Boolean)
+    .filter(Boolean);
 
-  const inProgressCourses = enrolledCourses.filter((c) => c.progress < 100 && c.progress > 0)
-  const completedCourses = enrolledCourses.filter((c) => c.progress === 100)
-  const notStartedCourses = enrolledCourses.filter((c) => c.progress === 0)
+  const inProgressCourses = enrolledCourses.filter(
+    (c) => c.progress < 100 && c.progress > 0
+  );
+  const completedCourses = enrolledCourses.filter((c) => c.progress === 100);
+  const notStartedCourses = enrolledCourses.filter((c) => c.progress === 0);
 
   const totalProgress =
     enrolledCourses.length > 0
-      ? Math.round(enrolledCourses.reduce((sum, c) => sum + (c.progress || 0), 0) / enrolledCourses.length)
-      : 0
+      ? Math.round(
+          enrolledCourses.reduce((sum, c) => sum + (c.progress || 0), 0) /
+            enrolledCourses.length
+        )
+      : 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -37,7 +50,9 @@ export default function MyLearning() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-2">My Learning Journey</h1>
-          <p className="text-muted-foreground">Track your progress and continue learning</p>
+          <p className="text-muted-foreground">
+            Track your progress and continue learning
+          </p>
         </div>
 
         {/* Overview Stats */}
@@ -49,9 +64,14 @@ export default function MyLearning() {
             <CardContent>
               <div className="text-3xl font-bold mb-2">{totalProgress}%</div>
               <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                <div className="bg-primary h-full transition-all" style={{ width: `${totalProgress}%` }} />
+                <div
+                  className="bg-primary h-full transition-all"
+                  style={{ width: `${totalProgress}%` }}
+                />
               </div>
-              <p className="text-xs text-muted-foreground mt-2">{enrolledCourses.length} courses enrolled</p>
+              <p className="text-xs text-muted-foreground mt-2">
+                {enrolledCourses.length} courses enrolled
+              </p>
             </CardContent>
           </Card>
 
@@ -63,8 +83,12 @@ export default function MyLearning() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold">{inProgressCourses.length}</div>
-              <p className="text-xs text-muted-foreground">courses being studied</p>
+              <div className="text-3xl font-bold">
+                {inProgressCourses.length}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                courses being studied
+              </p>
             </CardContent>
           </Card>
 
@@ -76,7 +100,9 @@ export default function MyLearning() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold">{completedCourses.length}</div>
+              <div className="text-3xl font-bold">
+                {completedCourses.length}
+              </div>
               <p className="text-xs text-muted-foreground">courses finished</p>
             </CardContent>
           </Card>
@@ -88,7 +114,9 @@ export default function MyLearning() {
             <CardContent className="py-12 text-center">
               <BookOpen className="w-12 h-12 text-muted-foreground mx-auto mb-4 opacity-50" />
               <p className="text-lg font-medium mb-2">No courses yet</p>
-              <p className="text-muted-foreground mb-6">Start learning by exploring courses</p>
+              <p className="text-muted-foreground mb-6">
+                Start learning by exploring courses
+              </p>
               <Button asChild>
                 <Link href="/">Browse Courses</Link>
               </Button>
@@ -97,9 +125,15 @@ export default function MyLearning() {
         ) : (
           <Tabs value={activeTab} onValueChange={setActiveTab}>
             <TabsList className="grid w-full max-w-md grid-cols-3">
-              <TabsTrigger value="in-progress">In Progress ({inProgressCourses.length})</TabsTrigger>
-              <TabsTrigger value="completed">Completed ({completedCourses.length})</TabsTrigger>
-              <TabsTrigger value="not-started">To Start ({notStartedCourses.length})</TabsTrigger>
+              <TabsTrigger value="in-progress">
+                In Progress ({inProgressCourses.length})
+              </TabsTrigger>
+              <TabsTrigger value="completed">
+                Completed ({completedCourses.length})
+              </TabsTrigger>
+              <TabsTrigger value="not-started">
+                To Start ({notStartedCourses.length})
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="in-progress" className="mt-6">
@@ -117,7 +151,7 @@ export default function MyLearning() {
         )}
       </main>
     </div>
-  )
+  );
 }
 
 function CourseProgressList({ courses }: { courses: any[] }) {
@@ -125,7 +159,9 @@ function CourseProgressList({ courses }: { courses: any[] }) {
     <div className="space-y-4">
       {courses.length === 0 ? (
         <Card>
-          <CardContent className="py-8 text-center text-muted-foreground">No courses in this category</CardContent>
+          <CardContent className="py-8 text-center text-muted-foreground">
+            No courses in this category
+          </CardContent>
         </Card>
       ) : (
         courses.map((course) => (
@@ -147,10 +183,15 @@ function CourseProgressList({ courses }: { courses: any[] }) {
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm mb-1">
                       <span>Progress</span>
-                      <span className="font-semibold">{course.progress || 0}%</span>
+                      <span className="font-semibold">
+                        {course.progress || 0}%
+                      </span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                      <div className="bg-primary h-full transition-all" style={{ width: `${course.progress || 0}%` }} />
+                      <div
+                        className="bg-primary h-full transition-all"
+                        style={{ width: `${course.progress || 0}%` }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -163,5 +204,5 @@ function CourseProgressList({ courses }: { courses: any[] }) {
         ))
       )}
     </div>
-  )
+  );
 }
