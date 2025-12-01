@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function LearningPathsSection() {
   return (
-    <section className="py-12">
+    <section id="learning-paths-section" className="py-12">
       <div className="mb-8 flex items-start justify-between">
         <div>
           <h2 className="text-3xl font-bold mb-2">Structured Learning Paths</h2>

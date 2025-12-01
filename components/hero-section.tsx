@@ -35,8 +35,12 @@ export default function HeroSection() {
             size="lg"
             className="bg-primary hover:bg-primary/90 gap-2 w-full sm:w-auto"
             onClick={() => {
-              const element = document.getElementById("courses-section");
-              element?.scrollIntoView({ behavior: "smooth" });
+              const element = document.getElementById("learning-paths-section");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+              } else {
+                window.location.href = "/#learning-paths-section";
+              }
             }}
           >
             Start Learning <ArrowRight className="w-4 h-4" />
