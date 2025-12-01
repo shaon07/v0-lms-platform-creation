@@ -6,7 +6,7 @@ import { Bookmark, ChevronRight, Play, Star, Users } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface CourseCardProps {
   course: Course;
@@ -16,7 +16,12 @@ interface CourseCardProps {
 export default function CourseCard({ course, onSaveToggle }: CourseCardProps) {
   const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
-  const [isSaved, setIsSaved] = useState(() => isCourseSaved(course.id));
+  // avoid reading localStorage during server render — initialize false and sync on mount
+  const [isSaved, setIsSaved] = useState(false);
+
+  useEffect(() => {
+    setIsSaved(isCourseSaved(course.id));
+  }, [course.id]);
 
   // Generate color based on category hash
   const getCategoryColor = (category: string) => {

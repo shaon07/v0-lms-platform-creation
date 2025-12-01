@@ -28,7 +28,7 @@ export default function CoursePage() {
         <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
           <div className="text-center space-y-4">
             <p className="text-lg text-muted-foreground">Course not found</p>
-            <Button variant="outline" onClick={() => router.back()}>
+            <Button variant="outline" onClick={() => router.push("/")}>
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to courses
             </Button>
@@ -46,7 +46,7 @@ export default function CoursePage() {
       <Header />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <Button
-          onClick={() => router.back()}
+          onClick={() => router.push("/")}
           variant="outline"
           size="sm"
           className="mb-6 bg-transparent cursor-pointer"
