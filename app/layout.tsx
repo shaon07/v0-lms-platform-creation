@@ -1,4 +1,4 @@
-import SiteLayout from "@/components/organisms/site-layout";
+import SiteLayout from "@/components/layouts/site-layout";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";

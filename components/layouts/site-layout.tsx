@@ -1,12 +1,12 @@
 "use client";
 
+import CategorySidebar from "@/components/organisms/category-sidebar";
+import Footer from "@/components/organisms/footer";
+import Header from "@/components/organisms/header";
 import { coursesData } from "@/lib/courses-data";
 import { X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import CategorySidebar from "./category-sidebar";
-import Footer from "./footer";
-import Header from "./header";
 
 export default function SiteLayout({
   children,
