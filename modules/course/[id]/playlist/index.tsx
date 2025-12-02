@@ -1,8 +1,8 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
+import { Button } from "@/components/atoms";
 import Header from "@/components/organisms/header";
-import { Button } from "@/components/ui/button";
 import { courseDetailsMap } from "@/lib/courses-data";
 import { getPlaylistVideos, YouTubeVideo } from "@/lib/youtube";
 import PlaylistClient from "./playlist-client";

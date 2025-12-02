@@ -4,8 +4,8 @@ import { ArrowLeft, PlayCircle } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
+import { Button } from "@/components/atoms";
 import Header from "@/components/organisms/header";
-import { Button } from "@/components/ui/button";
 import { CourseDetails } from "@/lib/courses-data";
 import { YouTubeVideo } from "@/lib/youtube";
 

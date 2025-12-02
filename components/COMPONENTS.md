@@ -3,12 +3,12 @@
 Goal
 
 - Organize components by Atomic Design: `atoms/`, `molecules/`, `organisms/`, `templates/`.
-- Keep backward compatibility via `components/ui` re-exports.
+- Compatibility layer `components/ui` has been removed; import from atom barrels directly.
 
 Current status
 
 - `components/atoms/` contains core primitives (Button, Card, Input, Tabs).
-- `components/ui/*` files re-export atoms to preserve existing imports.
+- Previously a `components/ui/` compatibility layer re-exported atoms during migration; it is now removed. Prefer importing from atom barrels directly.
 - `components/molecules/` and `components/organisms/` are scaffolded for migration.
 
 Guidelines
@@ -16,7 +16,7 @@ Guidelines
 - Atoms: single-purpose UI primitives (buttons, inputs, icons, labels).
 - Molecules: simple composition of atoms (search bars, form groups, list items).
 - Organisms: complex components combining molecules and atoms (headers, footers, hero sections).
-- Prefer exporting from the appropriate barrel: `import { Button } from '@/components/atoms'` or `import { Button } from '@/components/ui'` during migration.
+  - Prefer exporting from the appropriate barrel: `import { Button } from '@/components/atoms'` during migration.
 
 Next steps for migration
 
