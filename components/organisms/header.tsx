@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/atoms";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Menu } from "lucide-react";
 import Link from "next/link";
 import { useCallback } from "react";
 
@@ -43,8 +43,15 @@ export default function Header() {
         </div>
 
         <div className="md:hidden">
-          <Button size="sm" variant="outline">
-            Menu
+          <Button
+            size="icon"
+            variant="ghost"
+            onClick={() =>
+              window.dispatchEvent(new CustomEvent("open-category-sidebar"))
+            }
+            aria-label="Open menu"
+          >
+            <Menu className="w-5 h-5" />
           </Button>
         </div>
       </nav>
