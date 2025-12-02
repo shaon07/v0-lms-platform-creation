@@ -5,7 +5,7 @@ import { Button } from "@/components/atoms";
 import Header from "@/components/organisms/header";
 import { courseDetailsMap } from "@/lib/courses-data";
 import { getPlaylistVideos, YouTubeVideo } from "@/lib/youtube";
-import PlaylistClient from "./playlist-client";
+import PlaylistClient from "./features/PlaylistClient";
 
 interface PageProps {
   params: Promise<{
@@ -13,7 +13,7 @@ interface PageProps {
   }>;
 }
 
-export default async function PlaylistModule({ params }: PageProps) {
+export default async function PlaylistContainer({ params }: PageProps) {
   const { id: courseId } = await params;
   const course = courseDetailsMap[courseId];
 

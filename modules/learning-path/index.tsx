@@ -11,7 +11,7 @@ import { learningPaths } from "@/lib/learning-paths";
 import { ChevronRight, Clock } from "lucide-react";
 import Link from "next/link";
 
-export default function LearningPathsModule() {
+export default function LearningPathsContainer() {
   return (
     <div className="min-h-screen bg-background">
       <Header />

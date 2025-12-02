@@ -14,7 +14,7 @@ import { ArrowLeft, BookOpen, CheckCircle2, Clock } from "lucide-react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 
-export default function LearningPathModule() {
+export default function LearningPathContainer() {
   const router = useRouter();
   const params = useParams();
   const pathId = params.id as string;

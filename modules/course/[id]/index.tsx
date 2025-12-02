@@ -15,7 +15,7 @@ import { ArrowLeft } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-export default function CourseModulePage() {
+export default function CourseContainer() {
   const router = useRouter();
   const params = useParams();
   const courseId = params.id as string;
