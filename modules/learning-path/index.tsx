@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/atoms";
-import Header from "@/components/organisms/header";
+// Header removed — site header is provided by SiteLayout
 import { Course, coursesData } from "@/lib/courses-data";
 import { learningPaths } from "@/lib/learning-paths";
 import { ChevronRight, Clock } from "lucide-react";
@@ -14,7 +14,6 @@ import Link from "next/link";
 export default function LearningPathsContainer() {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
         <div className="mb-8 flex items-center justify-between">
           <div>

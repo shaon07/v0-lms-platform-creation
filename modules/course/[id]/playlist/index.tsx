@@ -2,7 +2,6 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/atoms";
-import Header from "@/components/organisms/header";
 import { courseDetailsMap } from "@/lib/courses-data";
 import { getPlaylistVideos, YouTubeVideo } from "@/lib/youtube";
 import PlaylistClient from "./features/PlaylistClient";
@@ -20,7 +19,6 @@ export default async function PlaylistContainer({ params }: PageProps) {
   if (!course) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
           <div className="text-center space-y-4">
             <p className="text-lg text-muted-foreground">Course not found</p>

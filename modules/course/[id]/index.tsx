@@ -9,7 +9,6 @@ import {
 import CourseRecommendations from "@/components/molecules/course-recommendations";
 import YoutubePlayer from "@/components/molecules/youtube-player";
 import CourseDetails from "@/components/organisms/course-details";
-import Header from "@/components/organisms/header";
 import { courseDetailsMap } from "@/lib/courses-data";
 import { ArrowLeft } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
@@ -28,7 +27,6 @@ export default function CourseContainer() {
   if (!course) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
           <div className="text-center space-y-4">
             <p className="text-lg text-muted-foreground">Course not found</p>
@@ -47,7 +45,6 @@ export default function CourseContainer() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <Button
           onClick={() => router.back()}

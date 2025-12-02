@@ -3,7 +3,6 @@
 import CourseGrid from "@/components/molecules/course-grid";
 import SearchBar from "@/components/molecules/search-bar";
 import CategorySidebar from "@/components/organisms/category-sidebar";
-import Header from "@/components/organisms/header";
 import HeroSection from "@/components/organisms/hero-section";
 import LearningDashboard from "@/components/organisms/learning-dashboard";
 import LearningPathsSection from "@/components/organisms/learning-paths";
@@ -46,7 +45,6 @@ export default function HomeContainer() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <HeroSection />
 
       <section className="px-4 md:px-6 py-12 bg-muted/30">

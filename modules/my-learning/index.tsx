@@ -11,7 +11,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/atoms";
-import Header from "@/components/organisms/header";
+// Header removed — site header is provided by SiteLayout
 import { coursesData } from "@/lib/courses-data";
 import { getSavedCourses } from "@/lib/enrollment";
 import { BookOpen, CheckCircle2 } from "lucide-react";
@@ -47,7 +47,6 @@ export default function MyLearningContainer() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         {/* Header */}
         <div className="mb-8">

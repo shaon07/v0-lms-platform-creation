@@ -1,3 +1,4 @@
+import SiteLayout from "@/components/organisms/site-layout";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -8,7 +9,6 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CodeLearn - Programming LMS",
   title: "FreeLearn - Programming LMS",
   description: "Learn programming with comprehensive courses on all languages",
   generator: "v0.app",
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`} suppressHydrationWarning={true}>
-        {children}
+        <SiteLayout>{children}</SiteLayout>
         <Analytics />
       </body>
     </html>

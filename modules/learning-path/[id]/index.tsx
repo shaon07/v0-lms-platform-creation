@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/atoms";
-import Header from "@/components/organisms/header";
+// Header removed — site header is provided by SiteLayout
 import { Course, coursesData } from "@/lib/courses-data";
 import { learningPaths } from "@/lib/learning-paths";
 import { ArrowLeft, BookOpen, CheckCircle2, Clock } from "lucide-react";
@@ -23,7 +23,6 @@ export default function LearningPathContainer() {
   if (!path) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <main className="max-w-7xl mx-auto px-4 md:px-6 py-12">
           <div className="text-center">
             <p className="text-lg text-muted-foreground">
@@ -47,7 +46,6 @@ export default function LearningPathContainer() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <button
           onClick={() => router.back()}

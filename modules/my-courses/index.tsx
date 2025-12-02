@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/atoms";
-import Header from "@/components/organisms/header";
+// Header removed — site header is provided by SiteLayout
 import {
   getSavedCourseDetails,
   getSavedCourses,
@@ -71,7 +71,6 @@ export default function MyCoursesContainer() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
           <div className="text-center">Loading your courses...</div>
         </div>
@@ -90,8 +89,6 @@ export default function MyCoursesContainer() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-2">My Courses</h1>

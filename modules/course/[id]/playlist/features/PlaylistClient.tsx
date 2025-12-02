@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { Button } from "@/components/atoms";
-import Header from "@/components/organisms/header";
 import { CourseDetails } from "@/lib/courses-data";
 import { YouTubeVideo } from "@/lib/youtube";
 
@@ -36,7 +35,6 @@ export default function PlaylistClient({
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <Header />
       <main className="flex-1 max-w-[1600px] mx-auto w-full p-4 md:p-6">
         {process.env.NEXT_PUBLIC_MODE === "development" && (
           <div className="mb-4 p-2 bg-muted text-xs font-mono rounded border">
