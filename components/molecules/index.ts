@@ -2,4 +2,4 @@
 // Export composed components (molecules) here, e.g.:
 // export * from './search-bar'
 
-export {};
+export { ThemeToggle } from "./theme-toggle";

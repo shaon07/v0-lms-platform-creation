@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/atoms";
+import { ThemeToggle } from "@/components/molecules/theme-toggle";
 import { BookOpen, Menu } from "lucide-react";
 import Link from "next/link";
 import { useCallback } from "react";
@@ -20,7 +21,7 @@ export default function Header() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-2">
           <Button
             variant="ghost"
             onClick={useCallback(() => {
@@ -40,9 +41,11 @@ export default function Header() {
               My Learning
             </Button>
           </Link>
+          <ThemeToggle />
         </div>
 
-        <div className="md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
           <Button
             size="icon"
             variant="ghost"

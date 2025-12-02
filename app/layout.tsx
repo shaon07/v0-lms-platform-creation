@@ -1,4 +1,5 @@
 import SiteLayout from "@/components/layouts/site-layout";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -37,9 +38,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`} suppressHydrationWarning={true}>
-        <SiteLayout>{children}</SiteLayout>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SiteLayout>{children}</SiteLayout>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
