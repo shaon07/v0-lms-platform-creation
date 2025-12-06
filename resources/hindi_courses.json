@@ -1,0 +1,4568 @@
+{
+  "database": "free_programming_books_hi",
+  "tables": {
+    "categories": [
+      { "id": 1, "name": "Algorithms and Data Structures", "parent_id": null },
+      { "id": 2, "name": "Algorithms", "parent_id": 1 },
+      { "id": 3, "name": "Data Structures", "parent_id": 1 },
+      { "id": 4, "name": "Soft Computing", "parent_id": 1 },
+      { "id": 5, "name": "Android", "parent_id": null },
+      { "id": 6, "name": "Angular", "parent_id": null },
+      { "id": 7, "name": "Arduino", "parent_id": null },
+      { "id": 8, "name": "Artificial Intelligence", "parent_id": null },
+      { "id": 9, "name": "Assembly", "parent_id": null },
+      { "id": 10, "name": "Bash and Shell", "parent_id": null },
+      { "id": 11, "name": "Blockchain", "parent_id": null },
+      { "id": 12, "name": "C", "parent_id": null },
+      { "id": 13, "name": "C#", "parent_id": null },
+      { "id": 14, "name": "ASP.NET", "parent_id": 13 },
+      { "id": 15, "name": "C++", "parent_id": null },
+      { "id": 16, "name": "Cloud Computing", "parent_id": null },
+      { "id": 17, "name": "AWS", "parent_id": 16 },
+      { "id": 18, "name": "Competitive Programming", "parent_id": null },
+      { "id": 19, "name": "Compiler Design", "parent_id": null },
+      { "id": 20, "name": "Computer Graphics", "parent_id": null },
+      {
+        "id": 21,
+        "name": "Computer Organization and Architecture",
+        "parent_id": null
+      },
+      { "id": 22, "name": "Data Science", "parent_id": null },
+      { "id": 23, "name": "Databases", "parent_id": null },
+      { "id": 24, "name": "DevOps", "parent_id": null },
+      { "id": 25, "name": "Figma", "parent_id": null },
+      { "id": 26, "name": "Flutter", "parent_id": null },
+      { "id": 27, "name": "Game Development", "parent_id": null },
+      { "id": 28, "name": "Git and GitHub", "parent_id": null },
+      { "id": 29, "name": "Golang", "parent_id": null },
+      { "id": 30, "name": "HTML and CSS", "parent_id": null },
+      { "id": 31, "name": "Bootstrap", "parent_id": 30 },
+      { "id": 32, "name": "Material UI", "parent_id": 30 },
+      { "id": 33, "name": "Tailwind CSS", "parent_id": 30 },
+      { "id": 34, "name": "iOS", "parent_id": null },
+      { "id": 35, "name": "Java", "parent_id": null },
+      { "id": 36, "name": "Spring Boot", "parent_id": 35 },
+      { "id": 37, "name": "JavaScript", "parent_id": null },
+      { "id": 38, "name": "Electron.js", "parent_id": 37 },
+      { "id": 39, "name": "GSAP", "parent_id": 37 },
+      { "id": 40, "name": "jQuery", "parent_id": 37 },
+      { "id": 41, "name": "Next.js", "parent_id": 37 },
+      { "id": 42, "name": "Node.js", "parent_id": 37 },
+      { "id": 43, "name": "React", "parent_id": 37 },
+      { "id": 44, "name": "React Native", "parent_id": 37 },
+      { "id": 45, "name": "Redux", "parent_id": 37 },
+      { "id": 46, "name": "Vue.js", "parent_id": 37 },
+      { "id": 47, "name": "Kotlin", "parent_id": null },
+      { "id": 48, "name": "Linux", "parent_id": null },
+      { "id": 49, "name": "Machine Learning", "parent_id": null },
+      { "id": 50, "name": "Mathematics", "parent_id": null },
+      { "id": 51, "name": "Matlab", "parent_id": null },
+      { "id": 52, "name": "Mongo DB", "parent_id": null },
+      { "id": 53, "name": "Natural Language Processing", "parent_id": null },
+      { "id": 54, "name": "Networking", "parent_id": null },
+      { "id": 55, "name": "Open Source", "parent_id": null },
+      { "id": 56, "name": "Operating Systems", "parent_id": null },
+      { "id": 57, "name": "PHP", "parent_id": null },
+      { "id": 58, "name": "CodeIgniter", "parent_id": 57 },
+      { "id": 59, "name": "Laravel", "parent_id": 57 },
+      { "id": 60, "name": "Python", "parent_id": null },
+      { "id": 61, "name": "Django", "parent_id": 60 },
+      { "id": 62, "name": "Flask", "parent_id": 60 },
+      { "id": 63, "name": "Jupyter", "parent_id": 60 },
+      { "id": 64, "name": "R", "parent_id": null },
+      { "id": 65, "name": "Ruby", "parent_id": null },
+      { "id": 66, "name": "Ruby on Rails", "parent_id": 65 },
+      { "id": 67, "name": "Rust", "parent_id": null },
+      { "id": 68, "name": "Security", "parent_id": null },
+      { "id": 69, "name": "Software Engineering", "parent_id": null },
+      { "id": 70, "name": "Solidity", "parent_id": null },
+      { "id": 71, "name": "Swift", "parent_id": null },
+      { "id": 72, "name": "System Design", "parent_id": null },
+      { "id": 73, "name": "TypeScript", "parent_id": null },
+      { "id": 74, "name": "Wordpress", "parent_id": null }
+    ],
+    "courses": [
+      {
+        "id": 1,
+        "title": "Complete C++ DSA Course | Data Structures & Algorithms Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "authors": ["Apna College"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 2,
+        "title": "Complete C++ Placement DSA Course",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
+        "authors": ["CodeHelp by Babbar"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 3,
+        "title": "Data Structures and Algorithms Course in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi",
+        "authors": ["CodeWithHarry"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 4,
+        "title": "Data Structures and Algorithms Course in Hindi using C",
+        "url": "https://www.youtube.com/playlist?list=PLf0LpPWikpPfA_vez2NndnYuQy6WkpTzc",
+        "authors": ["DataFlair"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 5,
+        "title": "Data Structures and Algorithms for GATE — Complete Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLC36xJgs4dxFCQVvjMrrjcY3XrcMm2GHy",
+        "authors": ["Gate CSE lectures by Amit Khurana"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 6,
+        "title": "Data Structures and Algorithms in Python",
+        "url": "https://www.youtube.com/playlist?list=PLyMom0n-MBrpakdIZvnhd6PFUCKNAyKo1",
+        "authors": ["Jovian"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 7,
+        "title": "DS & Algorithms Course Using Javascript",
+        "url": "https://www.youtube.com/playlist?list=PL_HlKez9XCSOi5thYDzipbJ2pEdzop7vx",
+        "authors": ["Technical Suneja"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 8,
+        "title": "Hindi Data Structures And Algorithms Tutorial Python",
+        "url": "https://www.youtube.com/playlist?list=PLPbgcxheSpE3NlJ30EDpxNYU6P2Jylns8",
+        "authors": ["codebasics Hindi"],
+        "category_id": 1,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 9,
+        "title": "All Sorting algorithms and Programs",
+        "url": "https://www.youtube.com/playlist?list=PLsFNQxKNzefK_DAUwnQwBizOmcY7aDLoY",
+        "authors": ["Saurabh Shukla"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 10,
+        "title": "Binary Search | Interview Questions | Coding | Tutorials | Algorithm",
+        "url": "https://www.youtube.com/playlist?list=PL_z_8CaSLPWeYfhtuKHj-9MpYb6XQJ_f2",
+        "authors": ["Aditya Verma"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 11,
+        "title": "Complete DAA Design and Analysis of Algorithm in one shot | Semester Exam | Hindi",
+        "url": "https://www.youtube.com/watch?v=z6DY_YSdyww",
+        "authors": ["KnowledgeGATE by Sanchit Sir"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "video"
+      },
+      {
+        "id": 12,
+        "title": "Design And Analysis Of Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa",
+        "authors": ["Gate Smashers"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 13,
+        "title": "Design and Analysis of Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PL1QH9gyQXfgs7foRxIbIH8wmJyDh5QzAm",
+        "authors": ["The Gatehub"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 14,
+        "title": "Dynamic Programming Playlist | Coding | Interview Questions | Tutorials | Algorithm",
+        "url": "https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go",
+        "authors": ["Aditya Verma"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 15,
+        "title": "Dynamic Programming Workshop",
+        "url": "https://www.youtube.com/playlist?list=PLqf9emQRQrnKA_EeveiXQj_uP25w8_5qL",
+        "authors": ["Vivek Gupta"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 16,
+        "title": "Graph Theory",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiG0M5FqjyoqB20Edk0tyzVt",
+        "authors": ["Gate Smashers"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 17,
+        "title": "Recursion Playlist | Coding | Interview Questions | Algorithm | Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PL_z_8CaSLPWeT1ffjiImo0sYTcnLzo-wY",
+        "authors": ["Aditya Verma"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+      {
+        "id": 18,
+        "title": "Sliding Window Algorithm - Face to Face Interviews",
+        "url": "https://www.youtube.com/playlist?list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj",
+        "authors": ["Aditya Verma"],
+        "category_id": 2,
+        "subcategory_id": 2,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 19,
+        "title": "2-D Arrays - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiFkOETg2Ybq-FMuJjkZSGeH",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 20,
+        "title": "All Data Structure Concepts | Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLsFNQxKNzefJNztGGoQC-59UhSwIaiIW3",
+        "authors": ["Saurabh Shukla"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 21,
+        "title": "Binary Trees - by LoveBabbar",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTo87y1ytEAqp7wYlEP3nner",
+        "authors": ["CodeHelp - by Babbar"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 22,
+        "title": "Binary Trees - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiHYxUk8dSu2_G7MR1PaGXN4",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 23,
+        "title": "Bit Manipulation - Level 2",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiFJRioti3ZV7QabwoJK6eKe",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 24,
+        "title": "Data Structure And Algorithms Course | DSA Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLmGElG-9wxc9Us6IK6Qy-KHlG_F3IS6Q9",
+        "authors": ["ScoreShala"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 25,
+        "title": "Data Structure Programs | Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLsFNQxKNzefJU-Sj__mljvrmJHZVKWbEm",
+        "authors": ["Saurabh Shukla"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 26,
+        "title": "Data Structure using Java",
+        "url": "https://www.youtube.com/playlist?list=PLH9iLcrNpXtQYQiudzpZpGw0mptHc06Su",
+        "authors": ["ForMyScholars"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 27,
+        "title": "Data Structures by Nargish Gupta",
+        "url": "https://www.youtube.com/playlist?list=PLPzfPcir5uPQ6LrB421cvMvcF3EcsGrr5",
+        "authors": ["NG Tutorials"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 28,
+        "title": "Data Structures using C",
+        "url": "https://www.youtube.com/playlist?list=PLf0LpPWikpPfA_vez2NndnYuQy6WkpTzc",
+        "authors": ["DataFlair"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 29,
+        "title": "DSA-One Course- The Complete Data Structure and Algorithms Course",
+        "url": "https://www.youtube.com/playlist?list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p",
+        "authors": ["Anuj Bhaiya"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 30,
+        "title": "Functions and Arrays - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiHOV7lm2uSw4ZiVsIRsGS6r",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 31,
+        "title": "Generic Trees - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiEmjuIVDrwR9h5i9TT2CEU_",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 32,
+        "title": "Graph Data Structure & Algorithms Full Course In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLzjZaW71kMwSrxEtvK5uQnfNQ9UjGGzA-",
+        "authors": ["Hello World"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 33,
+        "title": "Graphs - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiHfqDcLZMcO9SsUDY4S3a-v",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 34,
+        "title": "Graphs - Level 2",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiEuHrjpZ9m94Nag4fwAvtPQ",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 35,
+        "title": "Heap Playlist Interview Questions Coding Tutorials Data Structures",
+        "url": "https://www.youtube.com/playlist?list=PL_z_8CaSLPWdtY9W22VjnPxG30CXNZpI9",
+        "authors": ["Aditya Verma"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 36,
+        "title": "Java + Data Structures + Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PLKKfKV1b9e8ps6dD3QA5KFfHdiWj9cB1s",
+        "authors": ["Apni Kaksha"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 37,
+        "title": "Java + DSA",
+        "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+        "authors": ["Apna College"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 38,
+        "title": "Linked List - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiF5VZmktfqW6WVU1pxBF6l_",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 39,
+        "title": "Recursion & Backtracking - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 40,
+        "title": "Recursion & Backtracking - Level 2",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiHO9SQ6lxGuDsZNt2mkHEn0",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 41,
+        "title": "Simplified DSA with FRAZ",
+        "url": "https://www.youtube.com/playlist?list=PLKZaSt2df1gy75J3irj89a2vSGqeQdtDA",
+        "authors": ["Fraz"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 42,
+        "title": "Stack Playlist | Interview Questions | Coding | Tutorials | Data Structures",
+        "url": "https://www.youtube.com/playlist?list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd",
+        "authors": ["Aditya Verma"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 43,
+        "title": "Strivers A2Z-DSA Course | DSA Playlist | Placements",
+        "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz",
+        "authors": ["take U forward"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 44,
+        "title": "Time and Space - Level 1",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiFc7hJ5eeCb579PS8p-en4f",
+        "authors": ["Pepcoding"],
+        "category_id": 3,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 45,
+        "title": "Application of Soft Computing",
+        "url": "https://www.youtube.com/playlist?list=PLLmJo5LKwNNiSl_a8II-0xyujwPfdXFHR",
+        "authors": ["AKTU TechQuantum"],
+        "category_id": 4,
+        "subcategory_id": 4,
+        "video_type": "playlist"
+      },
+      {
+        "id": 46,
+        "title": "Application of soft computing",
+        "url": "https://www.youtube.com/playlist?list=PL_obO5Qb5QTEM_GVn5E45F3Z8-SIRBDL-",
+        "authors": ["LS Academy for Technical Education"],
+        "category_id": 4,
+        "subcategory_id": 4,
+        "video_type": "playlist"
+      },
+      {
+        "id": 47,
+        "title": "Introduction To Soft Computing",
+        "url": "https://www.youtube.com/playlist?list=PLJ5C_6qdAvBFqAYS0P9INAogIMklG8E-9",
+        "authors": ["Computer Science and Engineering"],
+        "category_id": 4,
+        "subcategory_id": 4,
+        "video_type": "playlist"
+      },
+      {
+        "id": 48,
+        "title": "Soft Computing | University exams specific",
+        "url": "https://www.youtube.com/playlist?list=PLuAADu3OvBt5-e5yXuIqBi1pttqw3RBeg",
+        "authors": ["Er Sahil ka Gyan"],
+        "category_id": 4,
+        "subcategory_id": 4,
+        "video_type": "playlist"
+      },
+      {
+        "id": 49,
+        "title": "Soft Computing And Optimization Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcCPUl8mAnb4g1oExKd0n4Gw",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 4,
+        "subcategory_id": 4,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 50,
+        "title": "Android App Development Course (Beginner to Advanced) | WsCube Tech 2.0",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGdDps6HAwOOVoAtBPAgIOXL",
+        "authors": ["WsCube Tech"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 51,
+        "title": "Android App Development Course in 2024",
+        "url": "https://www.youtube.com/playlist?list=PLTV_nsuD2lf4UCTV6xwvNPvFdmCNKyhc8",
+        "authors": ["Saumya Singh"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 52,
+        "title": "Android Development Tutorial for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb",
+        "authors": ["Anuj Bhaiya"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 53,
+        "title": "Android Development Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9aiL0kysYlfSOUgY5rNlOhUd",
+        "authors": ["CodeWithHarry"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 54,
+        "title": "Android Development With KOTLIN | Android App Development Course In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6Fr59UplGvL7q7P3Hg6nYzS45gld-CCI",
+        "authors": ["Zain Farhan"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 55,
+        "title": "App Development Course For School Students | Certified Course By Coding Blocks Junior",
+        "url": "https://www.youtube.com/playlist?list=PLhLbJ9UoJCvu4ktQMUJJq-D_6-Eoz8lOk",
+        "authors": ["Coding Blocks Junior"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 56,
+        "title": "Complete Android Development Course in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLUhfM8afLE_Ok-0Lx2v9hfrmbxi3GgsX1",
+        "authors": ["Neat Roots"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 57,
+        "title": "The complete Android Application Development Course in Hindi/Urdu",
+        "url": "https://www.youtube.com/playlist?list=PLtCBuHKmdxOe8IWZnA515lGPKaWx5WNOE",
+        "authors": ["Fahad Hussain"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 58,
+        "title": "Angular 12 - 13 tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV45--5t7_N4lveUI6Y31vQ6C",
+        "authors": ["Code Step By Step"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 59,
+        "title": "Angular 13 Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL_qizAfcpJ-N2mRgfQxnDgsv20daqwlfN",
+        "authors": ["Sahosoft Solutions"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 60,
+        "title": "Angular 6/7/8 Series (In Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLLhsXdvz0qjL1HVD2jAtlvoDmS5qj0OvA",
+        "authors": ["UX Trendz"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 61,
+        "title": "Angular In Depth",
+        "url": "https://www.youtube.com/playlist?list=PLqLR2H326bY4GoOaaxVYwdbNl9dvyWKvU",
+        "authors": ["Computer Baba"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 62,
+        "title": "Learn Angular in one video (Hindi)",
+        "url": "https://www.youtube.com/watch?v=0LhBvp8qpro&list=PLu0W_9lII9ahKZ42vg2w9ERPmShYbYAB7&index=21",
+        "authors": ["Code With Harry"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+
+      {
+        "id": 63,
+        "title": "Arduino Programming In Hindi (Full Playlist)",
+        "url": "https://www.youtube.com/watch?v=KOa1aVijhao",
+        "authors": ["SBS online classes"],
+        "category_id": 7,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 64,
+        "title": "Arduino Programming Series (हिंदी में)",
+        "url": "https://www.youtube.com/playlist?list=PLV3C-t_tgjGFyXP_-AF37AoIuxM9jzELM",
+        "authors": ["Engineers & Electronics"],
+        "category_id": 7,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 65,
+        "title": "Arduino project in hindi",
+        "url": "https://www.youtube.com/playlist?list=PLLpp1gWWec-Fj93mz9kfflp_ovplKCpR4",
+        "authors": ["Praveen Innovation Lab"],
+        "category_id": 7,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 66,
+        "title": "Complete Arduino Tutorial Learn Arduino Programming in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLg2KtP8cgLjzNu5G2bQQLxFeBiqk8IO0s",
+        "authors": ["Techtalks With Vivek"],
+        "category_id": 7,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 67,
+        "title": "Learn Arduino in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLVl__93X7ZlxnDtEY1_ibH-fECYEAKAQC",
+        "authors": ["TEKNOISTIX"],
+        "category_id": 7,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 68,
+        "title": "Artificial Intelligence (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI",
+        "authors": ["Gate Smashers"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 69,
+        "title": "Artificial Intelligence Lectures Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLV8vIYTIdSnYsdt0Dh9KkD9WFEi7nVgbe",
+        "authors": ["Easy Engineering Classes"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 70,
+        "title": "Complete Basics of AI in One Shot",
+        "url": "https://www.youtube.com/watch?v=D1eL1EnxXXQ",
+        "authors": ["Apna College"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 71,
+        "title": "Generative AI Series - Showcasing Generative AI By Building Projects",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9aiS4rUVp2jXwIvCruo27sG6",
+        "authors": ["CodeWithHarry"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 72,
+        "title": "Generative AI using LangChain",
+        "url": "https://www.youtube.com/playlist?list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0",
+        "authors": ["CampusX"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 73,
+        "title": "LangChain",
+        "url": "https://www.youtube.com/playlist?list=PLTDARY42LDV6flFgQLJCcVSXXa58mZ9Ty",
+        "authors": ["Krish Naik Hindi"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 74,
+        "title": "Playlist to Artificial Intelligence",
+        "url": "https://www.youtube.com/playlist?list=PLPIwNooIb9vgB1DQEftkKA3qOdeC4vonA",
+        "authors": ["Perfect Computer Engineer"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 75,
+        "title": "Prompt Engineering Full Course in Hindi (beginner to Master)",
+        "url": "https://www.youtube.com/playlist?list=PLyz4Eb45WBQ02Md7BiIO1sUsKTs8GcWKS",
+        "authors": ["EduExpress"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 76,
+        "title": "Assembly Language programming tutorial 8086 in hindi learn full",
+        "url": "https://www.youtube.com/playlist?list=PLAZj-jE2acZLdYT7HLFgNph190z2cjmAG",
+        "authors": ["Malik Shahzaib Official"],
+        "category_id": 9,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 77,
+        "title": "Assembly Language Programming Tutorials in Urdu Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLR2FqYUVaFJpHPw1ExSVJZFNlXzJYGAT1",
+        "authors": ["Programology"],
+        "category_id": 9,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 78,
+        "title": "x64 Assembly Language",
+        "url": "https://www.youtube.com/playlist?list=PL-DxAN1jsRa-3KzeQeEeoL_XpUHKfPL1u",
+        "authors": ["The Cyber Expert"],
+        "category_id": 9,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 79,
+        "title": "Bash Scripting | Complete Course In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLDnEHblf8hExnR-Xpmrpu3GdeO_4YJ_tD",
+        "authors": ["ENCODERSPRO"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 80,
+        "title": "Bash Scripting tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLxLRoXCDIalcosmDOQizh31EIHEK1njfO",
+        "authors": ["Fortify Solutions"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 81,
+        "title": "Shell Scripting and Bash Programming for Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLZqV_M3p_p10yhNExLIKj497ZkdUz1KuB",
+        "authors": ["LogicOps Lab - Hindi"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 82,
+        "title": "shell scripting complete tutorial in hindi",
+        "url": "https://www.youtube.com/playlist?list=PL9A0tISr5Ow5nZSY8-ICNAyXHJKesl_XL",
+        "authors": ["Cybersploit"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 83,
+        "title": "Shell Scripting For DevOps 2024 (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLlfy9GnSVerQu-uL0AdI3O5VzUmIv5pPf",
+        "authors": ["TrainWithShubham"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 84,
+        "title": "Shell Scripting Linux Beginners to Advanced in Hindi | Shell Scripting Tutorials for Beginner to Advanced in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLrFWmDe-rblpqyEzyAW6TMJyut-pbQHlr",
+        "authors": ["Cloud Tech Burner"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 85,
+        "title": "SHELL SCRIPTING Tutorial For Beginners",
+        "url": "https://www.youtube.com/playlist?list=PL0tP8lerTbX3MeIyMxGW2sLhWnPdn_xhd",
+        "authors": ["M Prashant"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 86,
+        "title": "Unix Shell Scripting Full Course",
+        "url": "https://www.youtube.com/playlist?list=PL6UwySlcwEYIZGsbXnUxsojD0yeUA67lb",
+        "authors": ["AmpCode"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 87,
+        "title": "Blockchain",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcDFRupamGc-9zc-vQqvkQnn",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 88,
+        "title": "Blockchain Full Course in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLgPmWS2dQHW-BRQCQCNYgmHUfCN115pn0",
+        "authors": ["Code Eater"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 89,
+        "title": "Blockchain Full Course in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLRlT7xBRpp9MiMN25XJjUVz01rGFQohq2",
+        "authors": ["Innovate India"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 90,
+        "title": "Complete Blockchain Development Course for Beginners in Hindi",
+        "url": "https://www.youtube.com/watch?v=RkYVVC2vXho",
+        "authors": ["web3Mantra"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 91,
+        "title": "Ethereum",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiE3QA0h3I6HDYNXejdPFKFN",
+        "authors": ["Pepcoding"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 92,
+        "title": "Playlist to Blockchain",
+        "url": "https://www.youtube.com/playlist?list=PLPIwNooIb9vgfXs-QkRYqqZbDXX-yLf59",
+        "authors": ["Perfect Computer Engineer"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 93,
+        "title": "Solidity ^0.8 | Blockchain | In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiG6_thChXWzolj9BEG-Y0gh",
+        "authors": ["Pepcoding"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 94,
+        "title": "All C Concepts | Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL7ersPsTyYt1d8g5qaxbE6sjWDzs4D_1v",
+        "authors": ["Saurabh Shukla"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 95,
+        "title": "C Language for GATE — Complete Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLC36xJgs4dxG-IqARhc23jYTDMYt7yvZP",
+        "authors": ["Gate CSE lectures by Amit Khurana"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 96,
+        "title": "C Language Tutorial for Beginners (with Notes & Practice Questions)",
+        "url": "https://www.youtube.com/watch?v=irqbmMNs2Bo",
+        "authors": ["Apna College"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 97,
+        "title": "C Language Tutorial For Beginners In Hindi (With Notes)",
+        "url": "https://www.youtube.com/watch?v=ZSPZob_1TOk",
+        "authors": ["CodeWithHarry"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 98,
+        "title": "C Language Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLmRclvVt5DtksgReOH3s7R1_cb1QA8vrb",
+        "authors": ["codeitup"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 99,
+        "title": "C Language Tutorials In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
+        "authors": ["CodeWithHarry"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 100,
+        "title": "C Programming Course",
+        "url": "https://www.youtube.com/playlist?list=PLxgZQoSe9cg1drBnejUaDD9GEJBGQ5hMt",
+        "authors": ["College Wallah"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 101,
+        "title": "C Programming for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PL98qAXLA6aftD9ZlnjpLhdQAOFI8xIB6e",
+        "authors": ["Programiz"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 102,
+        "title": "C Programming Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLiOa6ike4WAHH3HyPUu6pUG-r0LApvW-l",
+        "authors": ["Vikas Pandey, easytuts4you"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 103,
+        "title": "Basic C# Programming Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLCqWuVe6WFLLmMTO44hpYKnptJ6765skH",
+        "authors": ["Sunny Games & Technology"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 104,
+        "title": "C# Programming Complete in Hindi By Arvind",
+        "url": "https://www.youtube.com/playlist?list=PLOd2apPiwn-Z8GJiZs5HYb7HoiVvTV9H7",
+        "authors": ["Sarkar Study Waves Education"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 105,
+        "title": "C# Programming language (Console Applications)",
+        "url": "https://www.youtube.com/playlist?list=PLX07l0qxoHFLZftsVKyj3k9kfMca2uaPR",
+        "authors": ["Learning Never Ends"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 106,
+        "title": "C# Tutorial In Hindi",
+        "url": "https://www.youtube.com/watch?v=SuLiu5AK9Ps",
+        "authors": ["CodeWithHarry"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 107,
+        "title": "C# Tutorial in Hindi for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLV8vIYTIdSnYTYr0bmIbfzYii0YQSPocB",
+        "authors": ["Easy Engineering Classes"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 108,
+        "title": "ASP .Net in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLbsXhdgwIKL1g2vE86yGBK_RYuqt98yWL",
+        "authors": ["ComputerHindiNotes"],
+        "category_id": 13,
+        "subcategory_id": 14,
+        "video_type": "playlist"
+      },
+      {
+        "id": 109,
+        "title": "ASP.NET C# Web Form Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLx8RMTm-T9mq86-hvog8fHjJS1pBsPurS",
+        "authors": ["IT Tech Hindi Hub World"],
+        "category_id": 13,
+        "subcategory_id": 14,
+        "video_type": "playlist"
+      },
+      {
+        "id": 110,
+        "title": "ASP.NET Core Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL18HZjtdIA4Al-wYHC-i2TA-lgXLvHVmB",
+        "authors": ["Technology Keeda"],
+        "category_id": 13,
+        "subcategory_id": 14,
+        "video_type": "playlist"
+      },
+      {
+        "id": 111,
+        "title": "ASP.NET Course 2023",
+        "url": "https://www.youtube.com/playlist?list=PLMoluEXvWXK6Q1h-5vVX4tzX7-O2FdgZA",
+        "authors": ["Coder Baba"],
+        "category_id": 13,
+        "subcategory_id": 14,
+        "video_type": "playlist"
+      },
+      {
+        "id": 112,
+        "title": "ASP.NET Web Forms Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLp_RsiLZjwQS1FNXy0neuYgRGKNYPWpPk",
+        "authors": ["Programentor"],
+        "category_id": 13,
+        "subcategory_id": 14,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 113,
+        "title": "C++ and DSA Foundation Course",
+        "url": "https://www.youtube.com/playlist?list=PLxgZQoSe9cg0df_GxVjz3DD_Gck5tMXAd",
+        "authors": ["College Wallah"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 114,
+        "title": "C++ Full Course | C++ Tutorial | Data Structures & Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
+        "authors": ["Apna College"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 115,
+        "title": "C++ Full Course |Complete C++ Placement DSA Course| Data Structures & Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
+        "authors": ["CodeHelp - by Babbar"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 116,
+        "title": "C++ Programming in Hindi",
+        "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/c-programming-in-hindi1",
+        "authors": ["Bharani Akella (My Great Learning)"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 117,
+        "title": "C++ Programming in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLDA2q3s0-n15yszaZ2yRKEoxY-WWkuAt4",
+        "authors": ["Sumit Bisht (Edutainment 1.0)"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 118,
+        "title": "C++ Programming in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhijXuOfBSdQgK296Y7wUDWLn",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 119,
+        "title": "C++ Programming Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLoVVmGDgrrnS5_TiSg193ezTPd-Ukb25k",
+        "authors": ["Rakesh Roshan, Learn TechToTech"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 120,
+        "title": "C++ STL | Competitive Programming",
+        "url": "https://www.youtube.com/playlist?list=PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn",
+        "authors": ["Luv"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 121,
+        "title": "C++ Tutorial For Begineers In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLnSDvcENZlwA6YDSfoieM1bl-Y3ALcnL5",
+        "authors": ["Abhishek Shrivastava, Micro Solution"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 122,
+        "title": "C++ Tutorial for Beginners | C++ Tutorials In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLmGElG-9wxc8VMy1nNHDQldH2dU8Y08s7",
+        "authors": ["Manish Gehlot, WsCube Tech Programming Concepts"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 123,
+        "title": "C++ Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLhvdldYcnZMl3Smc6ANF6rO56ORgwb46g",
+        "authors": ["Coding Wallah Sir"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 124,
+        "title": "C++ Tutorials In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL",
+        "authors": ["CodeWithHarry"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 125,
+        "title": "Chai aur C++",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoCPfgKZS8UE0MDuwiKvL8zi",
+        "authors": ["Chai aur Code"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 126,
+        "title": "Object Oriented Programming in C++",
+        "url": "https://www.youtube.com/playlist?list=PLQEaRBV9gAFujcBWJhBT2XXsuMlIfETBy",
+        "authors": ["Coder Army"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 127,
+        "title": "The Complete C++ Course | Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLLYz8uHU480j37APNXBdPz7YzAi4XlQUF",
+        "authors": ["Saurabh Shukla"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 128,
+        "title": "Cloud Computing",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcCyQH0n9GHfwviu6KeJ46BV",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 16,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 129,
+        "title": "Cloud Computing",
+        "url": "https://www.youtube.com/playlist?list=PLDN4rrl48XKqNsrDogCpHsul3UHMC0Wdq",
+        "authors": ["Abdul Bari"],
+        "category_id": 16,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 130,
+        "title": "Cloud Computing (Complete Course)",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiHRHVUtR-O52MsrdUSrzuy4",
+        "authors": ["Gate Smashers"],
+        "category_id": 16,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 131,
+        "title": "Cloud Computing Course Free",
+        "url": "https://www.youtube.com/watch?v=lae0mfHBSjk",
+        "authors": ["Intellipaat"],
+        "category_id": 16,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 132,
+        "title": "Cloud Computing Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PL-JvKqQx2AtfQ8cGyKsFE7Tj2FyB1yCkd",
+        "authors": ["University Academy"],
+        "category_id": 16,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 133,
+        "title": "AWS For Beginners Playlist [HINDI]",
+        "url": "https://www.youtube.com/playlist?list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl",
+        "authors": ["M Prashant"],
+        "category_id": 17,
+        "subcategory_id": 17,
+        "video_type": "playlist"
+      },
+      {
+        "id": 134,
+        "title": "AWS Tutorial for Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLCFe3TcoBniI4iaavlfnR0UGQrtjgOMj9",
+        "authors": ["Together with Abhi"],
+        "category_id": 17,
+        "subcategory_id": 17,
+        "video_type": "playlist"
+      },
+      {
+        "id": 135,
+        "title": "AWS Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL_OdF9Z6GmVZCwyfd8n6_50jcE_Xlz1je",
+        "authors": ["S3CloudHub"],
+        "category_id": 17,
+        "subcategory_id": 17,
+        "video_type": "playlist"
+      },
+      {
+        "id": 136,
+        "title": "AWS Tutorial in Hindi | Edureka",
+        "url": "https://www.youtube.com/playlist?list=PLQbQOmlGYH3uoa_mYHDJkl958B_dBiaqW",
+        "authors": ["edureka! Hindi"],
+        "category_id": 17,
+        "subcategory_id": 17,
+        "video_type": "playlist"
+      },
+      {
+        "id": 137,
+        "title": "AWS Tutorials - AWS tutorials For Beginners - AWS Architect and SysOps - In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLBGx66SQNZ8a_y_CMLHchyHz_R6-6i-i_",
+        "authors": ["Technical Guftgu"],
+        "category_id": 17,
+        "subcategory_id": 17,
+        "video_type": "playlist"
+      },
+      {
+        "id": 138,
+        "title": "AWS Tutorials - AWS tutorials For Beginners - AWS Certification - AWS Training - In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6XT0grm_TfgtwtwUit305qS-HhDvb4du",
+        "authors": ["Gaurav Sharma"],
+        "category_id": 17,
+        "subcategory_id": 17,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 139,
+        "title": "Competitive Programming Series - Java Placement Course",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGfHs-LbtPOrlQHA37LFQg3S",
+        "authors": ["Wscube Tech"],
+        "category_id": 18,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 140,
+        "title": "Competitive Programming/DSA Course | Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLauivoElc3ggagradg8MfOZreCMmXMmJ-",
+        "authors": ["Luv"],
+        "category_id": 18,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 141,
+        "title": "Full course in Competitive programming [ Hindi ] || -by prince",
+        "url": "https://www.youtube.com/playlist?list=PLzjZaW71kMwTGbP1suqY16w1VSb9ZNuvE",
+        "authors": ["Hello World"],
+        "category_id": 18,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 142,
+        "title": "Range Queries - Level 3",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiGkI_pL8l67OVvbpnwf-5yO",
+        "authors": ["Pepcoding"],
+        "category_id": 18,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 143,
+        "title": "Text Processing - Level 3",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiEoZSwjEZT3TvpKG16FntFL",
+        "authors": ["Pepcoding"],
+        "category_id": 18,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 144,
+        "title": "Compiler Design",
+        "url": "https://www.youtube.com/playlist?list=PL1QH9gyQXfguPNDTsnG90W2kBDQpYLDQr",
+        "authors": ["The Gatehub"],
+        "category_id": 19,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 145,
+        "title": "Compiler Design",
+        "url": "https://www.youtube.com/playlist?list=PL9FuOtXibFjVR-87LcU-DS-9TJcbG97_p",
+        "authors": ["Abhishek Sharma"],
+        "category_id": 19,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 146,
+        "title": "Compiler Design",
+        "url": "https://www.youtube.com/playlist?list=PL23dd-8zssJBiyntds3X1sVWUDeb0Aa1N",
+        "authors": ["Start Practicing"],
+        "category_id": 19,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 147,
+        "title": "Compiler Design (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLmXKhU9FNesSmu-_DKC7APRoFkaQvGurx",
+        "authors": ["KnowledgeGATE by Sanchit Sir"],
+        "category_id": 19,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 148,
+        "title": "Compiler Design (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc",
+        "authors": ["Gate Smashers"],
+        "category_id": 19,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 149,
+        "title": "Compiler Design Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL-JvKqQx2Ate5DWhppx-MUOtGNA4S3spT",
+        "authors": ["University Academy"],
+        "category_id": 19,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 150,
+        "title": "Computer Graphics",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcAtxMe7ahYC4ZYjQHun_b-T",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 20,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 151,
+        "title": "Computer Graphics and Multimedia (CGMM) Lectures in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLV8vIYTIdSnaTVCcd954N14bVOOgYh-2V",
+        "authors": ["Easy Engineering Classes"],
+        "category_id": 20,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 152,
+        "title": "Computer Graphics Complete Syllabus Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLL8qj6F8dGlScni_9ZmeOMoRodrwzhvTq",
+        "authors": ["TutorialsSpace- Er. Deepak Garg"],
+        "category_id": 20,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 153,
+        "title": "Computer Graphics Full Course in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLAC6WcHCOQCHVfV3vR4At0g0QADIeZc_j",
+        "authors": ["Edulogy"],
+        "category_id": 20,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 154,
+        "title": "Computer Organisation and Architecture | Coa Complete Course in Hindi | True Engineer",
+        "url": "https://www.youtube.com/playlist?list=PLo4m8hx3sbb9SGSZy2Os7K4sAr53K9m-W",
+        "authors": ["True Engineer"],
+        "category_id": 21,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 155,
+        "title": "Computer Organization and Architecture",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX",
+        "authors": ["Gate Smashers"],
+        "category_id": 21,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 156,
+        "title": "Computer Organization and Architecture ( COA ) | CS & IT | GATE 2025 Crash Course",
+        "url": "https://www.youtube.com/playlist?list=PL3eEXnCBViH8OS7fH0uQdre5YGCIOhCBH",
+        "authors": ["GATE Wallah - EE, EC, CS & IN"],
+        "category_id": 21,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 157,
+        "title": "Computer Organization and Architecture GATE (Hindi) | Computer Organization GATE | Computer Organization and Architecture Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PL9zFgBale5fsVaOVUqXA1cJ22ePKpDEim",
+        "authors": ["Well Academy"],
+        "category_id": 21,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 158,
+        "title": "Computer Organization and Architecture Lectures in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLV8vIYTIdSnar4uzz-4TIlgyFJ2m18NE3",
+        "authors": ["Easy Engineering Classes"],
+        "category_id": 21,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 159,
+        "title": "Introduction to Computer Organization and Architecture",
+        "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRjC2nTHdeUtWFkoiPVespkc",
+        "authors": ["Neso Academy"],
+        "category_id": 21,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 160,
+        "title": "Data Analyst Course - Beginner's to Advance (हिंदी में) - Full Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLxzTa0VPR9ryvGSuCm4RS8aeAvOLXz9XM",
+        "authors": ["IHHPET: Industries Helping Hands Dot Com"],
+        "category_id": 22,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 161,
+        "title": "Data Science Course 2023",
+        "url": "https://www.youtube.com/playlist?list=PLfP3JxW-T70HvifebGl3d5d5jzI1Kp0i8",
+        "authors": ["Indian AI Production"],
+        "category_id": 22,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 162,
+        "title": "Python Data Science and Big Data Tutorials In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agK8pojo23OHiNz3Jm6VQCH",
+        "authors": ["CodeWithHarry"],
+        "category_id": 22,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 163,
+        "title": "3.1 DBMS In Hindi (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV",
+        "authors": ["Knowledge Gate"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 164,
+        "title": "Database Management System (DBMS)",
+        "url": "https://www.youtube.com/playlist?list=PLrjkTql3jnm-CLxHftqLgkrZbM8fUt0vn",
+        "authors": ["Education 4u"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 165,
+        "title": "Database Management System (DBMS) in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLAOnhLRjMTMDigfUzaAAQo7lbfScPFtHs",
+        "authors": ["Jitendra Ajmedha"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 166,
+        "title": "DBMS (Database Management System) Complete Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y",
+        "authors": ["Gate Smashers"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 167,
+        "title": "DBMS Lectures in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL0s3O6GgLL5dg3bZhTicr5zUITPAlZNjj",
+        "authors": ["Last moment tuitions"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 168,
+        "title": "DBMS Placements Series 2022",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU",
+        "authors": ["CodeHelp - by Babbar"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 169,
+        "title": "MongoDB Tutorial Course for Beginners to Advanced in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbysebQ-yBd7ZHYGPMuFvvyD",
+        "authors": ["Yahu Baba"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 170,
+        "title": "SQL Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLdOKnrf8EcP17p05q13WXbHO5Z_JfXNpw",
+        "authors": ["Rishabh Mishra"],
+        "category_id": 23,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 171,
+        "title": "Complete DevOps Zero to Hero Course",
+        "url": "https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa",
+        "authors": ["Abhishek.Veeramalla"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 172,
+        "title": "DevOps Training Tutorials For Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLYEK_dHOjwtODYB46wFuc34muw9Gl5X5x",
+        "authors": ["Linux Wale Guruji"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 173,
+        "title": "DevOps Training Videos in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLQbQOmlGYH3sxlq9ugoq1ipNFP7tus5Gd",
+        "authors": ["edureka! Hindi"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 174,
+        "title": "DevOps Tutorials in Hindi/Urdu | Devops सीखने का सबसे आसान तरीका | Complete Devops including Git,Jenkins,Maven,Chef,docker,Ansible and Kubernetes",
+        "url": "https://www.youtube.com/playlist?list=PLBGx66SQNZ8aPsFDwb79JrS2KQBTIZo10",
+        "authors": ["Bhupinder Rajput, Technical Guftgu"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 175,
+        "title": "Free Terraform Course",
+        "url": "https://www.youtube.com/playlist?list=PLlfy9GnSVerQzwhT644uP14iqZa0ZC4pn",
+        "authors": ["TrainWithShubham"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 176,
+        "title": "Jenkins For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6XT0grm_Tfi21F8O0TvHmb78P2uEmhDq",
+        "authors": ["Gaurav Sharma"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 177,
+        "title": "Server Configuration, Deployment & VPS Tutorials For Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9aiBNXUisDdSmfNbsKq407XC",
+        "authors": ["CodeWithHarry"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 178,
+        "title": "Terraform Tutorials For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm",
+        "authors": ["Gaurav Sharma"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 179,
+        "title": "Figma Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLuRPummNMvINdAbI_WT7R5vdjcyRPeRiq",
+        "authors": ["Pelfizz Studio"],
+        "category_id": 25,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 180,
+        "title": "Figma Tutorial For Beginners in Hindi",
+        "url": "https://www.youtube.com/watch?v=UjPpvf4TNLI",
+        "authors": ["Learn Grow"],
+        "category_id": 25,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 181,
+        "title": "Figma Tutorial In Hindi 2022",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp0TlgR6uPLR1s6X_w65FlTl",
+        "authors": ["Thapa Technical"],
+        "category_id": 25,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 182,
+        "title": "Figma Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLuou2gyfaGEud03tcppC1ofbYIcIEwKfm",
+        "authors": ["Nikhil Pawar"],
+        "category_id": 25,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 183,
+        "title": "Figma UI design tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLt7HkDVHvsa4Nf5qrXG6ozK3ZPTvNe__v",
+        "authors": ["Graphics Guruji"],
+        "category_id": 25,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 184,
+        "title": "Complete Flutter Tutorial In Hindi By Desi Programmer",
+        "url": "https://youtube.com/playlist?list=PLlFwzkUNmr94BF0KH7BYPL7DsZjhJRdTm",
+        "authors": ["Desi Programmer"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 185,
+        "title": "Flutter 3 tutorial in Hindi",
+        "url": "https://youtube.com/playlist?list=PLB97yPrFwo5g-XcPlfSXSOeeby23jVAcp",
+        "authors": ["CODERS NEVER QUIT"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 186,
+        "title": "Flutter App Development",
+        "url": "https://www.youtube.com/playlist?list=PLlvhNpz1tBvH4Wn8rMjtscK3l2pXnC9aN",
+        "authors": ["Code With Dhruv"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 187,
+        "title": "Flutter Complete Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGfGLShoW0vVX_tcyT8u1Y3E",
+        "authors": ["WsCube Tech"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 188,
+        "title": "Flutter Series 2020",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTo3Cs115GXkot28i406511Y",
+        "authors": ["CodeHelp - by Babbar"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 189,
+        "title": "Flutter Tutorial For Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLMkkZSS5OjPIwDyHHKVex6zr008U1-sWM",
+        "authors": ["Geeks Rank"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 190,
+        "title": "Flutter Widgets in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLz7ymP4HzwSH3vAnhDWLkO2TLbwGeigl7",
+        "authors": ["Ahirlog"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 191,
+        "title": "Master Flutter in Just 8 Hours | Full Course Hindi",
+        "url": "https://www.youtube.com/watch?v=j-LOab_PzzU",
+        "authors": ["Codepur"],
+        "category_id": 26,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+
+      {
+        "id": 192,
+        "title": "Android Game Development in Urdu/Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLU4yvac0MJbJS154x3GVvvTYWE3Ol6WMi",
+        "authors": ["OnlineUstaad"],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 193,
+        "title": "Complete Course on Python Game Development",
+        "url": "https://www.youtube.com/watch?v=Wg9J5kiX0wY",
+        "authors": ["Techonical Infotech Pvt. Ltd."],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 194,
+        "title": "Game Development Course",
+        "url": "https://www.youtube.com/playlist?list=PLBh8phtAyHPUY9fqgs1w6aHJALJ3_fMSc",
+        "authors": ["Farhan Aqeel"],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 195,
+        "title": "Game development in Hindi From Beginning to Advance",
+        "url": "https://www.youtube.com/playlist?list=PLdOT12odxrUrUExBUuM5KoN0fAnOdzH1L",
+        "authors": ["Logical Programmer"],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 196,
+        "title": "Python Game Development Using Pygame In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ailUQcxEPZrWgDoL36BtPYb",
+        "authors": ["CodeWithHarry"],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 197,
+        "title": "Unity Game Development Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLCqWuVe6WFLJW4urlRk1501OkAGVQtX8q",
+        "authors": ["Sunny Games & Technology"],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 198,
+        "title": "Unity Tutorial For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLSYBX91r-B-QoFxBATZJyle3aXvPtCmLe",
+        "authors": ["Nikhil Malankar"],
+        "category_id": 27,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 199,
+        "title": "Complete git and Github course in Hindi",
+        "url": "https://www.youtube.com/watch?v=q8EevlEpQ2A",
+        "authors": ["Chai aur Code"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 200,
+        "title": "Complete Git and GitHub Tutorial",
+        "url": "https://www.youtube.com/watch?v=apGV9Kg7ics&t=7s",
+        "authors": ["Kunal Kushwaha"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 201,
+        "title": "Complete Git and Github Tutorials for Beginners",
+        "url": "https://www.youtube.com/watch?v=Ez8F0nW6S-w",
+        "authors": ["Apna College"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 202,
+        "title": "Complete Git and GitHub Tutorials For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLzdlNxYnNoafZq1AKcqiGvj0gkzrjmgq7",
+        "authors": ["Code House"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 203,
+        "title": "Complete Git Tutorials For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi",
+        "authors": ["CodeWithHarry"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 204,
+        "title": "Complete Git/GitHub Tutorials In Hindi 2021",
+        "url": "https://www.youtube.com/playlist?list=PLoxQvXKPyCeX9__PPTu2M2oeY2QJt-3JB",
+        "authors": ["Vashishth Muni Singh"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 205,
+        "title": "Git & GitHub Fundamentals in 6 Hours",
+        "url": "https://www.youtube.com/playlist?list=PLfEr2kn3s-brBO7d9irTRvClcjiNhzczH",
+        "authors": ["Anurag Singh ProCodrr"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 206,
+        "title": "Git & GitHub Tutorial For Beginners In Hindi",
+        "url": "https://www.youtube.com/watch?v=gwWKnnCMQ5c",
+        "authors": ["CodeWithHarry"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 207,
+        "title": "Git & GitHub Tutorial in Hindi",
+        "url": "https://www.youtube.com/watch?v=NR_A2gCxaLE",
+        "authors": ["Edureka! Hindi"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 208,
+        "title": "Git and Github | Complete हिंदी में (With Examples)",
+        "url": "https://www.youtube.com/watch?v=zGq7T9gZH2k",
+        "authors": ["Knowledge Gate"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 209,
+        "title": "Git Complete Tutorials for Beginners in Hindi (A to Z)",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGdIVmcu5nfgE68jANQetnOX",
+        "authors": ["WsCube Tech"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 210,
+        "title": "Git Step-by-Step: Git Tutorials For Beginners - In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6XT0grm_TfjgDZ_shvnNvxHu0SGeR2ge",
+        "authors": ["Gaurav Sharma"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 211,
+        "title": "Github | All about Git and GitHub",
+        "url": "https://www.youtube.com/watch?v=77b2lVHHZqI",
+        "authors": ["Anuj Bhaiya"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 212,
+        "title": "GitHub Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLVdoaEL574VBxxcGQmTjxS-JoP5rKV8Wi",
+        "authors": ["Be A Programmar"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 213,
+        "title": "GitHub with Visual Studio (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhigWA1mNWzwErSBIZvgOJbNc",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 28,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 214,
+        "title": "Go Lang Course 2023 (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLLGlmW7jT-nQOVVgFV3cvztEcNxXylqj2",
+        "authors": ["Studytonight with Abhishek"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 215,
+        "title": "Go Lang Tutorials for Beginners in Depth",
+        "url": "https://www.youtube.com/playlist?list=PL8fnAiiuQeFtg3ztGNquEb4Oh-WZxVPUv",
+        "authors": ["Go Guru"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 216,
+        "title": "Go Lang Tutorials in HINDI",
+        "url": "https://www.youtube.com/playlist?list=PL45_xGOyv4bk55CMmqH6S6vvnwKD8qifD",
+        "authors": ["Coder Singh"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 217,
+        "title": "Go programming (GoLang) Tutorial for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLEtkoO2np9szq1XDH1Mfr36Fg5EXh-z20",
+        "authors": ["Host Progrmming"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 218,
+        "title": "Go programming Tutorial for Beginners(Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92yu7If3I7GonlWA8YU1BuAk",
+        "authors": ["CS Geeks"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 219,
+        "title": "Golang Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLXQpH_kZIxTWUe-Ee-DZEX5gfeoo4tHV6",
+        "authors": ["Coder's Gyan"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 220,
+        "title": "Let's go with golang",
+        "url": "https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa",
+        "authors": ["Hitesh Choudhary"],
+        "category_id": 29,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 221,
+        "title": "Chai aur HTML in हिन्दी",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI",
+        "authors": ["Chai aur Code"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 222,
+        "title": "Complete Web Dev using mern stack Love Babbar",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD",
+        "authors": ["Love Babbar"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 223,
+        "title": "CSS Full Free Course by WsCube Tech",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGcotVRgbduK05oOMnt-9r8H",
+        "authors": ["WsCube Tech"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 224,
+        "title": "CSS Tutorial in Hindi | Complete CSS Course For Beginners to Advanced | Step By Step Tutorial",
+        "url": "https://www.youtube.com/watch?v=WyxzAU3p8CE",
+        "authors": ["Vishwajeet Kumar (Tech Gun)"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 225,
+        "title": "Free Web Development Course For School Students (Grade 5 - 10) | Certified Course By Coding Blocks Junior | Learn HTML, CSS, Javascript",
+        "url": "https://www.youtube.com/playlist?list=PLhLbJ9UoJCvsCXqP9yAOZpzXHhWkLBXdw",
+        "authors": ["Coding Blocks Junior"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 226,
+        "title": "Front End Development Tutorial | Complete HTML and CSS Tutorial for Beginners (9 Hours)",
+        "url": "https://www.youtube.com/watch?v=Eu7G0jV0ImY",
+        "authors": ["WsCube Tech"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 227,
+        "title": "Full HTML Course for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLfEr2kn3s-bpuh9XfcDlXP6weTISBWzvQ",
+        "authors": ["Anurag Singh ProCodrr"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 228,
+        "title": "HTML CSS & Browser APIs",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiHU9RkY9sfh3G64-bd0ptvC",
+        "authors": ["Pepcoding"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 229,
+        "title": "HTML Tutorial for Beginners in Hindi | Complete HTML Course with AI + Notes + 5 Project Bundle",
+        "url": "https://www.youtube.com/watch?v=k2DSi1zGEc8",
+        "authors": ["CodeWithHarry"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 230,
+        "title": "HTML Tutorial in Hindi | Complete HTML Course For Beginners to Advanced",
+        "url": "https://www.youtube.com/watch?v=QXPWs00RD3A",
+        "authors": ["Vishwajeet Kumar (Tech Gun)"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 231,
+        "title": "Sigma Web Development Course",
+        "url": "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=mGaDlsxY1dRAR1t0",
+        "authors": ["CodeWithHarry"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 232,
+        "title": "Tailwind CSS Tutorials in Hindi",
+        "url": "https://youtube.com/playlist?list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O&si=rTTFha3VOrpdSXU2",
+        "authors": ["CodeWithHarry"],
+        "category_id": 30,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 233,
+        "title": "Web Development Course",
+        "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n",
+        "authors": ["Apna College"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 234,
+        "title": "Web Development Tutorials for Beginners in Hindi: HTML, CSS, JavaScript and more",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
+        "authors": ["CodeWithHarry"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 235,
+        "title": "Website Development Course in Hindi 2022",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp2jmYb2TQGYgBYp0xGwj9V1",
+        "authors": ["Thapa Technical"],
+        "category_id": 30,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 236,
+        "title": "Bootstrap 3 Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGciJ5_Ze6jDIfJpEeMYtsSe",
+        "authors": ["WsCube Tech"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "playlist"
+      },
+      {
+        "id": 237,
+        "title": "Bootstrap Tutorial for beginners in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbz1cgxiH5KCBsyQij1HsPtG",
+        "authors": ["Yahoo Baba"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "playlist"
+      },
+      {
+        "id": 238,
+        "title": "Bootstrap Tutorial for Beginners(Hindi)",
+        "url": "https://youtube.com/playlist?list=PLgPJX9sVy92wc38jA6JtvkA4l1xmJcKKH",
+        "authors": ["CS Geeks"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "playlist"
+      },
+      {
+        "id": 239,
+        "title": "Bootstrap Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLdPwRNmUlk0k91-qAXTHFqMScNEuo8E5d",
+        "authors": ["CODE4EDUCATION"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "playlist"
+      },
+      {
+        "id": 240,
+        "title": "Bootstrap Tutorial In Hindi",
+        "url": "https://www.youtube.com/watch?v=vpAJ0s5S2t0",
+        "authors": ["CodeWithHarry"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "video"
+      },
+      {
+        "id": 241,
+        "title": "Bootstrap tutorial in Hindi | Best Course",
+        "url": "https://youtube.com/playlist?list=PL7akPJI4biSIQmT7fSHWoMRaNUcRbXHFN",
+        "authors": ["CodinGyaan"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "playlist"
+      },
+      {
+        "id": 242,
+        "title": "Bootstrap Tutorial in Hindi With 2 Projects for Beginners | Complete Bootstrap 5 Tutorial in Hindi",
+        "url": "https://youtube.com/watch?v=QE5oQh63gGE",
+        "authors": ["Tech Gun"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "video"
+      },
+
+      {
+        "id": 243,
+        "title": "Material UI Complete in One Video (Hindi)",
+        "url": "https://www.youtube.com/watch?v=TJz6y9RLtA8",
+        "authors": ["Geeky Shows"],
+        "category_id": 32,
+        "subcategory_id": 32,
+        "video_type": "video"
+      },
+      {
+        "id": 244,
+        "title": "Material UI Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLlR2O33QQkfXnZMMZC0y22gLayBbB1UQd",
+        "authors": ["Indian Coders"],
+        "category_id": 32,
+        "subcategory_id": 32,
+        "video_type": "playlist"
+      },
+      {
+        "id": 245,
+        "title": "Material UI Tutorial for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8u9CiaEfFDaR0ipsKfHdnZccTm10J7-3",
+        "authors": ["Basics Adda"],
+        "category_id": 32,
+        "subcategory_id": 32,
+        "video_type": "playlist"
+      },
+      {
+        "id": 246,
+        "title": "Reactjs material ui in hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV4722H3_nosmpdjNXIPuBUXm",
+        "authors": ["Code Step By Step"],
+        "category_id": 32,
+        "subcategory_id": 32,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 247,
+        "title": "Learn Tailwind CSS with Projects - Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLPppPPmk0i3h9Xs6cAknE9OODTqZD5zFe",
+        "authors": ["Do Some Coding"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 248,
+        "title": "Tailwind Course + Project",
+        "url": "https://www.youtube.com/playlist?list=PLUcsbZa0qzu0OrMJWIuhvibOPZm_IHGTl",
+        "authors": ["Anuj Bhaiya"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 249,
+        "title": "Tailwind CSS Complete Course",
+        "url": "https://www.youtube.com/playlist?list=PLfEr2kn3s-br05lTglbEi25A1X07cvihy",
+        "authors": ["Anurag Singh ProCodrr"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 250,
+        "title": "Tailwind CSS Complete Course - CSS Framework [Hindi] - Beginner to Advanced",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGfpwYhVAbiGAhFl6h8XWDV_",
+        "authors": ["WsCube Tech"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 251,
+        "title": "Tailwind css hindi",
+        "url": "https://www.youtube.com/playlist?list=PLLCu4ndnReXLXfD-iIGBEB6_l8uF6TMNO",
+        "authors": ["NST Infotech"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 252,
+        "title": "Tailwind CSS In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp3l8tWTcB7R7Bsgd86lCa8a",
+        "authors": ["Thapa Technical"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 253,
+        "title": "Tailwind CSS Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O",
+        "authors": ["CodeWithHarry"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 254,
+        "title": "Getting Started with iOS in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL5PR3UyfTWvcRhz4ms-nNoGja2-DkA_6T",
+        "authors": ["iOS Academy"],
+        "category_id": 34,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 255,
+        "title": "iOS App development Course - Hindi - Xcode 9 - Swift 4",
+        "url": "https://www.youtube.com/playlist?list=PL27xikYyFh9Cg5f28LpQuoRL8LEs01_zT",
+        "authors": ["Confiance Labs"],
+        "category_id": 34,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 256,
+        "title": "iOS App Development Crash Course in Hindi",
+        "url": "https://www.youtube.com/watch?v=n7qOGHWunUY",
+        "authors": ["Akash Padhiyar"],
+        "category_id": 34,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 257,
+        "title": "IOS Mobile App Development Tutorial for beginners",
+        "url": "https://www.youtube.com/playlist?list=PLtCBuHKmdxOcmrDx2pM4qNvzWF2NI_Qlo",
+        "authors": ["Fahad Hussain"],
+        "category_id": 34,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 258,
+        "title": "Complete Java Programming Course 2025",
+        "url": "https://www.youtube.com/playlist?list=PLA3GkZPtsafY62QhQ030p85HAer0pFDdr",
+        "authors": ["Engineering Digest"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 259,
+        "title": "Complete Java Programming in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLmRclvVt5DtnqhXTJwd-oqVRwO3bLZCGV",
+        "authors": ["Anand Kumar, CodeitUp"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 260,
+        "title": "Core Java in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLVlQHNRLflP8kPvCvEM7ZopbRB93joJXy",
+        "authors": ["Naresh i Technologies"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 261,
+        "title": "Core Java Programming (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhij8Oplrvjt_RlDliZQgdxoV",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 262,
+        "title": "Hibernate tutorial Basic to Advance in Hindi",
+        "url": "https://youtube.com/playlist?list=PL0zysOflRCekX8OO7V7pGQ9kxZ28JyJlk",
+        "authors": ["Learn Code With Durgesh"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 263,
+        "title": "Java + DSA",
+        "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+        "authors": ["Apna College"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 264,
+        "title": "Java and DSA Foundation Course",
+        "url": "https://youtube.com/playlist?list=PLxgZQoSe9cg00xyG5gzb5BMkOClkch7Gr",
+        "authors": ["College Wallah"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 265,
+        "title": "Java Foundation Course | Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiFj7YSPl2ulcpwy-mwj1SSk",
+        "authors": ["Pepcoding"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 266,
+        "title": "Java Live Community Class",
+        "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7pyuXTES7ZqncOI_X0mgKgK",
+        "authors": ["Navin Reddy (Telusko)"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 267,
+        "title": "Java Programming Tutorial (HINDI/URDU)",
+        "url": "https://www.youtube.com/playlist?list=PLiOa6ike4WAHljIOitb3vR0nXQgneUedR",
+        "authors": ["Vikas Pandey, Easytuts4you"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 268,
+        "title": "Java Tutorial",
+        "url": "https://youtube.com/playlist?list=PLX9Zi6XTqOKQ7TdRz0QynGIKuMV9Q2H8E",
+        "authors": ["Saurabh Shukla Sir"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 269,
+        "title": "Java tutorial in Hindi for beginners",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV466xs0qGUvLGAXy6xLyEcQy",
+        "authors": ["Code Step By Step"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 270,
+        "title": "Java Tutorials for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLlhM4lkb2sEhfuXL-2BDrJ67WkUdQ2v9b",
+        "authors": ["Deepak Panwar, Smart Programming"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 271,
+        "title": "Java Tutorials For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q",
+        "authors": ["CodeWithHarry"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 272,
+        "title": "Microservice Tutorial in Hindi 2023",
+        "url": "https://www.youtube.com/playlist?list=PL0zysOflRCelb2Y4WOVckFC6B050BzV0D",
+        "authors": ["Learn Code With Durgesh"],
+        "category_id": 35,
+        "subcategory_id": 36,
+        "video_type": "playlist"
+      },
+      {
+        "id": 273,
+        "title": "Object Oriented Programming with Java",
+        "url": "https://www.youtube.com/playlist?list=PL9gnSGHSqcno1G3XjUbwzXHL8_EttOuKk",
+        "authors": ["Kunal Kushwaha"],
+        "category_id": 35,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 274,
+        "title": "Spring Framework Tutorial with SpringBoot in Hindi Complete Course",
+        "url": "https://www.youtube.com/playlist?list=PLiOIhBfKi8AIYNWEjYy1zZFe1N8GvPRHR",
+        "authors": ["CoderX Ankit"],
+        "category_id": 35,
+        "subcategory_id": 36,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 275,
+        "title": "Chai aur Javascript हिन्दी",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37",
+        "authors": ["Chai aur Code (Hitesh Choudhary)"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 276,
+        "title": "Express.js - Learn What Matters",
+        "url": "https://www.youtube.com/watch?v=pKJ4GGyDgJo",
+        "authors": ["Sheryians Coding School"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 277,
+        "title": "JavaScript | Beginning to Mastery Complete Tutorial",
+        "url": "https://www.youtube.com/watch?v=chx9Rs41W6g&list=PLwgFb6VsUj_n15Cg_y2ULKfsOR1XiQqPx",
+        "authors": ["Harshit Vashisth"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 278,
+        "title": "JavaScript Introduction Tutorial in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf",
+        "authors": ["Yahoo Baba"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 279,
+        "title": "JavaScript Tutorial for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4",
+        "authors": ["Telusko"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 280,
+        "title": "JavaScript Tutorial for Beginners (In Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0",
+        "authors": ["Vinod Bahadur Thapa (Thapa Technical)"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 281,
+        "title": "JavaScript Tutorial for beginners in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PLw9zMOoodWb5YB2TqrboVoSBkCKaOsvE_",
+        "authors": ["Husain Sir"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 282,
+        "title": "JavaScript Tutorials for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR",
+        "authors": ["CodeWithHarry"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 283,
+        "title": "JavaScript Tutorials In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ajyk081To1Cbt2eI5913SsL",
+        "authors": ["CodeWithHarry"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 284,
+        "title": "Namaste JavaScript",
+        "url": "https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP",
+        "authors": ["Akshay Saini"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 285,
+        "title": "RxJS Series (In Hindi)",
+        "url": "https://youtube.com/playlist?list=PLLhsXdvz0qjI68a8tLUUMyXmNhl608mcn",
+        "authors": ["UX Trendz"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 286,
+        "title": "Web Development Course",
+        "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n",
+        "authors": ["Apna College"],
+        "category_id": 37,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 287,
+        "title": "Electron js Course in Hindi for beginner",
+        "url": "https://www.youtube.com/playlist?list=PLCHw5ssvpa9sYFawfqZPeb70Le-3H9nTt",
+        "authors": ["satendrasingh programmer"],
+        "category_id": 38,
+        "subcategory_id": 38,
+        "video_type": "playlist"
+      },
+      {
+        "id": 288,
+        "title": "Electron js desktop app development tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLfxALjnZodrvtzXTg-ZFeRL7AIutdJBV4",
+        "authors": ["Wap Institute"],
+        "category_id": 38,
+        "subcategory_id": 38,
+        "video_type": "playlist"
+      },
+      {
+        "id": 289,
+        "title": "Electron js tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV46sT0RXw6PlMRVxJzEDUWuD",
+        "authors": ["Code Step By Step"],
+        "category_id": 38,
+        "subcategory_id": 38,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 290,
+        "title": "Animate anything with GSAP | Complete GSAP Course",
+        "url": "https://www.youtube.com/playlist?list=PLbtI3_MArDOnIIJxB6xFtpnhM0wTwz0x6",
+        "authors": ["Sheryians Coding School"],
+        "category_id": 39,
+        "subcategory_id": 39,
+        "video_type": "playlist"
+      },
+      {
+        "id": 291,
+        "title": "GSAP Demystified | From Beginning to Advanced",
+        "url": "https://www.youtube.com/playlist?list=PLbtI3_MArDOn9x8DUbc-E0t9PnvrUaPs9",
+        "authors": ["Sheryians Coding School"],
+        "category_id": 39,
+        "subcategory_id": 39,
+        "video_type": "playlist"
+      },
+      {
+        "id": 292,
+        "title": "Learning GSAP in hindi",
+        "url": "https://www.youtube.com/playlist?list=PLf8nAOi8Z9NXGhl7m8rTWmzjyhJEuFYmF",
+        "authors": ["D.Designing"],
+        "category_id": 39,
+        "subcategory_id": 39,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 293,
+        "title": "jQuery Tutorial for beginners in Hindi 2020",
+        "url": "https://youtube.com/playlist?list=PL-6FWL4WVVWXmWe_HnPG0rBQmmJfGsTKS",
+        "authors": ["CSEtutorials"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "playlist"
+      },
+      {
+        "id": 294,
+        "title": "jQuery Tutorial in Hindi",
+        "url": "https://youtube.com/playlist?list=PLvQjNLQMdagPRDnMQPMs5-vQL_IyAB0St",
+        "authors": ["Teaching Web"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "playlist"
+      },
+      {
+        "id": 295,
+        "title": "jQuery Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLp_RsiLZjwQQEtvmHTJRkK-lEuSn0kg7p",
+        "authors": ["Programentor"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "playlist"
+      },
+      {
+        "id": 296,
+        "title": "jQuery Tutorials in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbzSyiC0PFaqeabe1aGhfrbW",
+        "authors": ["Yahoo Baba"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "playlist"
+      },
+      {
+        "id": 297,
+        "title": "jQuery Tutorials in Hindi 2018",
+        "url": "https://youtube.com/playlist?list=PLwGdqUZWnOp0X4dVwSsEd6dV49TLLCooI",
+        "authors": ["Vinod Bahadur Thapa (Thapa Technical)"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "playlist"
+      },
+      {
+        "id": 298,
+        "title": "jQuery Video Course",
+        "url": "https://www.youtube.com/playlist?list=PLPAcs2twrK5_FzWMttkbTuM0dB5A-ni-Q",
+        "authors": ["w3webschool.net"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "playlist"
+      },
+      {
+        "id": 299,
+        "title": "jQuery Zero to Advance",
+        "url": "https://www.youtube.com/watch?v=YFlx1C8XwR0",
+        "authors": ["CodeWithHarry"],
+        "category_id": 40,
+        "subcategory_id": 40,
+        "video_type": "video"
+      },
+
+      {
+        "id": 300,
+        "title": "Learn NextJS with Aceternity UI library by building a project",
+        "url": "https://www.youtube.com/watch?v=cVKB5NQPiFA&t=744s",
+        "authors": ["Chai aur Code"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "video"
+      },
+      {
+        "id": 301,
+        "title": "Master Next JS 14 Complete Basic to Advance",
+        "url": "https://www.youtube.com/watch?v=yN8VXmncvRU&t=190s",
+        "authors": ["Geeky Shows"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "video"
+      },
+      {
+        "id": 302,
+        "title": "Next JS Tutorial for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLZjjdd9-SJS2ZvI4ct5Qtkje_Vdb5O_KM",
+        "authors": ["ILive4Coding"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 303,
+        "title": "Next js tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV44sj_Ikp8jQSvwD-m9htnHT",
+        "authors": ["Code Step By Step"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 304,
+        "title": "Next.JS Full FREE Course (New Updated) by WsCube Tech",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGcg_ZTmYgMkYp0snH-g4Zf6",
+        "authors": ["WsCube Tech"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 305,
+        "title": "Next.js Tutorials for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agtWvR_TZdb_r0dNI8-lDwG",
+        "authors": ["CodeWithHarry"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 306,
+        "title": "NextJS Chai aur full stack",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoBAaWGtn9GA2PTw0HO0tXzq",
+        "authors": ["Chai aur Code"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 307,
+        "title": "NextJS Master Course",
+        "url": "https://www.youtube.com/playlist?list=PLinedj3B30sDP2CHN5P0lDD64yYZ0Nn4J",
+        "authors": ["Piyush Garg"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 308,
+        "title": "NextJS Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp2rDbpfKAeUi9f8qZMS7_cv",
+        "authors": ["Vinod Bahadur Thapa (Thapa Technical)"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+      {
+        "id": 309,
+        "title": "NextJS Tutorial with Project in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL0zysOflRCemKr4NHzNgrfZAUjDzlQtO5",
+        "authors": ["Learn Code With Durgesh"],
+        "category_id": 41,
+        "subcategory_id": 41,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 310,
+        "title": "Complete NodeJS + ExpressJS + MongoDB Course in Hindi | Notes | Certification",
+        "url": "https://www.youtube.com/playlist?list=PL78RhpUUKSwfeSOOwfE9x6l5jTjn5LbY3",
+        "authors": ["Complete Coding by Prashant Sir"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 311,
+        "title": "Master NodeJS",
+        "url": "https://www.youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo",
+        "authors": ["Piyush Garg"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 312,
+        "title": "Node JS",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhiiSVvVP_9w57-aU7kx_H9bu",
+        "authors": ["Geeky Shows"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 313,
+        "title": "Node Js Tutorial in Hindi",
+        "url": "https://www.youtube.com/watch?v=BLl32FvcdVM&ab_channel=CodeWithHarry",
+        "authors": ["Code With Harry"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "video"
+      },
+      {
+        "id": 314,
+        "title": "Node.js Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLgOUQYMnO_SRqPikOJBu5G1ld4bJUZCmy",
+        "authors": ["truecodex"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 315,
+        "title": "Node.js Tutorials for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLUVqY59GNZQNCk_D9VW_zNh60WuQIzo3K",
+        "authors": ["Tutorials Website"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 316,
+        "title": "NodeJS in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV456iofeMKReMTvWLr7Ki9At",
+        "authors": ["Code Step By Step"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 317,
+        "title": "NodeJS Tutorial for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLzjZaW71kMwScTRKzoasdyB1sX-a9EbFp",
+        "authors": ["Hello World"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 318,
+        "title": "NodeJS Tutorial for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7occsESx2X1E2R2Uw5wCoeG",
+        "authors": ["Telusko"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+      {
+        "id": 319,
+        "title": "NodeJS Tutorial in Hindi 2020",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8",
+        "authors": ["Vinod Bahadur Thapa (Thapa Technical)"],
+        "category_id": 42,
+        "subcategory_id": 42,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 320,
+        "title": "10-Hour React Tutorial 2023 - Zero to Advanced | Learn React JS in Hindi",
+        "url": "https://www.youtube.com/watch?v=6l8RWV8D-Yo&list=PL2PkZdv6p7ZnS2QIz8WAPmqeqUUccPNQY",
+        "authors": ["Coder Dost"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "video"
+      },
+      {
+        "id": 321,
+        "title": "Chai aur react | with projects",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige",
+        "authors": ["Chai aur Code"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 322,
+        "title": "React JS (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhignjLLXTJWkRJKN-SgAqClL",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 323,
+        "title": "React JS Course 2023",
+        "url": "https://www.youtube.com/playlist?list=PLt5mNkGuWcuWSUHxSzWP74IU9U4BTVLt0",
+        "authors": ["6 Pack Programmer"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 324,
+        "title": "React JS Tutorial For Beginners in Hindi 2024 | React JS Tutorial",
+        "url": "https://www.youtube.com/playlist?list=PLrdDvCsCDu0Gdr-E7NlcFYaNPw29t7xmq",
+        "authors": ["CODE with Sufyan Shaikh"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 325,
+        "title": "React JS Tutorial in Hindi | React JS for Beginner to Advanced | Step by Step Video Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGdnIQKgnTeR1T9-1ltJEaJh",
+        "authors": ["WsCubeTech"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 326,
+        "title": "React JS Tutorial in Hindi 2022",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp3aROg4wypcRhZqJG3ajZWJ",
+        "authors": ["Vinod Bahadur Thapa, Thapa Technical"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 327,
+        "title": "React Js Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt",
+        "authors": ["Haris Ali Khan, CodeWithHarry"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 328,
+        "title": "React Tutorial for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV47BCAjiCtuV_liN9IwAl8pM",
+        "authors": ["Code Step By Step"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 329,
+        "title": "React Tutorial in Hindi",
+        "url": "https://www.youtube.com/watch?v=RGKi6LSPDLU",
+        "authors": ["CodeWithHarry"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "video"
+      },
+      {
+        "id": 330,
+        "title": "React.js Full Course in Hindi | Zero to Advanced in 28 Hours",
+        "url": "https://www.youtube.com/playlist?list=PLfEr2kn3s-bqpPUbeTZP6iRXTxTLwNB7F",
+        "authors": ["Anurag Singh ProCodrr"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 331,
+        "title": "ReactJS Tutorial for Beginners to Advanced",
+        "url": "https://www.youtube.com/playlist?list=PL_HlKez9XCSO1g7c61SyJZE4iehJDFg_w",
+        "authors": ["Technical Suneja"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 332,
+        "title": "ReactJS Tutorials for Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLUVqY59GNZQNTlOnGne0G7DXnmi7CeOtc",
+        "authors": ["Pradeep Maurya"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 333,
+        "title": "React Native hindi tutorial",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV479IV5cXwKXqGOcCOu0bPXW",
+        "authors": ["Code Step By Step"],
+        "category_id": 44,
+        "subcategory_id": 44,
+        "video_type": "playlist"
+      },
+      {
+        "id": 334,
+        "title": "Redux toolkit crash course | Chai aur React Series",
+        "url": "https://www.youtube.com/watch?v=1i04-A7kfFI",
+        "authors": ["Hitesh Choudhary (Chai aur Code)"],
+        "category_id": 45,
+        "subcategory_id": 45,
+        "video_type": "video"
+      },
+      {
+        "id": 335,
+        "title": "Redux toolkit tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp2nz2T6SfWX9t6D6SYn3XlN",
+        "authors": ["Vinod Bahadur Thapa (Thapa Technical)"],
+        "category_id": 45,
+        "subcategory_id": 45,
+        "video_type": "playlist"
+      },
+      {
+        "id": 336,
+        "title": "Redux tutorial in Hindi",
+        "url": "https://youtube.com/playlist?list=PL8p2I9GklV47TDYUq8RmFzeI9CgOoVgpJ&si=p-4s6qJ31ReIbKqj",
+        "authors": ["Code Step By Step"],
+        "category_id": 45,
+        "subcategory_id": 45,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 337,
+        "title": "Latest vue js 3 tutorial for beginners in hindi",
+        "url": "https://www.youtube.com/playlist?list=PLfxALjnZodruGEvbM8zTdnPMrQ5wHMmw8",
+        "authors": ["Wap Institute"],
+        "category_id": 46,
+        "subcategory_id": 46,
+        "video_type": "playlist"
+      },
+      {
+        "id": 338,
+        "title": "Vue js tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV45qwTH-mdzllUuFRJO-euYn",
+        "authors": ["Code Step By Step"],
+        "category_id": 46,
+        "subcategory_id": 46,
+        "video_type": "playlist"
+      },
+      {
+        "id": 339,
+        "title": "Vue JS Tutorial in Hindi (Learning from documentation)",
+        "url": "https://www.youtube.com/playlist?list=PLWxTHN2c_6cZpCJBULGoubyWsbfI0gDGW",
+        "authors": ["Touseef Jamal"],
+        "category_id": 46,
+        "subcategory_id": 46,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 340,
+        "title": "Kotlin Beginner Tutorials Hindi | Complete Series",
+        "url": "https://www.youtube.com/playlist?list=PLRKyZvuMYSIMW3-rSOGCkPlO1z_IYJy3G",
+        "authors": ["Cheezy Code"],
+        "category_id": 47,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 341,
+        "title": "Kotlin for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLUhfM8afLE_MXuRUfgm1g-qDuBRD1pxPG",
+        "authors": ["Neat Roots"],
+        "category_id": 47,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 342,
+        "title": "Kotlin Programming Complete in one Video (Hindi)",
+        "url": "https://www.youtube.com/watch?v=uoP4JKHgzDE",
+        "authors": ["Geeky Shows"],
+        "category_id": 47,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 343,
+        "title": "Kotlin Tutorial in Hindi : From beginner to advance Android",
+        "url": "https://www.youtube.com/playlist?list=PLaLbT5lAehvULj67yZ_JJ6zMwyvmqt78o",
+        "authors": ["Coding With Vikrant"],
+        "category_id": 47,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 344,
+        "title": "संपूर्ण लिनक्स हिंदी भाषा में सीखें (Complete Linux Course in Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PL9LY4jTSNS23_yo6XIyIFZeZKL7UlKm-V",
+        "authors": ["Nehra Classes"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 345,
+        "title": "Linux Basic tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLYEK_dHOjwtNX9NcnILJR1q5hL_4N0cdu",
+        "authors": ["Linux Wale Guruji"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 346,
+        "title": "Linux Playlist ZERO to Superhero | Linux for Freshers | Linux Full Course in hindi | Linux Full Playlist in hindi",
+        "url": "https://www.youtube.com/playlist?list=PLrFWmDe-rblqDfPvkVkEt45Nhnyvh6kN5",
+        "authors": ["Cloud Tech Burner"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 347,
+        "title": "Linux Tutorial For Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLSntPnamABVEi_K1gxbOEwXVz09pY9qb8",
+        "authors": ["Ankit Tiwari"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 348,
+        "title": "Linux Tutorial For Beginners in Hindi",
+        "url": "https://www.youtube.com/watch?v=_tCY-c-sPZc",
+        "authors": ["CodeWithHarry"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 349,
+        "title": "Linux Tutorials For Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL0tP8lerTbX3eUtBFS0Ir4_aFqKuXWjYZ",
+        "authors": ["M Prashant"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 350,
+        "title": "100 Days Of Deep Learning",
+        "url": "https://www.youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn",
+        "authors": ["CampusX"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 351,
+        "title": "100 Days Of Machine Learning",
+        "url": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+        "authors": ["CampusX"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 352,
+        "title": "Intro to Machine Learning",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiHioMKxmCxzpXdNfLE4TVjD",
+        "authors": ["Pepcoding"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 353,
+        "title": "Machine Learning",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcBhOEPwf5cFwqo5B-cP9G4P",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 354,
+        "title": "Machine Learning Full Course",
+        "url": "https://www.youtube.com/watch?v=IoZGSQ07e8g",
+        "authors": ["Bharani Akella, Great Learning"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 355,
+        "title": "Machine Learning in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLPbgcxheSpE0aBsefANDYe2X_-tyJbBMr",
+        "authors": ["Codebasics Hindi"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 356,
+        "title": "Machine Learning Tutorial using Python in Hindi 2022",
+        "url": "https://www.youtube.com/playlist?list=PLfP3JxW-T70Hh7j17_NLzjZ8CejSPx40V",
+        "authors": ["Indian AI Production"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 357,
+        "title": "Machine Learning Tutorials For Beginners Using Python in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ai6fAMHp-acBmJONT7Y4BSG",
+        "authors": ["CodeWithHarry"],
+        "category_id": 49,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 358,
+        "title": "Discrete Mathematics",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiH2wwES9vPWsEL6ipTaUSl3",
+        "authors": ["Gate Smashers"],
+        "category_id": 50,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 359,
+        "title": "Discrete Mathematics (Full Course) By Dr.Gajendra Purohit",
+        "url": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfJ27O0dvuMwafS3X8CecqUg",
+        "authors": ["Gajendra Purohit"],
+        "category_id": 50,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 360,
+        "title": "Discrete Mathematics Tutorials In Hindi | B.TECH- B.E.-UGC NET- GATE- LECTURES In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLL8qj6F8dGlTX359q-PBBUFw3BrBvAxq3",
+        "authors": ["Deepak Garg"],
+        "category_id": 50,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 361,
+        "title": "Maths for CP",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiFs8E0EGeckM89cD8E6sFro",
+        "authors": ["Pepcoding"],
+        "category_id": 50,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 362,
+        "title": "Maths for Machine Learning",
+        "url": "https://www.youtube.com/playlist?list=PLKnIA16_RmvbYFaaeLY28cWeqV-3vADST",
+        "authors": ["CampusX"],
+        "category_id": 50,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 363,
+        "title": "Statistics And Probability",
+        "url": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK",
+        "authors": ["Gajendra Purohit"],
+        "category_id": 50,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 364,
+        "title": "MATLAB (HINDI) Tutorial Series",
+        "url": "https://www.youtube.com/playlist?list=PL6G0RjixRx3xgzxqjRdZIoLLpzhyLFTXk",
+        "authors": ["WittyRobo"],
+        "category_id": 51,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 365,
+        "title": "Matlab Complete Course",
+        "url": "https://www.youtube.com/watch?v=iS5J4TlLSEM",
+        "authors": ["Armughan Ali"],
+        "category_id": 51,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 366,
+        "title": "MATLAB Complete Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGfdIlwG649bdzVHM4iLbD_H",
+        "authors": ["WsCube Tech"],
+        "category_id": 51,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 367,
+        "title": "Module-1: Basics of MATLAB (A complete Course)",
+        "url": "https://www.youtube.com/playlist?list=PLcgIaTuuWp3kr9W0T7b817jenHcX3CXs1",
+        "authors": ["R K Thenua"],
+        "category_id": 51,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 368,
+        "title": "Complete MongoDB Tutorial Series in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL5IobCNPDnI_Xh2iya6p37Ain_71ro71w",
+        "authors": ["Simple Snip Code"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 369,
+        "title": "MongoDB Complete Course Tutorial in Hindi",
+        "url": "https://www.youtube.com/watch?v=rU9ZODw5yvU",
+        "authors": ["Vinod Bahadur Thapa (Thapa Technical)"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 370,
+        "title": "MongoDB full course for beginners",
+        "url": "https://youtube.com/playlist?list=PLwGdqUZWnOp1P9xSsJg7g3AY0CUjs-WOa",
+        "authors": ["Thapa Technical"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 371,
+        "title": "MongoDB playlist in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLA3GkZPtsafZydhN4nP0h7hw7PQuLsBv1",
+        "authors": ["Engineering Digest"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 372,
+        "title": "MongoDB Tutorial for Beginners (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92xUxpTFgAOSBHdBwIdxav39",
+        "authors": ["CS Geeks"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 373,
+        "title": "MongoDB Tutorial in 1 Hour (2023)",
+        "url": "https://www.youtube.com/watch?v=J6mDkcqU_ZE",
+        "authors": ["CodeWithHarry"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 374,
+        "title": "MongoDB tutorial in hindi",
+        "url": "https://www.youtube.com/playlist?list=PLolI8AY2AS9aaE4Vx0adwfwUh3XiuVewX",
+        "authors": ["Code Improve"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 375,
+        "title": "MongoDB Tutorial in Hindi 2022",
+        "url": "https://www.youtube.com/playlist?list=PLQDioScEMUhkcqbgJ4ap2k4zg3sT_-Bbc",
+        "authors": ["Programming Experience"],
+        "category_id": 52,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 376,
+        "title": "Natural Language Processing",
+        "url": "https://www.youtube.com/playlist?list=PLKnIA16_RmvZo7fp5kkIth6nRTeQQsjfX",
+        "authors": ["CampusX"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 377,
+        "title": "Natural Language Processing with Deep NLP from Zero to Hero",
+        "url": "https://www.youtube.com/playlist?list=PLtCBuHKmdxOefxJhd6u8KY9vTN8G5D5yG",
+        "authors": ["Fahad Hussain"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 378,
+        "title": "NLP Tutorial Playlist Python",
+        "url": "https://www.youtube.com/playlist?list=PLeo1K3hjS3uuvuAXhYjV2lMEShq2UYSwX",
+        "authors": ["Code Basics"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 379,
+        "title": "Playlist to Natural Language Processing [ Hindi ]",
+        "url": "https://www.youtube.com/playlist?list=PLPIwNooIb9vimsumdWeKF3BRzs9tJ-_gy",
+        "authors": ["Perfect Computer Engineer"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 380,
+        "title": "3.4 Computer Networks (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLmXKhU9FNesSjFbXSZGF8JF_4LVwwofCd",
+        "authors": ["Knowledge Gate"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 381,
+        "title": "Computer Network (CN)",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcAXkWn2IR-l_WXOrr0n851a",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 382,
+        "title": "Computer Network Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL-JvKqQx2AteLNR8UO4UQiDmQF-Wotu5G",
+        "authors": ["University Academy"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 383,
+        "title": "Computer Networks",
+        "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx",
+        "authors": ["Neso Academy"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 384,
+        "title": "Computer Networks (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+        "authors": ["Gate Smashers"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 385,
+        "title": "Networking Basics",
+        "url": "https://www.youtube.com/playlist?list=PLkW9FMxqUvyZaSQNQslneeODER3bJCb2K",
+        "authors": ["Bitten Tech"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 386,
+        "title": "Open Source BootCamp - Master Open Source Contributions",
+        "url": "https://www.youtube.com/playlist?list=PLinedj3B30sAT6CotNj0iffhRV89SkNK9",
+        "authors": ["Piyush Garg"],
+        "category_id": 55,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 387,
+        "title": "3.2 Operating System (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD",
+        "authors": ["Knowledge Gate"],
+        "category_id": 56,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 388,
+        "title": "Operating System (Complete Playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p",
+        "authors": ["Gate Smashers"],
+        "category_id": 56,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 389,
+        "title": "Operating System in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLqcuf9-ILPYARwquS3KOD3bDe0NSaD-oK",
+        "authors": ["CS Engineering Gyan"],
+        "category_id": 56,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 390,
+        "title": "Operating Systems for Placements 2022",
+        "url": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+        "authors": ["CodeHelp - by Babbar"],
+        "category_id": 56,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 391,
+        "title": "Core PHP (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhigFdLdbSI2EM2MrJB7I0j-B",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 392,
+        "title": "PHP MYSQL Tutorial In Hindi | Backend Development in Hindi in 2020",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp1U4kemcU_vF9KQuHXlNxkb",
+        "authors": ["Thapa Technical"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 393,
+        "title": "PHP OOP Tutorial in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbwoi6Urr4LZTz2AMMCtzqDt",
+        "authors": ["Yahoo Baba"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 394,
+        "title": "PHP Tutorial for beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLmGElG-9wxc_Hp_bqKH0-cpeboH1_sQg7",
+        "authors": ["ScoreShala"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 395,
+        "title": "PHP Tutorial in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbyrzCMJOFzLnf_-_5E_dkzs",
+        "authors": ["Yahoo Baba"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 396,
+        "title": "PHP Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR",
+        "authors": ["CodeWithHarry"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 397,
+        "title": "Codeigniter 4 Tutorial For Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8kfzPha-e2iC8cT79hd5hCVffkbW309d",
+        "authors": ["Ubk InfoTech"],
+        "category_id": 58,
+        "subcategory_id": 58,
+        "video_type": "playlist"
+      },
+      {
+        "id": 398,
+        "title": "Codeigniter 4 Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLolI8AY2AS9ZmTeMOpu1iTOsx9WALtCgM",
+        "authors": ["Code Improve"],
+        "category_id": 58,
+        "subcategory_id": 58,
+        "video_type": "playlist"
+      },
+      {
+        "id": 399,
+        "title": "Codeigniter 4 Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL4_As-_ROQH2OIE5uILfodqSNQzUfAqFs",
+        "authors": ["Cs Krish"],
+        "category_id": 58,
+        "subcategory_id": 58,
+        "video_type": "playlist"
+      },
+      {
+        "id": 400,
+        "title": "CodeIgniter 4 Tutorials for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PL79xP87McblnMZG-F1hnRLuMgM5C95nMG",
+        "authors": ["GoPHP"],
+        "category_id": 58,
+        "subcategory_id": 58,
+        "video_type": "playlist"
+      },
+      {
+        "id": 401,
+        "title": "CodeIgniter Tutorial in Hindi | Learn CodeIgniter Framework Step by Step | Full Course",
+        "url": "https://www.youtube.com/playlist?list=PL97P2RbKWLQgkc4EXn7FBj_R6t0gsgHKo",
+        "authors": ["Heavy Coding"],
+        "category_id": 58,
+        "subcategory_id": 58,
+        "video_type": "playlist"
+      },
+      {
+        "id": 402,
+        "title": "Learn CodeIgniter 4 Framework Tutorials Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLn1Gr7zhiAMfWpSYfDgND8t7KjiqSaEum",
+        "authors": ["Online Web Tutor"],
+        "category_id": 58,
+        "subcategory_id": 58,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 403,
+        "title": "Laravel (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhijEqjCa63l0GkWh5EsG5iTR",
+        "authors": ["Geeky Shows"],
+        "category_id": 59,
+        "subcategory_id": 59,
+        "video_type": "playlist"
+      },
+      {
+        "id": 404,
+        "title": "Laravel 10 Tutorial Course in Hindi / Urdu",
+        "url": "https://www.youtube.com/playlist?list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ",
+        "authors": ["Yahoo Baba"],
+        "category_id": 59,
+        "subcategory_id": 59,
+        "video_type": "playlist"
+      },
+      {
+        "id": 405,
+        "title": "Laravel 9 Course in Hindi/Urdu",
+        "url": "https://www.youtube.com/playlist?list=PLDc9bt_00KcLME8wcKFNCF-9nP21L2nB2",
+        "authors": ["Career Development Lab"],
+        "category_id": 59,
+        "subcategory_id": 59,
+        "video_type": "playlist"
+      },
+      {
+        "id": 406,
+        "title": "Laravel 9 tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV44dF7G_uPK_9ZHCQon15flp",
+        "authors": ["Code Step By Step"],
+        "category_id": 59,
+        "subcategory_id": 59,
+        "video_type": "playlist"
+      },
+      {
+        "id": 407,
+        "title": "Laravel Framework Complete Tutorial for Beginners to Pro [HINDI]",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGfh2rwJjrmKNHzGxCZwBsqj",
+        "authors": ["WsCube Tech"],
+        "category_id": 59,
+        "subcategory_id": 59,
+        "video_type": "playlist"
+      },
+      {
+        "id": 408,
+        "title": "Step by step learn Laravel 7 in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLWCLxMult9xeJEntBQFZfOxUzDvkuq6uM",
+        "authors": ["Programming with Vishal"],
+        "category_id": 59,
+        "subcategory_id": 59,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 409,
+        "title": "100 Days of Code (Hindi) - Python Course",
+        "url": "https://replit.com/learn/code-with-harry-100-doc",
+        "authors": ["CodeWithHarry (replit)"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 410,
+        "title": "Advance Python (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhijd1hUF2VWiKt8FHNBa7kGb",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 411,
+        "title": "Chai aur Python",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s",
+        "authors": ["Chai aur Code"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 412,
+        "title": "Class 12 Board | Python | Computer Science",
+        "url": "https://www.youtube.com/playlist?list=PLKKfKV1b9e8oyESqu5mrGN-eDxHdNoi_j",
+        "authors": ["Apni Kaksha"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 413,
+        "title": "Complete Python Tutorial for Beginners to Advanced in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGcQfNj_SLlLV4Ytf39f8BF7",
+        "authors": ["WsCube Tech"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 414,
+        "title": "Complete Python tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLmRclvVt5DtmcLF3ywxKg692lhfD6SUOr",
+        "authors": ["codeitup"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 415,
+        "title": "Complete Python Tutorial in Hindi (2020)",
+        "url": "https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXkXElQychT_2j",
+        "authors": ["Harshit Vashisth"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 416,
+        "title": "Core Python (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 417,
+        "title": "Free Python Course For School Students (Grade7-10) Certified Course By Coding Blocks Junior",
+        "url": "https://youtube.com/playlist?list=PLhLbJ9UoJCvumawW64knIBSJuHALx3zBE",
+        "authors": ["Coding Blocks Junior"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 418,
+        "title": "Full Python Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLlgLmuG_KgbZziQYQV1sdhKt-VQHUE_Yl",
+        "authors": ["Bharani Akella"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 419,
+        "title": "Intermediate/Advanced python Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9aiJWQ7VhY712fuimEpQZYp4",
+        "authors": ["CodeWithHarry"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 420,
+        "title": "OpenCV Full Tutorial by WsCube Tech",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGelmHXLZ0ukHdb-jjvG6rRm",
+        "authors": ["WsCube Tech"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 421,
+        "title": "Python",
+        "url": "https://www.youtube.com/playlist?list=PLHjOos34ty4GYwKO-CFTdJKfVNd50tajF",
+        "authors": ["Computer Gyan Guruji"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 422,
+        "title": "Python For Beginners",
+        "url": "https://youtube.com/playlist?list=PL-5gYa7CLd4iBdPHRaSEwbivCnUq1nxj9",
+        "authors": ["Technical Sagar"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 423,
+        "title": "Python for Data Science for Absolute Beginners (Full Course)",
+        "url": "https://www.youtube.com/playlist?list=PL1gztxnUtwNfnR0jYniFM5E6HwcQMnFmx",
+        "authors": ["Data is Good"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 424,
+        "title": "Python Language Full Course (2025-26)",
+        "url": "https://www.youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0",
+        "authors": ["Shradha Khapra"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 425,
+        "title": "Python Programming in Hindi (Great Learning)",
+        "url": "https://www.greatlearning.in/academy/learn-for-free/courses/python-programming-in-hindi",
+        "authors": ["Great Learning"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 426,
+        "title": "Python Tutorial For Beginners | Hindi (With Notes)",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME",
+        "authors": ["CodeWithHarry"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 427,
+        "title": "Python Tutorial For Beginners in (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLf0LpPWikpPe5gc6fT9wDj3Y6e97z6ZD_",
+        "authors": ["DataFlair Hindi"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 428,
+        "title": "Python Tutorial For Beginners in Hindi",
+        "url": "https://www.youtube.com/watch?v=FStwWUkW5RQ&list=PLnSDvcENZlwAcFgFLD5bzt5Zh428yzQXT",
+        "authors": ["Micro Solution"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 429,
+        "title": "Python Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLQbQOmlGYH3tC535nKa7xB7dd7pZtYMZX",
+        "authors": ["edureka! Hindi"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 430,
+        "title": "Web Scraping Full Free Course by WsCube Tech",
+        "url": "https://youtube.com/playlist?list=PLjVLYmrlmjGfSYkgH-_jgC8KMxyRzq7US&si=quHKEA6-lapsAXQu",
+        "authors": ["WsCube Tech"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 431,
+        "title": "Chai aur Django",
+        "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy",
+        "authors": ["Chai aur Code"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 432,
+        "title": "Complete Django Tutorial in Hindi (Beginner to Advanced)",
+        "url": "https://www.youtube.com/playlist?list=PLtjl3y2jZEeVEROmLDT7sjziUR4gb4N5G",
+        "authors": ["Moh Technology, Mohshin Mansuri"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 433,
+        "title": "Django (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhigchy8DTw4pX4duTTpvqlh6",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 434,
+        "title": "Django in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLKkAfNrxxRKqYLB9bCqMXrvoYd13WVxOq",
+        "authors": ["Effcon Technology"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 435,
+        "title": "Django REST Framework (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhijTKyrlu-0g5GcP9nUp_HlN",
+        "authors": ["Rajesh Kumar, Geeky Shows"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 436,
+        "title": "Django Tutorial for Beginners(Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92yWUMgLpWrXtegKxrWLRnRv",
+        "authors": ["Vijay Manral, CS Geeks"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 437,
+        "title": "Python Django Tutorials In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9",
+        "authors": ["CodeWithHarry"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 438,
+        "title": "Flask (Python) In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLy-CGmBdq2VGQGbhmSQEOD3Ty-Fp19pGC",
+        "authors": ["HindiSiksha"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "playlist"
+      },
+      {
+        "id": 439,
+        "title": "Flask for Machine Learning",
+        "url": "https://learnwith.campusx.in/courses/Flask-for-Machine-Learning-Introduction-to-Flask--Dynamic-URL-Redirection-URL-Building-Jinja-Templates-Forms--Input-Validation-Databases-Sessions-Cookies-Training--Deloyment-of-ML-Model-6658698ad54433398d1a487b",
+        "authors": ["CampusX"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "video"
+      },
+      {
+        "id": 440,
+        "title": "Flask Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLQ623tNax05w6xydSxUSWpBuIUDe_SBNb",
+        "authors": ["Knowledge Gainer"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "playlist"
+      },
+      {
+        "id": 441,
+        "title": "Web Development Using Flask and Python",
+        "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agAiWp6Y41ueUKx1VcTRxmf",
+        "authors": ["CodeWithHarry"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 442,
+        "title": "Jupyter Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLBx2L_ikudBO7s6SQZaMDCtbyrjQ-04a8",
+        "authors": ["Saima Academy"],
+        "category_id": 63,
+        "subcategory_id": 63,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 443,
+        "title": "Complete R Programming Tutorial for Beginners to Pro [HINDI]",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGdmPrz0Lx7smkd0qIKHInOF",
+        "authors": ["WsCube Tech"],
+        "category_id": 64,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 444,
+        "title": "Introduction to R Software",
+        "url": "https://www.youtube.com/playlist?list=PLJ5C_6qdAvBFfF7qtFi8Pv_RK8x55jsUQ",
+        "authors": ["Computer Science and Engineering"],
+        "category_id": 64,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 445,
+        "title": "R Programming",
+        "url": "https://www.youtube.com/playlist?list=PLWPirh4EWFpEvN4ktS8LE0cvLCSfhD55t",
+        "authors": ["Tutorials Point (India) Ltd."],
+        "category_id": 64,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 446,
+        "title": "R programming language(Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92wLyuL-rFgbjqCLgXrpIKnc",
+        "authors": ["CS Geeks"],
+        "category_id": 64,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 447,
+        "title": "R Tutorial for Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcCRFzBkZ-b92Hdg-qCUfx48",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 64,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 448,
+        "title": "Complete Ruby Programming Course || Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92y_ENwi_4hMCpDtQFnazFPp",
+        "authors": ["CS Geeks"],
+        "category_id": 65,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 449,
+        "title": "Learn Ruby in 45 Minutes | Hindi",
+        "url": "https://www.youtube.com/watch?v=3V9a_WYEQPA",
+        "authors": ["CS Geeks"],
+        "category_id": 65,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 450,
+        "title": "Ruby Tutorial for Beginners (Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92yefe1xmyxgcyXjxmLHsSEV",
+        "authors": ["CS Geeks"],
+        "category_id": 65,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 451,
+        "title": "Full Stack Development in Ruby on Rails - Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLSfx1NJkuWPWlVjFy5datW4Y-54ltIFw7",
+        "authors": ["APPSIMPACT Academy Hindi"],
+        "category_id": 66,
+        "subcategory_id": 66,
+        "video_type": "playlist"
+      },
+      {
+        "id": 452,
+        "title": "Ruby on Rails 5 Tutorial(Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLgPJX9sVy92yV7Qt6_8ElC9paGWdtdIbb",
+        "authors": ["CS Geeks"],
+        "category_id": 66,
+        "subcategory_id": 66,
+        "video_type": "playlist"
+      },
+      {
+        "id": 453,
+        "title": "Ruby on Rails Course | Urdu / Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL9WbyKqkuCAYT-IPvo5PxR_hijMuR1RCB",
+        "authors": ["Code with Naqvi"],
+        "category_id": 66,
+        "subcategory_id": 66,
+        "video_type": "playlist"
+      },
+      {
+        "id": 454,
+        "title": "Ruby on Rails Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLWWB_UKBNWcuATKL6_MjSkPOMckEgYpcD",
+        "authors": ["AJ Technical"],
+        "category_id": 66,
+        "subcategory_id": 66,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 455,
+        "title": "Complete Rust Course - Zero to Advanced 2023",
+        "url": "https://www.youtube.com/playlist?list=PLOY5k46NyxirlL6Pk3Py6_5SL1EIdXg5c",
+        "authors": ["Blockchain Wala"],
+        "category_id": 67,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 456,
+        "title": "Rust Complete Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLRuqvIc0eAmp8Lv6M4BKQWEinvCuqdVFP",
+        "authors": ["One Two Coding"],
+        "category_id": 67,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 457,
+        "title": "Rust Programming Complete Tutorial In Hindi 2023.",
+        "url": "https://www.youtube.com/playlist?list=PLndmg9UIKNomnnSxd__VKkUX4zT1YpSoY",
+        "authors": ["Code Your Money"],
+        "category_id": 67,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 458,
+        "title": "Rust-Programming in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL8fnAiiuQeFsss4xdjXyHJ4fT4_w10s3J",
+        "authors": ["Go Guru"],
+        "category_id": 67,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 459,
+        "title": "Rust Programming Language",
+        "url": "https://www.youtube.com/playlist?list=PLinedj3B30sA_M0oxCRgFzPzEMX3CSfT5",
+        "authors": ["Piyush Garg"],
+        "category_id": 67,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 460,
+        "title": "Complete Ethical Hacking Tutorial for Beginners to Pro 2022",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGea8U9nphmCHGK_v6p_wq-R",
+        "authors": ["WsCube Tech"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 461,
+        "title": "Cryptography and network security",
+        "url": "https://www.youtube.com/playlist?list=PL9FuOtXibFjVR-87LcU-DS-9TJcbG97_p",
+        "authors": ["Abhishek Sharma"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 462,
+        "title": "Cryptography and Network Security Lecture in Hindi / Urdu for Beginners",
+        "url": "https://youtube.com/playlist?list=PLE3bzAX_OzbkQXKbRFqQqbnlGxTNeaUqe",
+        "authors": ["Katoon Studio"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 463,
+        "title": "cyber security course for beginners - Urdu/Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLKJfBg0XdWkevCEJ64RK11LylBNX2-zbk",
+        "authors": ["hashintelligence"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 464,
+        "title": "Cyber Security Tutorial In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL-JvKqQx2AteIbm-z4X709scVr9OaHpIY",
+        "authors": ["University Academy"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 465,
+        "title": "Cyber Security Tutorials In HIndi",
+        "url": "https://www.youtube.com/playlist?list=PL0fjgIGwLMWTFmZoLdEPoI9azA-osxcQj",
+        "authors": ["TechChip"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 466,
+        "title": "Ethical Hacking Full Course (Cyber Security in Hindi)",
+        "url": "https://www.youtube.com/playlist?list=PLa2xctTiNSCibSUhgYI2RT_loUJP9rDN6",
+        "authors": ["Masters in IT"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 467,
+        "title": "Information And Cyber Security",
+        "url": "https://www.youtube.com/playlist?list=PLYwpaL_SFmcArHtWmbs_vXX6soTK3WEJw",
+        "authors": ["5 Minutes Engineering"],
+        "category_id": 68,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 468,
+        "title": "Software Engineering",
+        "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2",
+        "authors": ["Gate Smashers"],
+        "category_id": 69,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 469,
+        "title": "Software Engineering",
+        "url": "https://www.youtube.com/playlist?list=PLmXKhU9FNesTrw7n8ouPsSLEcduRlENHr",
+        "authors": ["Knowledge Gate"],
+        "category_id": 69,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 470,
+        "title": "Software Engineering Lectures",
+        "url": "https://www.youtube.com/playlist?list=PLV8vIYTIdSnat3WCO9jfehtZyjnxb74wm",
+        "authors": ["Easy Engineering Classes"],
+        "category_id": 69,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 471,
+        "title": "Solidity ^0.8 | Blockchain | In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL-Jc9J83PIiG6_thChXWzolj9BEG-Y0gh",
+        "authors": ["Pepcoding"],
+        "category_id": 70,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 472,
+        "title": "Solidity Full Course",
+        "url": "https://www.youtube.com/playlist?list=PLgPmWS2dQHW9u6IXZq5t5GMQTpW7JL33i",
+        "authors": ["Code Eater"],
+        "category_id": 70,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 473,
+        "title": "Solidity full course for beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLR0uCBk15bq9a__TgfcZ7oA73MTEZ3NOK",
+        "authors": ["web3Mantra"],
+        "category_id": 70,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 474,
+        "title": "Swift Programming For Beginners In Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL3IxLTWfZ7Y1zM3EejYkcq4I86K3eloCb",
+        "authors": ["BuildWithShubham"],
+        "category_id": 71,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 475,
+        "title": "Swift Programming For IOS From Scratch",
+        "url": "https://www.youtube.com/playlist?list=PLtCBuHKmdxOd9kxsru5t_MFvDj5o5GdDl",
+        "authors": ["Fahad Hussain"],
+        "category_id": 71,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 476,
+        "title": "Swift Programming Hindi Tutorial For Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLb5R4QC2DtFv3MvfG42Cd5La34Hwj4pY6",
+        "authors": ["Code Cat"],
+        "category_id": 71,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 477,
+        "title": "Swift Tutorials For Beginners(Full) in Hindi.",
+        "url": "https://www.youtube.com/playlist?list=PLWZIhpNhtvfqBd00bF3ouroGHMPe-iroO",
+        "authors": ["Yogesh Patel"],
+        "category_id": 71,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 478,
+        "title": "System Analysis and Design",
+        "url": "https://www.youtube.com/playlist?list=PLWxTHN2c_6cbuRXdCpsYYMxy0N4SSfIX9",
+        "authors": ["TJ WEBDEV"],
+        "category_id": 72,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 479,
+        "title": "System Analysis and Design",
+        "url": "https://www.youtube.com/playlist?list=PLi81x6d2Os_8Sa8HifiFruWK6wmgG3Wrg",
+        "authors": ["Gursimran Singh Dhillon"],
+        "category_id": 72,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 480,
+        "title": "System Design Playlist in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLA3GkZPtsafZdyC5iucNM_uhqGJ5yFNUM",
+        "authors": ["Engineering Digest"],
+        "category_id": 72,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 481,
+        "title": "System Design Series By Coding Ninjas",
+        "url": "https://www.youtube.com/playlist?list=PLrk5tgtnMN6RvXrfflstJWgcPFQ_vTOV9",
+        "authors": ["Coding Ninjas"],
+        "category_id": 72,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 482,
+        "title": "Typescript in Hindi | Crash Course | Coders Gyan",
+        "url": "https://www.youtube.com/watch?v=F5pjG-sP0c8",
+        "authors": ["Coder's Gyan"],
+        "category_id": 73,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 483,
+        "title": "Typescript Tutorial for Beginners in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLwGdqUZWnOp0xfHQFmlL52b_6-QZ0mnk_",
+        "authors": ["Thapa Technical"],
+        "category_id": 73,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 484,
+        "title": "Typescript Tutorial in Hindi",
+        "url": "https://youtube.com/playlist?list=PL8p2I9GklV44eT51JPju4LsTQlce6DPtx",
+        "authors": ["Code Step By Step"],
+        "category_id": 73,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+
+      {
+        "id": 485,
+        "title": "Advanced Ecommerce Website - Elementor - Urdu & Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6Kd_lvAfBuZzR48t6mEWclYMN0C85aNE",
+        "authors": ["WP Academy"],
+        "category_id": 74,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 486,
+        "title": "WordPress Plugin Development Tutorials in Urdu-Hindi",
+        "url": "https://www.youtube.com/playlist?list=PL6Kd_lvAfBuYzxHmbOdoXjBuW6pFs_xja",
+        "authors": ["WP Academy"],
+        "category_id": 74,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 487,
+        "title": "WordPress Theme Development Complete Course Tutorial in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGc_A9H4NSLEHaD8kSz9Q38g",
+        "authors": ["WsCube Tech"],
+        "category_id": 74,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 488,
+        "title": "Wordpress Tutorial for Beginners | Wordpress Tutorials in Hindi - The Complete Guide For Beginners",
+        "url": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGfC44WZSTvlsZFzxnQsysJb",
+        "authors": ["WsCube Tech"],
+        "category_id": 74,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 489,
+        "title": "Wordpress tutorials in hindi",
+        "url": "https://www.youtube.com/playlist?list=PLlUrVpujUh3_PnBb1B-YOSP_oUqBL4gsh",
+        "authors": ["hindidevtuts"],
+        "category_id": 74,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 490,
+        "title": "WordPress Tutorials in Hindi",
+        "url": "https://www.youtube.com/playlist?list=PLjpp5kBQLNTTEggPfaWMAL_yv7FYiBClc",
+        "authors": ["Tech Gun"],
+        "category_id": 74,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      }
+    ]
+  }
+}
