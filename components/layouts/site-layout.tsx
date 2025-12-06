@@ -77,7 +77,7 @@ export default function SiteLayout({
       <Header />
 
       <div className="flex-1">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 flex gap-6">
+        <div className="w-full max-w-7xl mx-auto">
           {sidebar ? (
             <aside className="hidden lg:block w-64 flex-shrink-0">
               {sidebar}
