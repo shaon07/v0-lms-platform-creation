@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import type React from "react";
+import { Suspense } from "react";
 import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -46,7 +47,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SiteLayout>{children}</SiteLayout>
+          <Suspense fallback={<div className="min-h-screen" />}>
+            <SiteLayout>{children}</SiteLayout>
+          </Suspense>
         </ThemeProvider>
         <Analytics />
       </body>
