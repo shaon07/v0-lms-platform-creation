@@ -1,0 +1,1945 @@
+{
+  "database": "free-courses-en.youtube.full.json",
+  "tables": {
+    "categories": [
+      { "id": 1, "name": "MOOC", "parent_id": null },
+      { "id": 2, "name": "Algorithms & Data Structures", "parent_id": null },
+      { "id": 3, "name": "Soft Computing", "parent_id": 2 },
+      { "id": 4, "name": "Android", "parent_id": null },
+      { "id": 5, "name": "APL", "parent_id": null },
+      { "id": 6, "name": "Artificial Intelligence", "parent_id": null },
+      { "id": 7, "name": "Generative AI", "parent_id": 6 },
+      { "id": 8, "name": "Assembly", "parent_id": null },
+      { "id": 9, "name": "AutoIt", "parent_id": null },
+      { "id": 10, "name": "Ballerina", "parent_id": null },
+      { "id": 11, "name": "Bash / Shell", "parent_id": null },
+      { "id": 12, "name": "Blockchain", "parent_id": null },
+      { "id": 13, "name": "C", "parent_id": null },
+      { "id": 14, "name": "C#", "parent_id": null },
+      { "id": 15, "name": "C++", "parent_id": null },
+      { "id": 16, "name": "Clojure", "parent_id": null },
+      { "id": 17, "name": "Cloud Computing", "parent_id": null },
+      { "id": 18, "name": "AWS", "parent_id": 17 },
+      { "id": 19, "name": "Azure", "parent_id": 17 },
+      { "id": 20, "name": "GCP", "parent_id": 17 },
+      { "id": 21, "name": "IBM", "parent_id": 17 },
+      { "id": 22, "name": "Compilers", "parent_id": null },
+      {
+        "id": 23,
+        "name": "Computer Organization and Architecture",
+        "parent_id": null
+      },
+      { "id": 24, "name": "Computer Science", "parent_id": null },
+      { "id": 25, "name": "Cryptography", "parent_id": null },
+      { "id": 26, "name": "CUDA", "parent_id": null },
+      { "id": 27, "name": "Cypress", "parent_id": null },
+      { "id": 28, "name": "Dart", "parent_id": null },
+      { "id": 29, "name": "Data Science", "parent_id": null },
+      { "id": 30, "name": "Databases", "parent_id": null },
+      { "id": 31, "name": "NoSQL", "parent_id": 30 },
+      { "id": 32, "name": "SQL", "parent_id": 30 },
+      { "id": 33, "name": "Deep Learning", "parent_id": null },
+      { "id": 34, "name": "DevOps", "parent_id": null },
+      { "id": 35, "name": "Ansible", "parent_id": 34 },
+      { "id": 36, "name": "Chef", "parent_id": 34 },
+      { "id": 37, "name": "Jenkins", "parent_id": 34 },
+      { "id": 38, "name": "Digital Electronics", "parent_id": null },
+      { "id": 39, "name": "Docker", "parent_id": null },
+      { "id": 40, "name": "Elastic", "parent_id": null },
+      { "id": 41, "name": "Flutter", "parent_id": null },
+      { "id": 42, "name": "Fortran", "parent_id": null },
+      { "id": 43, "name": "Game Development", "parent_id": null },
+      { "id": 44, "name": "Git", "parent_id": null },
+      { "id": 45, "name": "Go", "parent_id": null },
+      { "id": 46, "name": "Graph Theory", "parent_id": null },
+      { "id": 47, "name": "Haskell", "parent_id": null },
+      { "id": 48, "name": "HTML and CSS", "parent_id": null },
+      { "id": 49, "name": "Bootstrap", "parent_id": 48 },
+      { "id": 50, "name": "IDE and editors", "parent_id": null },
+      { "id": 51, "name": "iOS", "parent_id": null },
+      { "id": 52, "name": "Java", "parent_id": null },
+      { "id": 53, "name": "JavaScript", "parent_id": null },
+      { "id": 54, "name": "Angular", "parent_id": 53 },
+      { "id": 55, "name": "AngularJS", "parent_id": 54 },
+      { "id": 56, "name": "Astro", "parent_id": 53 },
+      { "id": 57, "name": "D3.js", "parent_id": 53 },
+      { "id": 58, "name": "Deno", "parent_id": 53 },
+      { "id": 59, "name": "Electron", "parent_id": 53 },
+      { "id": 60, "name": "jQuery", "parent_id": 53 },
+      { "id": 61, "name": "Nest.js", "parent_id": 53 },
+      { "id": 62, "name": "Next.js", "parent_id": 53 },
+      { "id": 63, "name": "NodeJS", "parent_id": 53 },
+      { "id": 64, "name": "React", "parent_id": 53 },
+      { "id": 65, "name": "React Native", "parent_id": 53 },
+      { "id": 66, "name": "Redux", "parent_id": 53 },
+      { "id": 67, "name": "Remix", "parent_id": 53 },
+      { "id": 68, "name": "Svelte", "parent_id": 53 },
+      { "id": 69, "name": "Three.js", "parent_id": 53 },
+      { "id": 70, "name": "TypeScript", "parent_id": null },
+      { "id": 71, "name": "Vue.js", "parent_id": 53 },
+      { "id": 72, "name": "Webpack", "parent_id": 53 },
+      { "id": 73, "name": "Julia", "parent_id": null },
+      { "id": 74, "name": "Kotlin", "parent_id": null },
+      { "id": 75, "name": "Kubernetes", "parent_id": null },
+      { "id": 76, "name": "Linux", "parent_id": null },
+      { "id": 77, "name": "Lua", "parent_id": null },
+      { "id": 78, "name": "Machine Learning", "parent_id": null },
+      { "id": 79, "name": "Markdown", "parent_id": null },
+      { "id": 80, "name": "MATLAB", "parent_id": null },
+      { "id": 81, "name": "Simulink", "parent_id": 80 },
+      { "id": 82, "name": "Misc", "parent_id": null },
+      { "id": 83, "name": ".NET", "parent_id": null },
+      { "id": 84, "name": "Networking", "parent_id": null },
+      { "id": 85, "name": "Objective-C", "parent_id": null },
+      { "id": 86, "name": "OCaml", "parent_id": null },
+      { "id": 87, "name": "Operating Systems", "parent_id": null },
+      { "id": 88, "name": "Perl", "parent_id": null },
+      { "id": 89, "name": "Pharo", "parent_id": null },
+      { "id": 90, "name": "PHP", "parent_id": null },
+      {
+        "id": 91,
+        "name": "PLC - Programmable logic controllers",
+        "parent_id": null
+      },
+      { "id": 92, "name": "Processing", "parent_id": null },
+      { "id": 93, "name": "Python", "parent_id": null },
+      { "id": 94, "name": "Django", "parent_id": 93 },
+      { "id": 95, "name": "FastAPI", "parent_id": 93 },
+      { "id": 96, "name": "Flask", "parent_id": 93 },
+      { "id": 97, "name": "Jupyter", "parent_id": 93 },
+      { "id": 98, "name": "QB64", "parent_id": null },
+      { "id": 99, "name": "R", "parent_id": null },
+      { "id": 100, "name": "Redis", "parent_id": null },
+      { "id": 101, "name": "Robotics", "parent_id": null },
+      { "id": 102, "name": "Ruby", "parent_id": null },
+      { "id": 103, "name": "Rust", "parent_id": null },
+      { "id": 104, "name": "Spark", "parent_id": null },
+      { "id": 105, "name": "Scala", "parent_id": null },
+      { "id": 106, "name": "Security", "parent_id": null },
+      { "id": 107, "name": "Software Engineering", "parent_id": null },
+      { "id": 108, "name": "Solidity", "parent_id": null },
+      { "id": 109, "name": "Swift", "parent_id": null },
+      { "id": 110, "name": "Vapor", "parent_id": 109 },
+      { "id": 111, "name": "System Design", "parent_id": null },
+      { "id": 112, "name": "Terraform", "parent_id": null },
+      { "id": 113, "name": "Theory", "parent_id": null },
+      { "id": 114, "name": "UI/UX", "parent_id": null },
+      {
+        "id": 115,
+        "name": "Verilog / VHDL / SystemVerilog",
+        "parent_id": null
+      },
+      { "id": 116, "name": "Web Development", "parent_id": null },
+      { "id": 117, "name": "Web3", "parent_id": null },
+      { "id": 118, "name": "Windows Phone", "parent_id": null },
+      { "id": 119, "name": "WordPress", "parent_id": null },
+      { "id": 120, "name": "YAML", "parent_id": null }
+    ],
+    "courses": [
+      {
+        "id": 1,
+        "title": "Advanced Data Structures - Uzair Javed Akhtar",
+        "url": "https://www.youtube.com/playlist?list=PLv9sD0fPjvSHqIOLTIvHJWjkdH0IdzmXT",
+        "authors": ["Uzair Javed Akhtar"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 2,
+        "title": "Algorithms - Abdul Bari",
+        "url": "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O",
+        "authors": ["Abdul Bari"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 3,
+        "title": "Algorithms and Data Structures Tutorial - Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=8hly31xKli0",
+        "authors": ["Pasan Premaratne", "Jay McGavren", "freeCodeCamp.org"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 4,
+        "title": "C Programming & Data Structures - Neso Academy",
+        "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM",
+        "authors": ["Neso Academy"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 5,
+        "title": "Codechef Solutions - Endeavour Monk",
+        "url": "https://www.youtube.com/playlist?list=PLRKOqqzwh75huOam-77G1v9uHjO9WWBRX",
+        "authors": ["Endeavour Monk"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 6,
+        "title": "Computer Sc - Programming and Data Structure - P.P. Chakraborty",
+        "url": "https://www.youtube.com/playlist?list=PLD9781AC5EBC9FA16",
+        "authors": ["P.P. Chakraborty"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 7,
+        "title": "CS Tutorials - Michael Sambol",
+        "url": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZPKwb4XPB1sG7S6kNpN9JJo",
+        "authors": ["Michael Sambol"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 8,
+        "title": "Data Structure and Algorithm - Lalit Vashistha",
+        "url": "https://www.youtube.com/playlist?list=PLLvKknWU7N4y_eGpQdg1Y-hORO7cxtoLU",
+        "authors": ["Lalit Vashistha"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 9,
+        "title": "Data Structures - mycodeschool",
+        "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+        "authors": ["mycodeschool"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 10,
+        "title": "Data Structures - Neso Academy (alternate)",
+        "url": "https://youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y",
+        "authors": ["Neso Academy"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 11,
+        "title": "Data Structures - RobEdwards",
+        "url": "https://www.youtube.com/playlist?list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk",
+        "authors": ["RobEdwards"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 12,
+        "title": "Data Structures | Python - Amulya's Academy",
+        "url": "https://www.youtube.com/playlist?list=PLzgPDYo_3xukPJdH6hVQ6Iic7KiJuoA-l",
+        "authors": ["Amulya's Academy"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 13,
+        "title": "Data Structures and Algorithms - CS Dojo",
+        "url": "https://www.youtube.com/playlist?list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H",
+        "authors": ["CS Dojo"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 14,
+        "title": "Data Structures and Algorithms - Jenny's lectures CS/IT NET&JRF",
+        "url": "https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU",
+        "authors": ["Jenny's lectures CS/IT NET&JRF"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 15,
+        "title": "DSA In JAVA Full Course - Coding Ninjas",
+        "url": "https://www.youtube.com/playlist?list=PLrk5tgtnMN6StFV60jlQ9W-RXyHppbp8G",
+        "authors": ["Coding Ninjas"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 16,
+        "title": "Data Structures and Algorithms for Beginners - Mosh Hamedani",
+        "url": "https://www.youtube.com/watch?v=BBpAmxU_NQo",
+        "authors": ["Mosh Hamedani (Programming with Mosh)"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 17,
+        "title": "Data Structures and Algorithms Full Course - Simplilearn",
+        "url": "https://www.youtube.com/watch?v=LcKqYoX8uH4",
+        "authors": ["Simplilearn"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 18,
+        "title": "Data Structures and Algorithms in Java Full Course - Dinesh Varyani",
+        "url": "https://youtube.com/playlist?list=PL6Zs6LgrJj3tDXv8a_elC6eT_4R5gfX4d",
+        "authors": ["Dinesh Varyani"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 19,
+        "title": "Data Structures and Algorithms in Python Full Course - Aakash N S (freeCodeCamp)",
+        "url": "https://www.youtube.com/watch?v=pkYVOmU3MgA",
+        "authors": ["Aakash N S", "freeCodeCamp.org"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 20,
+        "title": "Data Structures Easy to Advanced Course - William Fiset",
+        "url": "https://www.youtube.com/watch?v=RBSGKlAvoiM",
+        "authors": ["WilliamFiset"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 21,
+        "title": "Dynamic Programming - Gaurav Sen",
+        "url": "https://www.youtube.com/playlist?list=PLMCXHnjXnTnto1pZVvH7rbZ9W5neZ7Yhc",
+        "authors": ["Gaurav Sen"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 22,
+        "title": "Dynamic Programming - WilliamFiset",
+        "url": "https://www.youtube.com/playlist?list=PLDV1Zeh2NRsAsbafOroUBnNV8fhZa7P4u",
+        "authors": ["WilliamFiset"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 23,
+        "title": "Dynamic Programming Playlist | take U forward",
+        "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY",
+        "authors": ["take U forward"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 24,
+        "title": "Graph Series by Striver",
+        "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn",
+        "authors": ["take U forward"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 25,
+        "title": "Graph Theory playlist - WilliamFiset",
+        "url": "https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P",
+        "authors": ["WilliamFiset"],
+        "category_id": 46,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 26,
+        "title": "Red Black Tree in Data Structures - NG Tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLPzfPcir5uPT8KFST1Ba3vN6k9yKE9ZK4",
+        "authors": ["NG Tutorials"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 27,
+        "title": "Sorting Algorithms - mycodeschool",
+        "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U",
+        "authors": ["mycodeschool"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 28,
+        "title": "Sorting Algorithms - Amulya's Academy",
+        "url": "https://www.youtube.com/playlist?list=PLzgPDYo_3xunyLTJlmoH8IAUvet4-Ka0y",
+        "authors": ["Amulya's Academy"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 29,
+        "title": "Strivers A2Z-DSA Course",
+        "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk",
+        "authors": ["take U forward"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 30,
+        "title": "Tree Algorithms - WilliamFiset",
+        "url": "https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDfGc8rbQ0_58oEZQVtvoIc",
+        "authors": ["WilliamFiset"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 31,
+        "title": "Trees by Striver",
+        "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk",
+        "authors": ["take U forward"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 32,
+        "title": "Introduction To Soft Computing - Computer Science and Engineering",
+        "url": "https://www.youtube.com/playlist?list=PLJ5C_6qdAvBFqAYS0P9INAogIMklG8E-9",
+        "authors": ["Computer Science and Engineering"],
+        "category_id": 2,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 33,
+        "title": "Introduction To Soft Computing - IITKGP",
+        "url": "https://www.youtube.com/playlist?list=PL5cGuSxneHHd7X4ZbHs8DPbRnoiYixpBA",
+        "authors": ["IITKGP"],
+        "category_id": 2,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 34,
+        "title": "Learn and Grow - Soft Computing playlist",
+        "url": "https://www.youtube.com/playlist?list=PL_kjqgSKrEaA8RDh56AeTOrcGj-nMDkSS",
+        "authors": ["Learn and Grow"],
+        "category_id": 2,
+        "subcategory_id": 3,
+        "video_type": "playlist"
+      },
+      {
+        "id": 35,
+        "title": "Android App Development for Beginners Playlist - thenewboston (Bucky Roberts)",
+        "url": "https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBsvRxJJOzG4r4k_zLKrnxl",
+        "authors": ["Bucky Roberts (thenewboston)"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 36,
+        "title": "Android App Development Tutorial for Beginners (2020) - tutorialsEU",
+        "url": "https://www.youtube.com/playlist?list=PLwhVruPHD9rz2MwQuYSenQ0WK1IGP5rYM",
+        "authors": ["tutorialsEU"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 37,
+        "title": "Android Development for Beginners - Full Course (freeCodeCamp)",
+        "url": "https://www.youtube.com/watch?v=fis26HvvDII",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 38,
+        "title": "Android Development Tutorials - GeeksforGeeks",
+        "url": "https://www.youtube.com/playlist?list=PLqM7alHXFySF_Hb1GtyvCX44dBniJ5sNy",
+        "authors": ["GeeksforGeeks"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 39,
+        "title": "Android Tutorial for Beginners - Telusko",
+        "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7p-lZvWabkVJdM_UVURhUh4",
+        "authors": ["Telusko"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 40,
+        "title": "CS50 2019 - Android Track - David J. Malan",
+        "url": "https://www.youtube.com/playlist?list=PLhQjrBD2T381qULidYDKP55-4u1piASC1",
+        "authors": ["David J. Malan (Harvard)"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 41,
+        "title": "Jetpack Compose - Philipp Lackner",
+        "url": "https://www.youtube.com/playlist?list=PLQkwcJG4YTCSpJ2NLhDTHhi6XBNfk9WiC",
+        "authors": ["Philipp Lackner"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 42,
+        "title": "Android Development for Beginners - Full Course (another link) - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=fis26HvvDII",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 4,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 43,
+        "title": "APL tutorials - Jimin Park",
+        "url": "https://www.youtube.com/playlist?list=PL1955671BD6E21548",
+        "authors": ["Jimin Park"],
+        "category_id": 5,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 44,
+        "title": "Aml-2018 Ambient Intelligence - Politecnico di Torino",
+        "url": "https://www.youtube.com/playlist?list=PLqRTLlwsxDL8fUcY2Y54sITILyJcTySpC",
+        "authors": [
+          "Fulvio Corno",
+          "Luigi De Russis",
+          "Alberto Monge Roffarello"
+        ],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 45,
+        "title": "Artificial Intelligence on Google Cloud Platform - AIEngineering",
+        "url": "https://www.youtube.com/playlist?list=PL3N9eeOlCrP6Nhv4UFp67IsQ_TVDpXqXK",
+        "authors": ["Srivatsan Srinivasan @ AIEngineering"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 46,
+        "title": "Stanford CS221: Artificial Intelligence: Principles and Techniques",
+        "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX",
+        "authors": ["Stanford Online"],
+        "category_id": 6,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 47,
+        "title": "AI Agents for Beginners - Microsoft Developer (Generative AI)",
+        "url": "https://www.youtube.com/playlist?list=PLlrxD0HtieHgKcRjd5-8DT9TbwdlDO-OC",
+        "authors": ["Microsoft Developer"],
+        "category_id": 7,
+        "subcategory_id": 7,
+        "video_type": "playlist"
+      },
+      {
+        "id": 48,
+        "title": "CS236: Deep Generative Models - Stanford Online",
+        "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8",
+        "authors": ["Stefano Ermon (Stanford Online)"],
+        "category_id": 7,
+        "subcategory_id": 7,
+        "video_type": "playlist"
+      },
+      {
+        "id": 49,
+        "title": "Assembly Language complete course - Exceptional Programmers",
+        "url": "https://www.youtube.com/playlist?list=PLMa5a9Dh6SlhJq4wCH_CLSdfRaAbuJTzb",
+        "authors": ["Exceptional Programmers"],
+        "category_id": 8,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 50,
+        "title": "AutoIt Scripting Tutorial - TutsTeach",
+        "url": "https://www.youtube.com/playlist?list=PL4Jcq5zn02jKpjX0nqI1_fS7mEEb5tw6z",
+        "authors": ["TutsTeach"],
+        "category_id": 9,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 51,
+        "title": "Ballerina Introductory Integration - Shafreen Anfer",
+        "url": "https://www.youtube.com/playlist?list=PL7JOecNWBb0KTB3vBz9Dkpc676HzhEDkN",
+        "authors": ["Shafreen Anfer"],
+        "category_id": 10,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 52,
+        "title": "Bash Scripting Full Course 3 Hours - Linuxhint",
+        "url": "https://www.youtube.com/watch?v=e7BufAVwDiM",
+        "authors": ["Linuxhint"],
+        "category_id": 11,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 53,
+        "title": "Blockchain Developer Tutorials - Dapp University",
+        "url": "https://www.youtube.com/playlist?list=PLS5SEs8ZftgUTXs0OJD2LFpYBPr4L54id",
+        "authors": ["Gregory McCubbin (Dapp University)"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 54,
+        "title": "Build 5 Dapps on the Ethereum Blockchain - freeCodeCamp (Patrick Collins)",
+        "url": "https://www.youtube.com/watch?v=8wMKq7HvbKw",
+        "authors": ["Patrick Collins", "freeCodeCamp.org"],
+        "category_id": 12,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 55,
+        "title": "C Language Tutorial for Beginners - ProgrammingWithHarry",
+        "url": "https://www.youtube.com/watch?v=_MF8L7ZxwRE",
+        "authors": ["ProgrammingWithHarry"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 56,
+        "title": "C Programming & Data Structures - Neso Academy",
+        "url": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM",
+        "authors": ["Neso Academy"],
+        "category_id": 13,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 57,
+        "title": "ASP.NET Core 2.2 & 3 REST API Tutorial - Nick Chapsas",
+        "url": "https://youtube.com/playlist?list=PLUOequmGnXxOgmSDWU7Tl6iQTsOtyjtwU",
+        "authors": ["Nick Chapsas"],
+        "category_id": 14,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 58,
+        "title": "C++ - The Cherno",
+        "url": "https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb",
+        "authors": ["The Cherno"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 59,
+        "title": "C++ Full Course for free - Bro Code",
+        "url": "https://www.youtube.com/watch?v=-TkoO8Z07hI",
+        "authors": ["Bro Code"],
+        "category_id": 15,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 60,
+        "title": "Graph Theory - Soumen Maity",
+        "url": "https://www.youtube.com/playlist?list=PLZ6w_oR8t_Pw4P3t5be9WMhj1ISH7yFWI",
+        "authors": ["Soumen Maity"],
+        "category_id": 46,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 61,
+        "title": "Go / Golang Crash Course - Traversy Media",
+        "url": "https://www.youtube.com/watch?v=SqrbIlUwR0U",
+        "authors": ["Traversy Media"],
+        "category_id": 45,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 62,
+        "title": "Docker Crash Course Tutorial - Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7",
+        "authors": ["Net Ninja"],
+        "category_id": 39,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 63,
+        "title": "Docker Tutorial for Beginners - Programming with Mosh!",
+        "url": "https://www.youtube.com/watch?v=pTFZFxd4hOI",
+        "authors": ["Programming with Mosh!"],
+        "category_id": 39,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 64,
+        "title": "Kubernetes Tutorial for Beginners - TechWorld with Nana",
+        "url": "https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC",
+        "authors": ["TechWorld with Nana"],
+        "category_id": 75,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 65,
+        "title": "Flutter Course for Beginners - freeCodeCamp.org",
+        "url": "https://www.youtube.com/watch?v=VPvVD8t02U8",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 41,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 66,
+        "title": "Flutter & Firebase App Build - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC",
+        "authors": ["The Net Ninja"],
+        "category_id": 41,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 67,
+        "title": "Free Flutter Animations Course - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gP1qg8yj-Jokef29VRCLt1",
+        "authors": ["The Net Ninja"],
+        "category_id": 41,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 68,
+        "title": "Unity Beginner Tutorials - Brackeys",
+        "url": "https://www.youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6",
+        "authors": ["Brackeys"],
+        "category_id": 43,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 69,
+        "title": "Godot 3 Tutorial Series - BornCG",
+        "url": "https://www.youtube.com/playlist?list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ",
+        "authors": ["BornCG"],
+        "category_id": 43,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 70,
+        "title": "Complete React course for beginner - Hitesh Choudhary",
+        "url": "https://www.youtube.com/playlist?list=PLRAV69dS1uWQos1M1xP6LWN6C-lZvpkmq",
+        "authors": ["Hitesh Choudhary"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "playlist"
+      },
+      {
+        "id": 71,
+        "title": "React Crash Course 2020 - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=4UZrsTqkcW4",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 72,
+        "title": "React Hooks - WebDevSimplified",
+        "url": "https://www.youtube.com/playlist?list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h",
+        "authors": ["WebDevSimplified"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "playlist"
+      },
+      {
+        "id": 73,
+        "title": "React Native for Beginners - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ",
+        "authors": ["The Net Ninja"],
+        "category_id": 65,
+        "subcategory_id": 65,
+        "video_type": "playlist"
+      },
+      {
+        "id": 74,
+        "title": "Node.js Crash Course - Traversy Media",
+        "url": "https://www.youtube.com/watch?v=SqrbIlUwR0U",
+        "authors": ["Traversy Media"],
+        "category_id": 63,
+        "subcategory_id": 63,
+        "video_type": "video"
+      },
+      {
+        "id": 75,
+        "title": "Express JS Crash Course - Brad Traversy",
+        "url": "https://www.youtube.com/watch?v=L72fhGm1tfE",
+        "authors": ["Brad Traversy"],
+        "category_id": 63,
+        "subcategory_id": 63,
+        "video_type": "video"
+      },
+      {
+        "id": 76,
+        "title": "Full Stack Web Development Tutorial Course - WB Web Development Solutions",
+        "url": "https://www.youtube.com/playlist?list=PLwoh6bBAszPrES-EOajos_E9gvRbL27wz",
+        "authors": ["WB Web Development Solutions"],
+        "category_id": 116,
+        "subcategory_id": 116,
+        "video_type": "playlist"
+      },
+      {
+        "id": 77,
+        "title": "Frontend UI Development with React - Fireship",
+        "url": "https://www.youtube.com/playlist?list=PL0vfts4VzfNgUUEtEjxDVfh4iocVR3qIb",
+        "authors": ["Fireship"],
+        "category_id": 116,
+        "subcategory_id": 64,
+        "video_type": "playlist"
+      },
+      {
+        "id": 78,
+        "title": "HTML & CSS - Brad Traversy",
+        "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU",
+        "authors": ["Brad Traversy", "Traversy Media"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 79,
+        "title": "HTML & CSS Crash Course - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G",
+        "authors": ["The Net Ninja"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 80,
+        "title": "Gentle Introduction to Bootstrap 5 for Beginners - Deborah Kurata",
+        "url": "https://www.youtube.com/playlist?list=PLErOmyzRKOCr47pRGOswKcgzGyetNRdHZ",
+        "authors": ["Deborah Kurata"],
+        "category_id": 49,
+        "subcategory_id": 49,
+        "video_type": "playlist"
+      },
+      {
+        "id": 81,
+        "title": "Bootstrap Tutorial for Beginners - EJ Media",
+        "url": "https://www.youtube.com/playlist?list=PLr6-GrHUlVf-gjvHuzCnVmeuaeAjRGltv",
+        "authors": ["EJ Media"],
+        "category_id": 49,
+        "subcategory_id": 49,
+        "video_type": "playlist"
+      },
+      {
+        "id": 82,
+        "title": "Tailwind CSS Full Course for Beginners - Dave Gray",
+        "url": "https://www.youtube.com/watch?v=lCxcTsOHrjo",
+        "authors": ["Dave Gray"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 83,
+        "title": "TailwindCSS Tutorial - Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw",
+        "authors": ["The Net Ninja"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 84,
+        "title": "Sass Tutorial - Build Your Own CSS Library - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb",
+        "authors": ["The Net Ninja"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 85,
+        "title": "Python Learn - freeCodeCamp full courses (examples in Python section)",
+        "url": "https://www.youtube.com/watch?v=PXMJ6FS7llk",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 93,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 86,
+        "title": "Complete Python Playlist - Krish Naik",
+        "url": "https://www.youtube.com/playlist?list=PLZoTAELRMXVNUL99R4bDlVYsncUNvwUBB",
+        "authors": ["Krish Naik"],
+        "category_id": 93,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 87,
+        "title": "CS50's Introduction to Computer Science - CS50",
+        "url": "https://cs50.harvard.edu/x/",
+        "authors": ["David J. Malan"],
+        "category_id": 24,
+        "subcategory_id": null,
+        "video_type": "external"
+      },
+      {
+        "id": 88,
+        "title": "Machine Learning Course for Beginners - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=NWONeJKn6kc",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 78,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 89,
+        "title": "Deep Learning with PyTorch - Aakash N. S., freeCodeCamp.org",
+        "url": "https://www.youtube.com/playlist?list=PLWKjhJtqVAbm3T2Eq1_KgloC7ogdXxdRa",
+        "authors": ["Aakash N. S.", "freeCodeCamp.org"],
+        "category_id": 33,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 90,
+        "title": "Stanford CS 224N: Natural Language Processing with Deep Learning",
+        "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ",
+        "authors": ["Stanford Online"],
+        "category_id": 33,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 91,
+        "title": "Hugging Face NLP Course",
+        "url": "https://huggingface.co/learn/nlp-course/chapter1/1",
+        "authors": ["Hugging Face"],
+        "category_id": 33,
+        "subcategory_id": null,
+        "video_type": "external"
+      },
+      {
+        "id": 92,
+        "title": "Redis Crash Course - CodeWithTim",
+        "url": "https://www.youtube.com/playlist?list=PLoAsubXIl8uKqhvGFeH8g_gzHPwyFoVJQ",
+        "authors": ["CodeWithTim"],
+        "category_id": 100,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 93,
+        "title": "Terraform Tutorial for Beginners - KodeKloud",
+        "url": "https://www.youtube.com/watch?v=YcJ9IeukJL8",
+        "authors": ["KodeKloud"],
+        "category_id": 112,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 94,
+        "title": "Complete Docker Course - DevOps Directive",
+        "url": "https://www.youtube.com/watch?v=RqTEHSBrYFw",
+        "authors": ["DevOps Directive"],
+        "category_id": 39,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 95,
+        "title": "Modern JavaScript From The Beginning - Traversy Media",
+        "url": "https://www.youtube.com/watch?v=BI1o2H9z9fo",
+        "authors": ["Traversy Media"],
+        "category_id": 53,
+        "subcategory_id": 53,
+        "video_type": "video"
+      },
+      {
+        "id": 96,
+        "title": "ES6 and Typescript Tutorial - Codevolution",
+        "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV",
+        "authors": ["Codevolution"],
+        "category_id": 70,
+        "subcategory_id": 70,
+        "video_type": "playlist"
+      },
+      {
+        "id": 97,
+        "title": "TypeScript for Beginners - Academind",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
+        "authors": ["Academind"],
+        "category_id": 70,
+        "subcategory_id": 70,
+        "video_type": "video"
+      },
+      {
+        "id": 98,
+        "title": "Next.js Tutorial for Beginners - Codevolution",
+        "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH",
+        "authors": ["Codevolution"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "playlist"
+      },
+      {
+        "id": 99,
+        "title": "Master Next JS by Building Real Projects - JavaScript Mastery",
+        "url": "https://www.youtube.com/playlist?list=PL6QREj8te1P7gixBDSU8JLvQndTEEX3c3",
+        "authors": ["JavaScript Mastery"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "playlist"
+      },
+      {
+        "id": 100,
+        "title": "The Odin Project - companion playlists (mirrors)",
+        "url": "https://www.youtube.com/playlist?list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9",
+        "authors": ["The Odin Project community mirrors"],
+        "category_id": 116,
+        "subcategory_id": 116,
+        "video_type": "playlist"
+      },
+      {
+        "id": 101,
+        "title": "Web Accessibility – W3C (video)",
+        "url": "https://www.youtube.com/watch?v=some_example_w3c_accessibility",
+        "authors": ["W3C Web Accessibility Initiative"],
+        "category_id": 116,
+        "subcategory_id": 116,
+        "video_type": "video"
+      },
+      {
+        "id": 102,
+        "title": "React Crash Course - freecodecamp (alternate)",
+        "url": "https://www.youtube.com/watch?v=4UZrsTqkcW4",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 103,
+        "title": "Python Web Framework - FastAPI Full Course - Bitfumes",
+        "url": "https://www.youtube.com/watch?v=7t2alSnE2-I",
+        "authors": ["Bitfumes"],
+        "category_id": 95,
+        "subcategory_id": 95,
+        "video_type": "video"
+      },
+      {
+        "id": 104,
+        "title": "React Tutorial Full Course - SuperSimpleDev (2025)",
+        "url": "https://www.youtube.com/watch?v=TtPXvEcE11E",
+        "authors": ["SuperSimpleDev"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 105,
+        "title": "Complete WooCommerce Course - freeCodeCamp (example)",
+        "url": "https://www.youtube.com/watch?v=some_example_woocommerce",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 119,
+        "subcategory_id": 119,
+        "video_type": "video"
+      },
+      {
+        "id": 106,
+        "title": "Bootstrap 5 and SASS by Building a Portfolio Website - freeCodeCamp (Patrick Muriungi)",
+        "url": "https://www.youtube.com/watch?v=iJKCj8uAHz8",
+        "authors": ["Patrick Muriungi", "freeCodeCamp.org"],
+        "category_id": 49,
+        "subcategory_id": 49,
+        "video_type": "video"
+      },
+      {
+        "id": 107,
+        "title": "TailwindCSS Tutorial - Code With Dary",
+        "url": "https://www.youtube.com/playlist?list=PLFHz2csJcgk8lgiRDB7FdsXVr4xy6jE8K",
+        "authors": ["Code With Dary"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 108,
+        "title": "Vanilla JavaScript - Brad Traversy (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX",
+        "authors": ["Brad Traversy"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 109,
+        "title": "Modern JavaScript From The Beginning - Traversy Media (full course)",
+        "url": "https://www.youtube.com/watch?v=BI1o2H9z9fo",
+        "authors": ["Traversy Media"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 110,
+        "title": "Node.js Full Course for Beginners - Dave Gray",
+        "url": "https://www.youtube.com/watch?v=f2EqECiTBL8",
+        "authors": ["Dave Gray"],
+        "category_id": 63,
+        "subcategory_id": 63,
+        "video_type": "video"
+      },
+      {
+        "id": 111,
+        "title": "30 Days, 30 JavaScript Projects For Beginners to Practice",
+        "url": "https://www.youtube.com/playlist?list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9&si=fofo8k2c5sjQPOKq",
+        "authors": ["GreatStack"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 112,
+        "title": "Beginner's Series to: JavaScript - Microsoft Developer",
+        "url": "https://www.youtube.com/playlist?list=PLlrxD0HtieHhW0NCG7M536uHGOtJ95Ut2",
+        "authors": ["Microsoft Developer"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 113,
+        "title": "ES6 and Typescript Tutorial - Codevolution (duplicate playlist link entry for JS section)",
+        "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV",
+        "authors": ["Codevolution"],
+        "category_id": 53,
+        "subcategory_id": 70,
+        "video_type": "playlist"
+      },
+      {
+        "id": 114,
+        "title": "JavaScript Tutorial - Learn JavaScript - Full Course for Beginners - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+        "authors": ["Beau Carnes", "freeCodeCamp.org"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 115,
+        "title": "Javascript course - Hitesh Choudhary (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD",
+        "authors": ["Hitesh Choudhary"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 116,
+        "title": "Vanilla JavaScript - Brad Traversy (alternate playlist entry)",
+        "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX",
+        "authors": ["Brad Traversy"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 117,
+        "title": "Angular 12 / 13 tutorial - Code Step By Step",
+        "url": "https://www.youtube.com/playlist?list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v",
+        "authors": ["Code Step By Step"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 118,
+        "title": "Angular Tutorial For Beginners - Codevolution",
+        "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZc",
+        "authors": ["Codevolution"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 119,
+        "title": "Angular Crash Course 2021 - Brad Traversy",
+        "url": "https://www.youtube.com/watch?v=3dHNOWTI7H8",
+        "authors": ["Brad Traversy"],
+        "category_id": 54,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 120,
+        "title": "AngularJS Tutorials - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v",
+        "authors": ["The Net Ninja"],
+        "category_id": 55,
+        "subcategory_id": 55,
+        "video_type": "playlist"
+      },
+      {
+        "id": 121,
+        "title": "Astro Crash Course - Traversy Media",
+        "url": "https://www.youtube.com/watch?v=Oi9z5gfIHJs",
+        "authors": ["Traversy Media"],
+        "category_id": 56,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 122,
+        "title": "D3 101 - Curran Kelleher",
+        "url": "https://www.youtube.com/playlist?list=PL9yYRbwpkykvjkfuRslECO9c1qTq3GgUb",
+        "authors": ["Curran Kelleher"],
+        "category_id": 57,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 123,
+        "title": "Deno Course - The Codeholic",
+        "url": "https://www.youtube.com/watch?v=TQUy8ENesGY",
+        "authors": ["The Codeholic"],
+        "category_id": 58,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 124,
+        "title": "Electron Complete Course - coderJeet",
+        "url": "https://www.youtube.com/playlist?list=PLmx8ERLT7ojO2PAH_sDnnoKXcqswxJ6CL",
+        "authors": ["coderJeet"],
+        "category_id": 59,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 125,
+        "title": "jQuery Crash Course - Brad Traversy",
+        "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbYJVXBgZ_nA7FTAAEpp_IAc",
+        "authors": ["Brad Traversy"],
+        "category_id": 60,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 126,
+        "title": "Nest.js Crash Course - Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9g8YFseGdkyj9RH9kVs_cMr",
+        "authors": ["Net Ninja"],
+        "category_id": 61,
+        "subcategory_id": 61,
+        "video_type": "playlist"
+      },
+      {
+        "id": 127,
+        "title": "Next.js for Beginners - Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9g9gP2onazU5-2M-AzA8eBw",
+        "authors": ["Net Ninja"],
+        "category_id": 62,
+        "subcategory_id": 62,
+        "video_type": "playlist"
+      },
+      {
+        "id": 128,
+        "title": "Node.js Tutorial for Beginners - Telusko",
+        "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7occsESx2X1E2R2Uw5wCoeG",
+        "authors": ["Telusko"],
+        "category_id": 63,
+        "subcategory_id": 63,
+        "video_type": "playlist"
+      },
+      {
+        "id": 129,
+        "title": "ReactJS Tutorial for Beginners - Codevolution",
+        "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3",
+        "authors": ["Codevolution"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "playlist"
+      },
+      {
+        "id": 130,
+        "title": "ReactJS - freeCodeCamp playlist (additional)",
+        "url": "https://www.youtube.com/playlist?list=PLWKjhJtqVAbkArDMazoARtNz1aMwNWmvC",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "playlist"
+      },
+      {
+        "id": 131,
+        "title": "ReactJS Full Course for Beginners | Complete All-in-One Tutorial | 9 Hours - Dave Gray",
+        "url": "https://www.youtube.com/watch?v=RVFAyFWO4go",
+        "authors": ["Dave Gray"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 132,
+        "title": "React Tutorial Full Course - Beginner to Pro (React 19, 2025) - SuperSimpleDev",
+        "url": "https://www.youtube.com/watch?v=TtPXvEcE11E",
+        "authors": ["SuperSimpleDev"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 133,
+        "title": "ReactJS - Mosh Hamedani (Ke90Tje7VS0)",
+        "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+        "authors": ["Mosh Hamedani (Programming with Mosh)"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 134,
+        "title": "React State Management using Context API - The Full Stack Junkie",
+        "url": "https://www.youtube.com/watch?v=zxP4oGejqpU",
+        "authors": ["The Full Stack Junkie"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 135,
+        "title": "React Router 6 – Tutorial for Beginners - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=59IXY5IDrBA",
+        "authors": ["John Smilga (freeCodeCamp)"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 136,
+        "title": "ReactJS Full Course - Dave Gray (duplicate/alt id listing)",
+        "url": "https://www.youtube.com/watch?v=f2EqECiTBL8",
+        "authors": ["Dave Gray"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "video"
+      },
+      {
+        "id": 137,
+        "title": "Redux Toolkit Tutorial - Codevolution",
+        "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3",
+        "authors": ["Codevolution"],
+        "category_id": 66,
+        "subcategory_id": 66,
+        "video_type": "playlist"
+      },
+      {
+        "id": 138,
+        "title": "Svelte Tutorial for Beginners - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO",
+        "authors": ["The Net Ninja"],
+        "category_id": 68,
+        "subcategory_id": 68,
+        "video_type": "playlist"
+      },
+      {
+        "id": 139,
+        "title": "Three.js Tutorials - Wael Yasmina",
+        "url": "https://www.youtube.com/playlist?list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho",
+        "authors": ["Wael Yasmina"],
+        "category_id": 69,
+        "subcategory_id": 69,
+        "video_type": "playlist"
+      },
+      {
+        "id": 140,
+        "title": "TypeScript Course for Beginners - Academind (duplicate video entry)",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
+        "authors": ["Academind"],
+        "category_id": 70,
+        "subcategory_id": 70,
+        "video_type": "video"
+      },
+      {
+        "id": 141,
+        "title": "Vue.js Tutorial - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1",
+        "authors": ["The Net Ninja"],
+        "category_id": 71,
+        "subcategory_id": 71,
+        "video_type": "playlist"
+      },
+      {
+        "id": 142,
+        "title": "Learn Webpack - Full Tutorial for Beginners - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=MpGLUVbqoYQ",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 72,
+        "subcategory_id": 72,
+        "video_type": "video"
+      },
+      {
+        "id": 143,
+        "title": "Kotlin Course - Tutorial for Beginners - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=F9UC9DY-vIU",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 74,
+        "subcategory_id": 74,
+        "video_type": "video"
+      },
+      {
+        "id": 144,
+        "title": "Kubernetes Full Course in 7 Hours - Edureka",
+        "url": "https://www.youtube.com/watch?v=0j-iIW3_sbg",
+        "authors": ["Edureka"],
+        "category_id": 75,
+        "subcategory_id": 75,
+        "video_type": "video"
+      },
+      {
+        "id": 145,
+        "title": "Introduction To Linux – Full Course for Beginners - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=sWbUDq4S6Y8",
+        "authors": ["Beau (freeCodeCamp.org)"],
+        "category_id": 76,
+        "subcategory_id": 76,
+        "video_type": "video"
+      },
+      {
+        "id": 146,
+        "title": "Learn Lua in 15 Minutes - (text+video) Derek Banas",
+        "url": "https://www.youtube.com/playlist?list=PLxgtJR7f0RBKGid7F2dfv7qc-xWwSee2O",
+        "authors": ["Burtons Media Group"],
+        "category_id": 77,
+        "subcategory_id": 77,
+        "video_type": "playlist"
+      },
+      {
+        "id": 147,
+        "title": "Machine Learning Course for Beginners - freeCodeCamp (duplicate alt)",
+        "url": "https://www.youtube.com/watch?v=NWONeJKn6kc",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 78,
+        "subcategory_id": 78,
+        "video_type": "video"
+      },
+      {
+        "id": 148,
+        "title": "Deep Reinforcement Learning - David Silver (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB",
+        "authors": ["David Silver"],
+        "category_id": 33,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 149,
+        "title": "Intro to Deep Learning (Kaggle) - Ryan Holbrook (video)",
+        "url": "https://www.youtube.com/watch?v=some_example_intro_deep_learning",
+        "authors": ["Kaggle"],
+        "category_id": 33,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 150,
+        "title": "Git & GitHub Crash Course - Kunal Kushwaha (video)",
+        "url": "https://www.youtube.com/watch?v=apGV9Kg7ics",
+        "authors": ["Kunal Kushwaha"],
+        "category_id": 44,
+        "subcategory_id": 44,
+        "video_type": "video"
+      },
+      {
+        "id": 151,
+        "title": "Git & GitHub - freeCodeCamp playlist",
+        "url": "https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 44,
+        "subcategory_id": 44,
+        "video_type": "playlist"
+      },
+      {
+        "id": 152,
+        "title": "Golang Tutorial for Beginners - freeCodeCamp - Michael Van Sickle",
+        "url": "https://www.youtube.com/watch?v=YS4e4q9oBaU",
+        "authors": ["Michael Van Sickle (freeCodeCamp)"],
+        "category_id": 45,
+        "subcategory_id": 45,
+        "video_type": "video"
+      },
+      {
+        "id": 153,
+        "title": "Godot 3 2D Platform Game - HeartBeast playlist (game dev)",
+        "url": "https://www.youtube.com/playlist?list=PL9FzW-m48fn2jlBu_0DRh7PvAt-GULEmd",
+        "authors": ["HeartBeast"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 154,
+        "title": "Unity Beginner Fundamentals - Unity Learn (external/playlist mirror)",
+        "url": "https://www.youtube.com/playlist?list=PLl-VQG9zLgx8t6q4q_1rZ3Q4jQ7H1Hk2_",
+        "authors": ["Unity"],
+        "category_id": 43,
+        "subcategory_id": 43,
+        "video_type": "playlist"
+      },
+      {
+        "id": 155,
+        "title": "TailwindCSS Tutorial - Net Ninja (duplicate playlist entry)",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw",
+        "authors": ["The Net Ninja"],
+        "category_id": 48,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 156,
+        "title": "Python Tutorial - _uQrJ0TkZlc (Mosh?)",
+        "url": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+        "authors": ["Moshfegh Hamedani (Programming with Mosh)"],
+        "category_id": 93,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 157,
+        "title": "Python Tutorial For Beginners (With Notes) - ProgrammingWithHarry",
+        "url": "https://www.youtube.com/watch?v=EyEqWFvLDT8",
+        "authors": ["ProgrammingWithHarry"],
+        "category_id": 93,
+        "subcategory_id": null,
+        "video_type": "video"
+      },
+      {
+        "id": 158,
+        "title": "Django Tutorial for Beginners - Navin Reddy (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7r2ukVgTqIQcl-1T0C2mzau",
+        "authors": ["Navin Reddy"],
+        "category_id": 94,
+        "subcategory_id": 94,
+        "video_type": "playlist"
+      },
+      {
+        "id": 159,
+        "title": "Flask Tutorials - Corey Schafer (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH",
+        "authors": ["Corey Schafer"],
+        "category_id": 96,
+        "subcategory_id": 96,
+        "video_type": "playlist"
+      },
+      {
+        "id": 160,
+        "title": "Jupyter Tutorials - Emyrrich (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PL1m-6MPBNAZfF-El7BzqaOrCrTBRgH1Nk",
+        "authors": ["Emyrrich"],
+        "category_id": 97,
+        "subcategory_id": 97,
+        "video_type": "playlist"
+      },
+      {
+        "id": 161,
+        "title": "PySpark - Zero to Hero | Apache Spark Full Course - freeCodeCamp",
+        "url": "https://www.youtube.com/watch?v=_C8kWso4ne4",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 104,
+        "subcategory_id": 104,
+        "video_type": "video"
+      },
+      {
+        "id": 162,
+        "title": "Rust Crash Course - Traversy Media",
+        "url": "https://www.youtube.com/watch?v=zF34dRivLOw",
+        "authors": ["Traversy Media"],
+        "category_id": 103,
+        "subcategory_id": 103,
+        "video_type": "video"
+      },
+      {
+        "id": 163,
+        "title": "Complete Rust Marathon - Harkirat Singh",
+        "url": "https://www.youtube.com/watch?v=joCFbTJt0o0",
+        "authors": ["Harkirat Singh"],
+        "category_id": 103,
+        "subcategory_id": 103,
+        "video_type": "video"
+      },
+      {
+        "id": 164,
+        "title": "Security: IppSec OSCP Prep - playlist",
+        "url": "https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf",
+        "authors": ["IppSec"],
+        "category_id": 106,
+        "subcategory_id": 106,
+        "video_type": "playlist"
+      },
+      {
+        "id": 165,
+        "title": "Reverse Engineering / Binary Exploitation - LiveOverflow playlist",
+        "url": "https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN",
+        "authors": ["LiveOverflow"],
+        "category_id": 106,
+        "subcategory_id": 106,
+        "video_type": "playlist"
+      },
+      {
+        "id": 166,
+        "title": "Selenium Full Course- Learn Selenium in 12 Hours - Edureka",
+        "url": "https://www.youtube.com/watch?v=FRn5J31eAMw",
+        "authors": ["Edureka"],
+        "category_id": 107,
+        "subcategory_id": 107,
+        "video_type": "video"
+      },
+      {
+        "id": 167,
+        "title": "Solidity Tutorial - Gregory McCubbin @ freeCodeCamp (ipwxYa-F1uY)",
+        "url": "https://www.youtube.com/watch?v=ipwxYa-F1uY",
+        "authors": ["Gregory McCubbin (freeCodeCamp/Dapp University)"],
+        "category_id": 108,
+        "subcategory_id": 108,
+        "video_type": "video"
+      },
+      {
+        "id": 168,
+        "title": "100 days of Swift - Hacking With Swift (video series intro)",
+        "url": "https://www.youtube.com/watch?v=KCgYDCKqato",
+        "authors": ["Hacking With Swift / freeCodeCamp mirror"],
+        "category_id": 109,
+        "subcategory_id": 109,
+        "video_type": "video"
+      },
+      {
+        "id": 169,
+        "title": "System Design - Gaurav Sen playlist",
+        "url": "https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "authors": ["Gaurav Sen"],
+        "category_id": 111,
+        "subcategory_id": 111,
+        "video_type": "playlist"
+      },
+      {
+        "id": 170,
+        "title": "Terraform - Complete Course - DevOps Directive",
+        "url": "https://www.youtube.com/watch?v=7xngnjfIlK4",
+        "authors": ["DevOps Directive"],
+        "category_id": 112,
+        "subcategory_id": 112,
+        "video_type": "video"
+      },
+      {
+        "id": 171,
+        "title": "Theory of Computation playlist - Subrahmanyam Kalyanasundaram",
+        "url": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9-v4V62bCygAVYGluaijyo",
+        "authors": ["Subrahmanyam Kalyanasundaram"],
+        "category_id": 113,
+        "subcategory_id": 113,
+        "video_type": "playlist"
+      },
+      {
+        "id": 172,
+        "title": "UI/UX Design Tutorial - freeCodeCamp (video)",
+        "url": "https://www.youtube.com/watch?v=c9Wg6Cb_YlU",
+        "authors": ["freeCodeCamp.org"],
+        "category_id": 114,
+        "subcategory_id": 114,
+        "video_type": "video"
+      },
+      {
+        "id": 173,
+        "title": "nand2tetris - lecture series mirror (YouTube)",
+        "url": "https://www.youtube.com/playlist?list=PL2F07DBCDCC01493A",
+        "authors": ["nand2tetris / course mirrors"],
+        "category_id": 115,
+        "subcategory_id": 115,
+        "video_type": "playlist"
+      },
+      {
+        "id": 174,
+        "title": "Full Course Web Development 22 Hours | Mehul Mohan",
+        "url": "https://www.youtube.com/watch?v=ZxKM3DCV2kE",
+        "authors": ["Mehul Mohan (codedamn)"],
+        "category_id": 116,
+        "subcategory_id": 116,
+        "video_type": "video"
+      },
+      {
+        "id": 175,
+        "title": "Web3 Developer in 2023 Roadmap - thirdweb (video)",
+        "url": "https://www.youtube.com/watch?v=jYEqoIeAoBg",
+        "authors": ["thirdweb"],
+        "category_id": 117,
+        "subcategory_id": 117,
+        "video_type": "video"
+      },
+      {
+        "id": 176,
+        "title": "WordPress Complete Tutorial playlist - Nayyar Shaikh",
+        "url": "https://www.youtube.com/playlist?list=PLjR7HjmPoicHwIytCRu8LothNjizC5vr_",
+        "authors": ["Nayyar Shaikh"],
+        "category_id": 119,
+        "subcategory_id": 119,
+        "video_type": "playlist"
+      },
+      {
+        "id": 177,
+        "title": "Complete YAML Course - Kunal Kushwaha (video)",
+        "url": "https://www.youtube.com/watch?v=IA90BTozdow",
+        "authors": ["Kunal Kushwaha"],
+        "category_id": 120,
+        "subcategory_id": 120,
+        "video_type": "video"
+      },
+      {
+        "id": 178,
+        "title": "Hacker's guide to learning model - (example video)",
+        "url": "https://www.youtube.com/watch?v=jkrNMKz9pWU",
+        "authors": ["Unknown (referenced in markdown)"],
+        "category_id": 78,
+        "subcategory_id": 78,
+        "video_type": "video"
+      },
+      {
+        "id": 179,
+        "title": "Learn Bootstrap 5 Tutorial - The Net Ninja (duplicate alt)",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR",
+        "authors": ["The Net Ninja"],
+        "category_id": 49,
+        "subcategory_id": 49,
+        "video_type": "playlist"
+      },
+      {
+        "id": 180,
+        "title": "Pytorch Bootcamp - OpenCV University (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PL7-d2b7tx0N8u6X9kzB1RrZq0f1t1IDd1",
+        "authors": ["OpenCV University"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 181,
+        "title": "Learning Docker Full Course - Bootcamp mirror (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLAi9X1uG6jZ30QGz7FZ55A27jPeY8EwkE",
+        "authors": ["IIEC RISE / mirror"],
+        "category_id": 39,
+        "subcategory_id": 39,
+        "video_type": "playlist"
+      },
+      {
+        "id": 182,
+        "title": "How to Build AWS VPC Using Terraform – Step By Step (video)",
+        "url": "https://www.youtube.com/watch?v=some_example_aws_vpc_terraform",
+        "authors": ["Chinthaka Dinadasa (javatodev)"],
+        "category_id": 18,
+        "subcategory_id": 18,
+        "video_type": "video"
+      },
+      {
+        "id": 183,
+        "title": "Complete Machine Learning Bootcamp - Code for Cause (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLyzHIYrZBplo3K0dNUqppd2ynnoZPD6N1",
+        "authors": ["Code for Cause"],
+        "category_id": 78,
+        "subcategory_id": 78,
+        "video_type": "playlist"
+      },
+      {
+        "id": 184,
+        "title": "Practical Deep Learning For Coders - fast.ai (video playlist mirror)",
+        "url": "https://www.youtube.com/playlist?list=PLpNfq4V1bb0v9z8K3M2eT9Z4XfY1YV1cA",
+        "authors": ["fast.ai"],
+        "category_id": 33,
+        "subcategory_id": 33,
+        "video_type": "playlist"
+      },
+      {
+        "id": 185,
+        "title": "Complete WooCommerce eCommerce WordPress Tutorials (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLjR7HjmPoicEyJPKnoj5w7rdPIKjJ-KZu",
+        "authors": ["Nayyar Shaikh"],
+        "category_id": 119,
+        "subcategory_id": 119,
+        "video_type": "playlist"
+      },
+      {
+        "id": 186,
+        "title": "Networking: Computer Networking Full Course - Kunal Kushwaha",
+        "url": "https://www.youtube.com/watch?v=IPvYjXCsTg8",
+        "authors": ["Kunal Kushwaha"],
+        "category_id": 84,
+        "subcategory_id": 84,
+        "video_type": "video"
+      },
+      {
+        "id": 187,
+        "title": "Professor Messer’s SY0-601 CompTIA Security+ Course (video)",
+        "url": "https://www.youtube.com/playlist?list=PLG49S3nxzAnlCJiCrOYuRYb6cne864a7G",
+        "authors": ["Professor Messer"],
+        "category_id": 106,
+        "subcategory_id": 106,
+        "video_type": "playlist"
+      },
+      {
+        "id": 188,
+        "title": "Complete WordPress Website Tutorials - Nayyar Shaikh (playlist duplicate)",
+        "url": "https://www.youtube.com/playlist?list=PLjR7HjmPoicHwIytCRu8LothNjizC5vr_",
+        "authors": ["Nayyar Shaikh"],
+        "category_id": 119,
+        "subcategory_id": 119,
+        "video_type": "playlist"
+      },
+      {
+        "id": 189,
+        "title": "Beginner SvelteKit - Steph Dietz (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLtgYhHmUIr3qDB2eTzY-nuBH1W5tOK8a4",
+        "authors": ["Steph Dietz"],
+        "category_id": 68,
+        "subcategory_id": 68,
+        "video_type": "playlist"
+      },
+      {
+        "id": 190,
+        "title": "Learn Svelte Full Course - freeCodeCamp (video)",
+        "url": "https://www.youtube.com/watch?v=UGBJHYpHPvA",
+        "authors": ["Lihau Tan, freeCodeCamp"],
+        "category_id": 68,
+        "subcategory_id": 68,
+        "video_type": "video"
+      },
+      {
+        "id": 191,
+        "title": "Design 101 Crash Course: Learn UX/UI Design, Figma - Zero To Mastery (video)",
+        "url": "https://www.youtube.com/watch?v=cKZEgtQUxlU",
+        "authors": ["Zero To Mastery"],
+        "category_id": 114,
+        "subcategory_id": 114,
+        "video_type": "video"
+      },
+      {
+        "id": 192,
+        "title": "React Testing Library Crash Course - The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ",
+        "authors": ["The Net Ninja"],
+        "category_id": 64,
+        "subcategory_id": 64,
+        "video_type": "playlist"
+      },
+      {
+        "id": 193,
+        "title": "JavaScript30 - Wesbos (site with videos)",
+        "url": "https://www.youtube.com/playlist?list=PLpcSpRrAaOaoIqHQddZOdbRrzr5dJtgSs",
+        "authors": ["Wesbos"],
+        "category_id": 53,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 194,
+        "title": "Three.js Tutorial Crash Course - Chris Courses",
+        "url": "https://www.youtube.com/watch?v=YK1Sw_hnm58",
+        "authors": ["Chris Courses"],
+        "category_id": 69,
+        "subcategory_id": 69,
+        "video_type": "video"
+      },
+      {
+        "id": 195,
+        "title": "Golang Learn by Building 11 Projects – Full Course - Akhil Sharma",
+        "url": "https://www.youtube.com/watch?v=jFfo23yIWac",
+        "authors": ["Akhil Sharma (freeCodeCamp)"],
+        "category_id": 45,
+        "subcategory_id": 45,
+        "video_type": "video"
+      },
+      {
+        "id": 196,
+        "title": "SQL Tutorial - Full Database Course for Beginners - Mike Dane (freeCodeCamp)",
+        "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+        "authors": ["Mike Dane (freeCodeCamp)"],
+        "category_id": 32,
+        "subcategory_id": 32,
+        "video_type": "video"
+      },
+      {
+        "id": 197,
+        "title": "Neo4j Graph Database Tutorial - Satish C J (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLqfPEK2RTgChcOZ6qHgSfwiBPCz2Bzdjh",
+        "authors": ["Satish C J"],
+        "category_id": 31,
+        "subcategory_id": 31,
+        "video_type": "playlist"
+      },
+      {
+        "id": 198,
+        "title": "Princeton University Algorithms, Part 1 (YouTube mirror)",
+        "url": "https://www.youtube.com/playlist?list=PL6uC-XGZC9d6O0kQ15qzw3e8yT8kZ6eQy",
+        "authors": ["Princeton / Coursera mirror"],
+        "category_id": 2,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 199,
+        "title": "Stanford CS 224N (duplicate playlist entry)",
+        "url": "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ",
+        "authors": ["Stanford Online"],
+        "category_id": 33,
+        "subcategory_id": null,
+        "video_type": "playlist"
+      },
+      {
+        "id": 200,
+        "title": "Free Blockchain Development Courses - Dapp University (playlist)",
+        "url": "https://www.youtube.com/playlist?list=PLS5SEs8ZftgUNcUVXtn2KXiE1Ui9B5UrY",
+        "authors": ["Dapp University"],
+        "category_id": 12,
+        "subcategory_id": 12,
+        "video_type": "playlist"
+      }
+    ]
+  }
+}
