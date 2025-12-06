@@ -5,8 +5,8 @@ import Footer from "@/components/organisms/footer";
 import Header from "@/components/organisms/header";
 import { coursesData } from "@/lib/courses-data";
 import { X } from "lucide-react";
-import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import React, { useCallback, useEffect, useState } from "react";
 
 export default function SiteLayout({
   children,
@@ -18,8 +18,11 @@ export default function SiteLayout({
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const router = useRouter();
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+
+  // Get filter values directly from URL params
+  const selectedCategory = searchParams.get("category");
+  const selectedLanguage = searchParams.get("language");
 
   // Open drawer with animation
   function openDrawer() {
@@ -54,30 +57,42 @@ export default function SiteLayout({
     new Set(coursesData.map((c) => c.language))
   ).sort();
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const params = new URLSearchParams(window.location.search);
-    setSelectedCategory(params.get("category"));
-    setSelectedLanguage(params.get("language"));
-  }, []);
+  const handleSelectCategory = useCallback(
+    (category: string | null) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (category) {
+        params.set("category", category);
+      } else {
+        params.delete("category");
+      }
+      const qs = params.toString();
+      router.push(`/${qs ? `?${qs}` : ""}`);
+      closeDrawer();
+    },
+    [router, searchParams]
+  );
 
-  function handleSelect(category: string | null, language: string | null) {
-    const params = new URLSearchParams();
-    if (category) params.set("category", category);
-    if (language) params.set("language", language);
-    const qs = params.toString();
-    router.push(`/${qs ? `?${qs}` : ""}`);
-    setSelectedCategory(category);
-    setSelectedLanguage(language);
-    closeDrawer();
-  }
+  const handleSelectLanguage = useCallback(
+    (language: string | null) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (language) {
+        params.set("language", language);
+      } else {
+        params.delete("language");
+      }
+      const qs = params.toString();
+      router.push(`/${qs ? `?${qs}` : ""}`);
+      closeDrawer();
+    },
+    [router, searchParams]
+  );
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
       <div className="flex-1">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 flex gap-6">
+        <div className="w-full max-w-7xl mx-auto">
           {sidebar ? (
             <aside className="hidden lg:block w-64 flex-shrink-0">
               {sidebar}
@@ -132,8 +147,8 @@ export default function SiteLayout({
                   languages={languages}
                   selectedCategory={selectedCategory}
                   selectedLanguage={selectedLanguage}
-                  onSelectCategory={(c) => handleSelect(c, selectedLanguage)}
-                  onSelectLanguage={(l) => handleSelect(selectedCategory, l)}
+                  onSelectCategory={handleSelectCategory}
+                  onSelectLanguage={handleSelectLanguage}
                 />
               )}
             </div>

@@ -8,19 +8,53 @@ import LearningDashboard from "@/components/organisms/learning-dashboard";
 import LearningPathsSection from "@/components/organisms/learning-paths";
 import { coursesData } from "@/lib/courses-data";
 import MobileFilters from "@/modules/home/features/MobileFilters";
-import { useEffect, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 export default function HomeContainer() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
+
+  // Get filter values directly from URL
+  const selectedCategory = searchParams.get("category");
+  const selectedLanguage = searchParams.get("language");
+
+  // URL-based filter handlers for consistency across all filter UI
+  const handleSelectCategory = useCallback(
+    (category: string | null) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (category) {
+        params.set("category", category);
+      } else {
+        params.delete("category");
+      }
+      const qs = params.toString();
+      router.push(`/${qs ? `?${qs}` : ""}`, { scroll: false });
+    },
+    [router, searchParams]
+  );
+
+  const handleSelectLanguage = useCallback(
+    (language: string | null) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (language) {
+        params.set("language", language);
+      } else {
+        params.delete("language");
+      }
+      const qs = params.toString();
+      router.push(`/${qs ? `?${qs}` : ""}`, { scroll: false });
+    },
+    [router, searchParams]
+  );
 
   useEffect(() => {
     const coursesSection = document.getElementById("courses-section");
-    if (coursesSection) {
+    if (coursesSection && (selectedCategory || selectedLanguage)) {
       coursesSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [selectedCategory, selectedLanguage, searchQuery]);
+  }, [selectedCategory, selectedLanguage]);
 
   const filteredCourses = useMemo(() => {
     return coursesData.filter((course) => {
@@ -69,8 +103,8 @@ export default function HomeContainer() {
             languages={languages}
             selectedCategory={selectedCategory}
             selectedLanguage={selectedLanguage}
-            onSelectCategory={setSelectedCategory}
-            onSelectLanguage={setSelectedLanguage}
+            onSelectCategory={handleSelectCategory}
+            onSelectLanguage={handleSelectLanguage}
           />
         </aside>
 
@@ -85,8 +119,8 @@ export default function HomeContainer() {
             languages={languages}
             selectedCategory={selectedCategory}
             selectedLanguage={selectedLanguage}
-            onSelectCategory={setSelectedCategory}
-            onSelectLanguage={setSelectedLanguage}
+            onSelectCategory={handleSelectCategory}
+            onSelectLanguage={handleSelectLanguage}
           />
 
           <div className="space-y-4 mb-4">
